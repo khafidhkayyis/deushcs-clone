@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import heroBannerImage from "../images/DEUS-Human-Capital-Services-Indonesia.webp";
+import bottomSectionBg from "../images/DEUS-Technology.jpeg";
 
 export default function HeroBanner() {
     return (
@@ -110,17 +111,30 @@ export default function HeroBanner() {
             </section>
 
             {/* Bottom Section - Dark Blue Textured Background */}
-            <section className="bg-[#1a3a4a] text-white py-16 lg:py-20">
-                <div className="container mx-auto px-6">
-                    <div className="max-w-4xl mx-auto">
+            <section
+                className="relative text-white py-16 lg:py-20"
+                style={{
+                    backgroundImage: `url(${bottomSectionBg.src})`,
+                    backgroundAttachment: 'fixed',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: 'cover',
+                }}
+            >
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-[#1a3a4a] opacity-70 z-0"></div>
+
+                {/* Scrollable Content */}
+                <div className="relative z-10 container mx-auto px-6">
+                    <div className="max-w-7xl mx-auto">
                         {/* Quote */}
-                        <blockquote className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-8">
+                        <blockquote className="text-3xl md:text-4xl lg:text-4xl font-bold leading-tight mb-8">
                             &ldquo;DEUS Human Capital Services provides optimized solutions
                             for hr services aimed at enhancing employee management.&rdquo;
                         </blockquote>
 
                         {/* Descriptive Paragraph */}
-                        <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-200">
+                        <p className="text-base text-justify md:text-lg lg:text-xl leading-relaxed text-gray-200">
                             Our platform is dedicated to maximizing employee performance while
                             fostering innovation in talent management and HR services in
                             Indonesia. By utilizing modernized HR software, DEUS Human Capital
