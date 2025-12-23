@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import logo from "./image/deus_human_capital_services_logo.jpeg";
+import logo from "./images/deus_human_capital_services_logo.jpeg";
 import Image from "next/image";
 
 export default function Header() {
