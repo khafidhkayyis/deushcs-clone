@@ -1,15 +1,18 @@
 import React from "react";
+import Image from "next/image";
+import heroBannerImage from "../images/DEUS-Human-Capital-Services-Indonesia.webp";
+import bottomSectionBg from "../images/DEUS-Technology.jpeg";
 
 export default function HeroBanner() {
     return (
         <div className="relative w-full">
             {/* Top Section - Dark Teal Background */}
-            <section className="relative bg-[#0d4f5c] text-white overflow-hidden">
+            <section className="relative bg-[#122430] text-white overflow-hidden">
                 <div className="container mx-auto px-6 py-16 lg:py-24">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         {/* Left Side - Content */}
-                        <div className="relative z-10">
-                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8">
+                        <div className="relative z-10 order-2 lg:order-1">
+                            <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight mb-8">
                                 Helping Indonesian<br />
                                 Businesses With<br />
                                 Gamified Assessments<br />
@@ -36,7 +39,7 @@ export default function HeroBanner() {
                                         </svg>
                                     </div>
                                     <div>
-                                        <p className="text-base md:text-lg leading-relaxed">
+                                        <p className="text-base text-justify md:text-lg leading-relaxed">
                                             If your company needs guidance for efficient recruitment or
                                             employee development: check out{" "}
                                             <strong>DEUS Discover</strong> for the first gamified
@@ -63,7 +66,7 @@ export default function HeroBanner() {
                                         </svg>
                                     </div>
                                     <div>
-                                        <p className="text-base md:text-lg leading-relaxed">
+                                        <p className="text-base text-justify md:text-lg leading-relaxed">
                                             If your company needs better KPI management and workforce
                                             development tools: check out{" "}
                                             <strong>DEUS Enhance</strong> here.
@@ -89,7 +92,7 @@ export default function HeroBanner() {
                                         </svg>
                                     </div>
                                     <div>
-                                        <p className="text-base md:text-lg leading-relaxed">
+                                        <p className="text-base text-justify md:text-lg leading-relaxed">
                                             If your company is having a hard time keeping up with
                                             operational task managements: check out{" "}
                                             <strong>Eagle Vision</strong> here.
@@ -100,74 +103,38 @@ export default function HeroBanner() {
                         </div>
 
                         {/* Right Side - Visual Elements */}
-                        <div className="relative lg:flex lg:justify-end">
-                            <div className="relative w-full max-w-lg mx-auto lg:mx-0">
-                                {/* Abstract Geometric Shapes */}
-                                <div className="absolute inset-0 opacity-20">
-                                    <div className="absolute top-10 right-20 w-16 h-16 border-2 border-white rounded-full"></div>
-                                    <div className="absolute top-32 left-10 w-12 h-12 bg-white opacity-30 transform rotate-45"></div>
-                                    <div className="absolute bottom-20 right-10 w-8 h-8 border-2 border-white transform rotate-45"></div>
-                                    <div className="absolute top-20 left-32 w-10 h-10 bg-white opacity-20 transform rotate-45"></div>
-                                </div>
-
-                                {/* Woman with Tablet */}
-                                <div className="relative z-10 flex flex-col items-center">
-                                    <div className="w-48 h-64 bg-gray-300 rounded-lg mb-4 flex items-center justify-center">
-                                        <span className="text-gray-600 text-sm">Woman Image</span>
-                                    </div>
-
-                                    {/* Devices */}
-                                    <div className="relative w-full max-w-md">
-                                        {/* Laptop */}
-                                        <div className="absolute -bottom-8 -left-8 w-32 h-24 bg-gray-200 rounded border-2 border-gray-400 p-1">
-                                            <div className="w-full h-full bg-linear-to-br from-purple-500 to-blue-500 rounded flex items-center justify-center">
-                                                <span className="text-white text-xs font-bold">
-                                                    Game Screen
-                                                </span>
-                                            </div>
-                                        </div>
-
-                                        {/* Tablet */}
-                                        <div className="absolute -top-4 left-16 w-24 h-32 bg-white rounded border-2 border-gray-400 p-1">
-                                            <div className="w-full h-full bg-gray-100 rounded flex items-center justify-center">
-                                                <div className="text-center">
-                                                    <div className="w-16 h-2 bg-blue-400 mb-1 mx-auto"></div>
-                                                    <div className="w-12 h-2 bg-green-400 mb-1 mx-auto"></div>
-                                                    <div className="w-14 h-2 bg-yellow-400"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        {/* Smartphone */}
-                                        <div className="absolute -bottom-4 left-32 w-12 h-20 bg-gray-800 rounded-lg border-2 border-gray-600 p-1">
-                                            <div className="w-full h-full bg-gray-900 rounded flex items-center justify-center">
-                                                <div className="text-center">
-                                                    <div className="w-6 h-1 bg-blue-500 mb-1 mx-auto rounded"></div>
-                                                    <div className="w-6 h-1 bg-green-500 mb-1 mx-auto rounded"></div>
-                                                    <div className="w-6 h-1 bg-yellow-500 rounded"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div className="relative order-1 lg:order-2 lg:flex lg:justify-end">
+                            <Image src={heroBannerImage} alt="Hero Banner" width={500} height={500} />
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* Bottom Section - Dark Blue Textured Background */}
-            <section className="bg-[#1a3a4a] text-white py-16 lg:py-20">
-                <div className="container mx-auto px-6">
-                    <div className="max-w-4xl mx-auto">
+            <section
+                className="relative text-white py-16 lg:py-20"
+                style={{
+                    backgroundImage: `url(${bottomSectionBg.src})`,
+                    backgroundAttachment: 'fixed',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundSize: 'cover',
+                }}
+            >
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-[#1a3a4a] opacity-70 z-0"></div>
+
+                {/* Scrollable Content */}
+                <div className="relative z-10 container mx-auto px-6">
+                    <div className="max-w-7xl mx-auto">
                         {/* Quote */}
-                        <blockquote className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-8">
+                        <blockquote className="text-3xl md:text-4xl lg:text-4xl font-bold leading-tight mb-8">
                             &ldquo;DEUS Human Capital Services provides optimized solutions
                             for hr services aimed at enhancing employee management.&rdquo;
                         </blockquote>
 
                         {/* Descriptive Paragraph */}
-                        <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-200">
+                        <p className="text-base text-justify md:text-lg lg:text-xl leading-relaxed text-gray-200">
                             Our platform is dedicated to maximizing employee performance while
                             fostering innovation in talent management and HR services in
                             Indonesia. By utilizing modernized HR software, DEUS Human Capital
