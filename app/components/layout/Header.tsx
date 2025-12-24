@@ -26,23 +26,19 @@ export default function Header() {
   }, []);
 
   return (
-    <header className="bg-[#122430] text-white w-full sticky top-0 z-50">
-      <div className="container mx-auto px-4 py-4">
+    <header className="bg-[#122430] text-white w-full sticky top-0 z-50 font-sans">
+      <div className="container mx-auto md:mx-10 px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo Section */}
-          <div className="flex items-center gap-3">
-            <div className="relative w-12 h-12 flex items-center justify-center">
-              <Image src={logo} alt="DEUS Logo" width={50} height={50} />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-bold">DEUS</span>
-              <span className="text-xs text-gray-300">Human Capital Services</span>
+          <div className="flex items-center">
+            <div className="relative w-23 h-23 flex items-center justify-center">
+              <Image src={logo} alt="DEUS Logo" width={100} height={100} />
             </div>
           </div>
 
           {/* Navigation Links */}
-          <nav className="hidden md:flex items-center gap-6">
-            <a href="#" className="hover:text-yellow-400 transition-colors">
+          <nav className="hidden md:flex items-center gap-17 font-medium">
+            <a href="#" className="hover:text-gray-300 transition-colors text-xl">
               Home
             </a>
             <div className="relative" ref={aboutUsRef}>
@@ -51,7 +47,7 @@ export default function Header() {
                   setAboutUsOpen(!aboutUsOpen);
                   setProductsOpen(false);
                 }}
-                className="flex items-center gap-1 hover:text-yellow-400 transition-colors"
+                className="flex items-center gap-1 hover:text-gray-300 transition-colors text-xl"
               >
                 About Us
                 <svg
@@ -88,7 +84,7 @@ export default function Header() {
                   setProductsOpen(!productsOpen);
                   setAboutUsOpen(false);
                 }}
-                className="flex items-center gap-1 hover:text-yellow-400 transition-colors"
+                className="flex items-center gap-1 hover:text-gray-300 transition-colors text-xl"
               >
                 Our Products
                 <svg
@@ -119,20 +115,21 @@ export default function Header() {
                 </div>
               )}
             </div>
-            <a href="#" className="hover:text-yellow-400 transition-colors">
+            {/* CTA Button */}
+            <button className="hidden lg:block text-xl bg-yellow-200 hover:bg-yellow-500 text-gray-900 font-medium px-6 py-2 rounded-full transition-colors">
+              Free HR Consultation
+            </button>
+            <a href="#" className="hover:text-gray-300 transition-colors text-xl">
               DEUS Corner
             </a>
           </nav>
 
-          {/* CTA Button */}
-          <button className="hidden lg:block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-6 py-2 rounded-lg transition-colors">
-            Free HR Consultation
-          </button>
+
 
           {/* Language Flags */}
           <div className="flex items-center gap-2 ml-4">
             <button
-              className="w-8 h-6 border border-gray-400 hover:border-yellow-400 transition-colors overflow-hidden"
+              className="w-6 h-4 border border-gray-400 hover:border-yellow-400 transition-colors overflow-hidden"
               title="United States"
             >
               <svg width="32" height="24" viewBox="0 0 32 24" className="w-full h-full">
@@ -148,7 +145,7 @@ export default function Header() {
               </svg>
             </button>
             <button
-              className="w-8 h-6 border border-gray-400 hover:border-yellow-400 transition-colors overflow-hidden"
+              className="w-6 h-4 border border-gray-400 hover:border-yellow-400 transition-colors overflow-hidden"
               title="Indonesia"
             >
               <div className="w-full h-full flex flex-col">
@@ -192,13 +189,13 @@ export default function Header() {
         {mobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-gray-600 pt-4">
             <nav className="flex flex-col gap-4">
-              <a href="#" className="hover:text-yellow-400 transition-colors">
+              <a href="#" className="hover:text-gray-300 transition-colors">
                 Home
               </a>
               <div>
                 <button
                   onClick={() => setAboutUsOpen(!aboutUsOpen)}
-                  className="flex items-center justify-between w-full hover:text-yellow-400 transition-colors"
+                  className="flex items-center justify-between w-full hover:text-gray-300 transition-colors"
                 >
                   About Us
                   <svg
@@ -217,13 +214,13 @@ export default function Header() {
                 </button>
                 {aboutUsOpen && (
                   <div className="ml-4 mt-2 flex flex-col gap-2">
-                    <a href="#" className="text-gray-300 hover:text-yellow-400">
+                    <a href="#" className="text-gray-300 hover:text-gray-300">
                       Company
                     </a>
-                    <a href="#" className="text-gray-300 hover:text-yellow-400">
+                    <a href="#" className="text-gray-300 hover:text-gray-300">
                       Team
                     </a>
-                    <a href="#" className="text-gray-300 hover:text-yellow-400">
+                    <a href="#" className="text-gray-300 hover:text-gray-300">
                       Mission
                     </a>
                   </div>
@@ -232,7 +229,7 @@ export default function Header() {
               <div>
                 <button
                   onClick={() => setProductsOpen(!productsOpen)}
-                  className="flex items-center justify-between w-full hover:text-yellow-400 transition-colors"
+                  className="flex items-center justify-between w-full hover:text-gray-300 transition-colors"
                 >
                   Our Products
                   <svg
@@ -251,19 +248,19 @@ export default function Header() {
                 </button>
                 {productsOpen && (
                   <div className="ml-4 mt-2 flex flex-col gap-2">
-                    <a href="#" className="text-gray-300 hover:text-yellow-400">
+                    <a href="#" className="text-gray-300 hover:text-gray-300">
                       Product 1
                     </a>
-                    <a href="#" className="text-gray-300 hover:text-yellow-400">
+                    <a href="#" className="text-gray-300 hover:text-gray-300">
                       Product 2
                     </a>
-                    <a href="#" className="text-gray-300 hover:text-yellow-400">
+                    <a href="#" className="text-gray-300 hover:text-gray-300">
                       Product 3
                     </a>
                   </div>
                 )}
               </div>
-              <a href="#" className="hover:text-yellow-400 transition-colors">
+              <a href="#" className="hover:text-gray-300 transition-colors">
                 DEUS Corner
               </a>
               <button className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-6 py-2 rounded-lg transition-colors w-full mt-2">
