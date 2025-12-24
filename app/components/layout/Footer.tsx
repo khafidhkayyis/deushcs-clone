@@ -27,10 +27,10 @@ export default function Footer() {
         </svg>
       </div>
 
-      <div className="container mx-auto px-4 py-12 relative z-10">
+      <div className="container mx-auto md:mx-25 px-4 py-12 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Left Column */}
-          <div className="flex flex-col gap-4">
+          <div className="flex gap-4">
             <a href="#" className="font-bold text-white hover:text-yellow-400 transition-colors uppercase">
               HOME
             </a>
@@ -87,7 +87,7 @@ export default function Footer() {
 
           {/* Middle-Right Section - CTA Button */}
           <div className="flex items-start justify-center lg:justify-start">
-            <button className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-8 py-4 rounded-lg transition-colors w-full lg:w-auto">
+            <button className="bg-yellow-200 hover:bg-yellow-500 text-gray-900 font-semibold px-6 py-3 rounded-full transition-colors w-full text-lg lg:w-auto">
               FREE HR CONSULTATION
             </button>
           </div>
