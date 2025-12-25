@@ -9,10 +9,10 @@ export default function HeroBanner() {
             {/* Top Section - Dark Teal Background */}
             <section className="relative bg-[#122430] text-white overflow-hidden">
                 <div className="container mx-auto px-6 py-16 lg:py-24">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
                         {/* Left Side - Content */}
                         <div className="relative z-10 order-2 lg:order-1">
-                            <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold leading-tight mb-8">
+                            <h1 className="text-4xl leading-12 md:text-5xl lg:text-5xl font-extrabold mb-8 pl-0 md:pl-5">
                                 Helping Indonesian<br />
                                 Businesses With<br />
                                 Gamified Assessments<br />
@@ -20,7 +20,7 @@ export default function HeroBanner() {
                             </h1>
 
                             {/* Service Descriptions */}
-                            <div className="space-y-6">
+                            <div className="space-y-6 p-0 md:p-10">
                                 {/* DEUS Discover */}
                                 <div className="flex gap-4">
                                     <div className="shrink-0 w-12 h-12 flex items-center justify-center">
@@ -39,7 +39,7 @@ export default function HeroBanner() {
                                         </svg>
                                     </div>
                                     <div>
-                                        <p className="text-base text-justify md:text-lg leading-relaxed">
+                                        <p className="text-base text-justify md:text-lg leading-6">
                                             If your company needs guidance for efficient recruitment or
                                             employee development: check out{" "}
                                             <strong>DEUS Discover</strong> for the first gamified
@@ -66,7 +66,7 @@ export default function HeroBanner() {
                                         </svg>
                                     </div>
                                     <div>
-                                        <p className="text-base text-justify md:text-lg leading-relaxed">
+                                        <p className="text-base text-justify md:text-lg leading-6">
                                             If your company needs better KPI management and workforce
                                             development tools: check out{" "}
                                             <strong>DEUS Enhance</strong> here.
@@ -92,7 +92,7 @@ export default function HeroBanner() {
                                         </svg>
                                     </div>
                                     <div>
-                                        <p className="text-base text-justify md:text-lg leading-relaxed">
+                                        <p className="text-base text-justify md:text-lg leading-6">
                                             If your company is having a hard time keeping up with
                                             operational task managements: check out{" "}
                                             <strong>Eagle Vision</strong> here.
@@ -104,7 +104,7 @@ export default function HeroBanner() {
 
                         {/* Right Side - Visual Elements */}
                         <div className="relative order-1 lg:order-2 lg:flex lg:justify-end">
-                            <Image src={heroBannerImage} alt="Hero Banner" width={500} height={500} />
+                            <Image src={heroBannerImage} alt="Hero Banner" width={600} height={600} />
                         </div>
                     </div>
                 </div>
@@ -125,7 +125,7 @@ export default function HeroBanner() {
                 <div className="absolute inset-0 bg-[#1a3a4a] opacity-70 z-0"></div>
 
                 {/* Scrollable Content */}
-                <div className="relative z-10 container mx-auto px-6">
+                <div className="relative z-10 container mx-auto px-10">
                     <div className="max-w-7xl mx-auto">
                         {/* Quote */}
                         <blockquote className="text-3xl md:text-4xl lg:text-4xl font-bold leading-tight mb-8">
