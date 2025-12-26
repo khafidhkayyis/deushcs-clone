@@ -14,6 +14,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// 200 (font-extralight)
+// 300 (font-light)
+// 400 (font-normal)
+// 600 (font-semibold)
+// 700 (font-bold)
+// 800 (font-extrabold)
+// 900 (font-black)
 const biryani = Biryani({
   weight: ['200', '300', '400', '600', '700', '800', '900'],
   subsets: ["latin"],
