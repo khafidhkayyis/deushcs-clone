@@ -3,6 +3,7 @@ import Barrier from "./sections/Barrier";
 import Service from "./sections/Service";
 import Profile from "./sections/profile";
 import Smarter from "./sections/Smarter";
+import Smart from "./sections/Smart";
 
 export default function HomePage() {
     return (
@@ -12,6 +13,7 @@ export default function HomePage() {
             <Service />
             <Profile />
             <Smarter />
+            <Smart />
         </div>
     );
 }
