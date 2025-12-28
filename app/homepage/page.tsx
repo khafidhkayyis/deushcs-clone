@@ -5,6 +5,7 @@ import Profile from "./sections/profile";
 import Smarter from "./sections/Smarter";
 import Smart from "./sections/Smart";
 import Empower from "./sections/Empower";
+import Dedicate from "./sections/Dedicate";
 
 export default function HomePage() {
     return (
@@ -16,6 +17,7 @@ export default function HomePage() {
             <Smarter />
             <Smart />
             <Empower />
+            <Dedicate />
         </div>
     );
 }
