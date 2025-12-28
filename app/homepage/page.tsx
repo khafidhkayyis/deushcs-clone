@@ -4,6 +4,7 @@ import Service from "./sections/Service";
 import Profile from "./sections/profile";
 import Smarter from "./sections/Smarter";
 import Smart from "./sections/Smart";
+import Empower from "./sections/Empower";
 
 export default function HomePage() {
     return (
@@ -14,6 +15,7 @@ export default function HomePage() {
             <Profile />
             <Smarter />
             <Smart />
+            <Empower />
         </div>
     );
 }
