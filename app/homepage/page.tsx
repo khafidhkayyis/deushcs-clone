@@ -1,6 +1,7 @@
 import HeroBanner from "./sections/HeroBanner";
 import Barrier from "./sections/Barrier";
 import Service from "./sections/Service";
+import Profile from "./sections/profile";
 
 export default function HomePage() {
     return (
@@ -8,6 +9,7 @@ export default function HomePage() {
             <HeroBanner />
             <Barrier />
             <Service />
+            <Profile />
         </div>
     );
 }
