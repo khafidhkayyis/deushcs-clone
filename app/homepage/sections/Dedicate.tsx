@@ -1,8 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import dedicateImage from "../images/DEUS-Dedicate.webp";
+import { defaultItems } from "./Barrier";
 
 export default function Dedicate() {
+    const clientPartnershipsItem = defaultItems[1];
+
     return (
         <>
             <section className="relative bg-[#ffffff] text-[#122430] py-16 lg:py-24">
@@ -26,7 +29,6 @@ export default function Dedicate() {
                 </div>
             </section>
 
-            {/* Call to Action Section */}
             <section className="relative bg-[#ffffff] text-[#122430] py-16 lg:py-24">
                 <div className="container mx-auto px-6">
                     <div className="flex flex-col items-center justify-center text-center">
@@ -36,6 +38,23 @@ export default function Dedicate() {
                         <button className="bg-[#ffeb3b] border-2 border-[#122430] rounded-full px-8 py-3 text-xl font-semibold text-[#122430] hover:bg-[#ffd700] transition-colors duration-300">
                             Book Your Free Consultation With Us!
                         </button>
+                    </div>
+                </div>
+            </section>
+
+            {/* Call to Action Section */}
+            <section
+                className="relative py-16 lg:py-24"
+                style={{ backgroundColor: clientPartnershipsItem.bgColor }}
+            >
+                <div className="container mx-auto px-6">
+                    <div className="flex flex-col items-center justify-center text-center">
+                        <h2
+                            className="text-3xl md:text-4xl lg:text-3xl font-extrabold mb-8"
+                            style={{ color: clientPartnershipsItem.textColor }}
+                        >
+                            {clientPartnershipsItem.text}
+                        </h2>
                     </div>
                 </div>
             </section>
