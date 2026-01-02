@@ -1,15 +1,15 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
-import telkomLogo from "../images/logo/telkom-indonesia.png";
-import bogaLogo from "../images/logo/boga-group-logo.png";
-import delamibrandLogo from "../images/logo/Delamibrands.png";
-import sarinahLogo from "../images/logo/Sarinah.png";
-import bcgLogo from "../images/logo/bcglogo.jpeg";
-import sphLogo from "../images/logo/SPH-logo.png";
-import omosandoLogo from "../images/logo/Omosando-logo.png";
-import heliosLogo from "../images/logo/Helios-logo.png";
-import healthyLogo from "../images/logo/healthy-logo.webp";
-import glamifyLogo from "../images/logo/Glamify-Logo.png";
+import telkomLogo from "../images/logoclient/telkom-indonesia.png";
+import bogaLogo from "../images/logoclient/boga-group-logo.png";
+import delamibrandLogo from "../images/logoclient/Delamibrands.png";
+import sarinahLogo from "../images/logoclient/Sarinah.png";
+import bcgLogo from "../images/logoclient/bcglogo.jpeg";
+import sphLogo from "../images/logoclient/SPH-logo.png";
+import omosandoLogo from "../images/logoclient/Omosando-logo.png";
+import heliosLogo from "../images/logoclient/Helios-logo.png";
+import healthyLogo from "../images/logoclient/healthy-logo.webp";
+import glamifyLogo from "../images/logoclient/Glamify-Logo.png";
 
 
 interface ClientItem {
@@ -139,6 +139,9 @@ export default function Sponsored() {
                             )}
                         </div>
                     ))}
+                    <div className="col-span-2 md:col-span-3 lg:col-span-5 flex justify-end items-center w-full">
+                        <p className="text-[#1e293b] text-4xl font-semibold text-right w-full">And many more!</p>
+                    </div>
                 </div>
             </div>
         </section>
