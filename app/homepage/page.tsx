@@ -6,7 +6,10 @@ import Smarter from "./sections/Smarter";
 import Smart from "./sections/Smart";
 import Empower from "./sections/Empower";
 import Dedicate from "./sections/Dedicate";
-import Sponsored from "./sections/sponsored";
+import Clients from "./sections/Clients";
+import Patners from "./sections/Patners";
+import Scrolllogo from "./sections/Scrolllogo";
+import Transformational from "./sections/Transformational";
 
 export default function HomePage() {
     return (
@@ -19,7 +22,10 @@ export default function HomePage() {
             <Smart />
             <Empower />
             <Dedicate />
-            <Sponsored />
+            <Clients />
+            <Patners />
+            <Scrolllogo />
+            <Transformational />
         </div>
     );
 }
