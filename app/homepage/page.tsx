@@ -9,6 +9,7 @@ import Dedicate from "./sections/Dedicate";
 import Clients from "./sections/Clients";
 import Patners from "./sections/Patners";
 import Scrolllogo from "./sections/Scrolllogo";
+import Transformational from "./sections/Transformational";
 
 export default function HomePage() {
     return (
@@ -24,6 +25,7 @@ export default function HomePage() {
             <Clients />
             <Patners />
             <Scrolllogo />
+            <Transformational />
         </div>
     );
 }
