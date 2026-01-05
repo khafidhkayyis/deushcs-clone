@@ -10,6 +10,7 @@ import Clients from "./sections/Clients";
 import Patners from "./sections/Patners";
 import Scrolllogo from "./sections/Scrolllogo";
 import Transformational from "./sections/Transformational";
+import Pillars from "./sections/Pillars";
 
 export default function HomePage() {
     return (
@@ -26,6 +27,7 @@ export default function HomePage() {
             <Patners />
             <Scrolllogo />
             <Transformational />
+            <Pillars />
         </div>
     );
 }
