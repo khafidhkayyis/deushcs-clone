@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import Link from "next/link";
 import logo from "./images/deus_human_capital_services_logo.jpeg";
 import Image from "next/image";
 
@@ -38,9 +39,9 @@ export default function Header() {
 
           {/* Navigation Links */}
           <nav className="hidden md:flex items-center gap-17 font-medium">
-            <a href="#" className="hover:text-gray-300 transition-colors text-xl">
+            <Link href="/" className="hover:text-gray-300 transition-colors text-xl">
               Home
-            </a>
+            </Link>
             <div className="relative" ref={aboutUsRef}>
               <button
                 onClick={() => {
@@ -66,14 +67,17 @@ export default function Header() {
               </button>
               {aboutUsOpen && (
                 <div className="absolute top-full left-0 mt-2 bg-white text-gray-800 rounded shadow-lg py-2 min-w-[200px] z-50">
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                    Company
+                  <a href="/whoweare" className="block px-4 py-2 hover:bg-gray-100">
+                    Who We Are
                   </a>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                    Team
+                    Our Journey
                   </a>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                    Mission
+                    Values
+                  </a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                    Core Team
                   </a>
                 </div>
               )}
@@ -189,9 +193,9 @@ export default function Header() {
         {mobileMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-gray-600 pt-4">
             <nav className="flex flex-col gap-4">
-              <a href="#" className="hover:text-gray-300 transition-colors">
+              <Link href="/" className="hover:text-gray-300 transition-colors">
                 Home
-              </a>
+              </Link>
               <div>
                 <button
                   onClick={() => setAboutUsOpen(!aboutUsOpen)}
@@ -214,14 +218,17 @@ export default function Header() {
                 </button>
                 {aboutUsOpen && (
                   <div className="ml-4 mt-2 flex flex-col gap-2">
-                    <a href="#" className="text-gray-300 hover:text-gray-300">
-                      Company
+                    <a href="/whoweare" className="text-gray-300 hover:text-gray-300">
+                      Who We Aree
                     </a>
                     <a href="#" className="text-gray-300 hover:text-gray-300">
-                      Team
+                      Our Journey
                     </a>
                     <a href="#" className="text-gray-300 hover:text-gray-300">
-                      Mission
+                      Values
+                    </a>
+                    <a href="#" className="text-gray-300 hover:text-gray-300">
+                      Core Team
                     </a>
                   </div>
                 )}
