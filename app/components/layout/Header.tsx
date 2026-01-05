@@ -71,10 +71,13 @@ export default function Header() {
                     Who We Are
                   </a>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                    Team
+                    Our Journey
                   </a>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                    Mission
+                    Values
+                  </a>
+                  <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                    Core Team
                   </a>
                 </div>
               )}
@@ -216,13 +219,16 @@ export default function Header() {
                 {aboutUsOpen && (
                   <div className="ml-4 mt-2 flex flex-col gap-2">
                     <a href="/whoweare" className="text-gray-300 hover:text-gray-300">
-                      Who We Are
+                      Who We Aree
                     </a>
                     <a href="#" className="text-gray-300 hover:text-gray-300">
-                      Team
+                      Our Journey
                     </a>
                     <a href="#" className="text-gray-300 hover:text-gray-300">
-                      Mission
+                      Values
+                    </a>
+                    <a href="#" className="text-gray-300 hover:text-gray-300">
+                      Core Team
                     </a>
                   </div>
                 )}
