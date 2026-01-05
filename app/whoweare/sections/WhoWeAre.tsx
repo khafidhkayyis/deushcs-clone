@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import profileImage from "../homepage/images/DEUS-Profile.webp";
+import profileImage from "../images/weare.webp";
 
 export default function WhoWeAre() {
     return (
