@@ -1,7 +1,12 @@
 import React from "react";
 import Barrier from "./barrier";
 
-export default function BarrierName() {
+const titles = [
+    "Our Journey in Redefining HRM Systems",
+    "Our Values"
+];
+
+function BarrierSection({ title }: { title: string }) {
     return (
         <div>
             <Barrier />
@@ -27,12 +32,30 @@ export default function BarrierName() {
                 {/* Centered text */}
                 <div className="container mx-auto px-6 text-center relative z-10">
                     <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#1a2a3a]">
-                        Our Journey in Redefining HRM Systems
+                        {title}
                     </h2>
                 </div>
             </div>
             <Barrier />
         </div>
+    );
+}
+
+interface BarrierNameProps {
+    index?: number;
+}
+
+export default function BarrierName({ index }: BarrierNameProps) {
+    if (index !== undefined) {
+        return <BarrierSection title={titles[index]} />;
+    }
+
+    return (
+        <>
+            {titles.map((title, idx) => (
+                <BarrierSection key={idx} title={title} />
+            ))}
+        </>
     );
 }
 
