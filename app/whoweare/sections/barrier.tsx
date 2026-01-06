@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Barrier() {
     return (
-        <div className="relative w-full h-16 md:h-20 lg:h-5 overflow-hidden">
+        <div className="relative w-full h-2 md:h-20 lg:h-5 overflow-hidden">
             {/* Top subtle line */}
             <div className="absolute top-0 left-0 w-full h-px bg-gray-400/50 z-10"></div>
 
