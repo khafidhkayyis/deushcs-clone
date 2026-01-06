@@ -3,6 +3,7 @@ import BarrierName from "./sections/barrierName";
 import OurProcess from "./sections/ourProcess";
 import OurValues from "./sections/ourValues";
 import TeamCore from "./sections/teamCore";
+import GetIn from "./sections/getIn";
 
 
 export default function WhoWeArePage() {
@@ -13,6 +14,7 @@ export default function WhoWeArePage() {
             <OurProcess />
             <OurValues />
             <TeamCore />
+            <GetIn />
         </div>
     );
 }
