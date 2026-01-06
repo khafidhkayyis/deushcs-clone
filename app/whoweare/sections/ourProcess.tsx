@@ -1,4 +1,5 @@
 import React from "react";
+import BarrierName from "./barrierName";
 
 export default function OurProcess() {
     const inceptionItems = [
@@ -20,8 +21,8 @@ export default function OurProcess() {
     ];
 
     return (
-        <section className="relative bg-[#122430] text-white py-16 lg:py-24">
-            <div className="container mx-auto px-6">
+        <section className="relative bg-[#122430] text-white py-16 lg:py-15">
+            <div className="container mx-auto px-6 mb-12">
                 {/* Title - Inception */}
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-12 text-left">
                     Inception
@@ -55,6 +56,9 @@ export default function OurProcess() {
                         </div>
                     ))}
                 </div>
+            </div>
+            <div>
+                <BarrierName index={1} />
             </div>
         </section>
     );
