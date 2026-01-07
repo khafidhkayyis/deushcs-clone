@@ -107,9 +107,9 @@ export default function Header() {
               </button>
               {productsOpen && (
                 <div className="absolute top-full left-0 mt-2 bg-white text-gray-800 rounded shadow-lg py-2 min-w-[200px] z-50">
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                    Product 1
-                  </a>
+                  <Link href="/discover" className="block px-4 py-2 hover:bg-gray-100">
+                    DEUS Discover
+                  </Link>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-100">
                     Product 2
                   </a>
@@ -255,9 +255,9 @@ export default function Header() {
                 </button>
                 {productsOpen && (
                   <div className="ml-4 mt-2 flex flex-col gap-2">
-                    <a href="#" className="text-gray-300 hover:text-gray-300">
-                      Product 1
-                    </a>
+                    <Link href="/discover" className="text-gray-300 hover:text-gray-300">
+                      DEUS Discover
+                    </Link>
                     <a href="#" className="text-gray-300 hover:text-gray-300">
                       Product 2
                     </a>
