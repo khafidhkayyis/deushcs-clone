@@ -6,6 +6,7 @@ import TeamCore from "./sections/teamCore";
 import GetIn from "./sections/getIn";
 
 
+
 export default function WhoWeArePage() {
     return (
         <div className="w-full">
