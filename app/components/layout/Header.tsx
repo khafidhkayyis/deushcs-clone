@@ -70,7 +70,7 @@ export default function Header() {
                   <a href="/whoweare" className="block px-4 py-2 hover:bg-gray-100">
                     Who We Are
                   </a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                  <a href="/whoweare#our-journey" className="block px-4 py-2 hover:bg-gray-100">
                     Our Journey
                   </a>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-100">
@@ -221,7 +221,7 @@ export default function Header() {
                     <a href="/whoweare" className="text-gray-300 hover:text-gray-300">
                       Who We Aree
                     </a>
-                    <a href="#" className="text-gray-300 hover:text-gray-300">
+                    <a href="/whoweare#our-journey" className="text-gray-300 hover:text-gray-300">
                       Our Journey
                     </a>
                     <a href="#" className="text-gray-300 hover:text-gray-300">

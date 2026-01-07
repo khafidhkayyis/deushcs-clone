@@ -35,9 +35,12 @@ export default function WhoWeAre() {
                     <p>
                         At DEUS, our passion for games and dedication in HR Services thrive in organizations drove our journey. Combining our founder&apos;s love for games with expertise in business psychology, we created gamified assessments to empower professional growth. We&apos;ve since evolved to offer comprehensive human resource management services via our strategic people management system. Our solutions enable organizations to assess and strategically develop their most valuable asset: their people. With the support of our advanced HR software solutions, we empower companies to harness the full potential of their workforce. DEUS is rooted in good intentions, DEUS has entered into a strategic partnership with the Ministry of Communication and Information Technology (KOMINFO) for the SSI Program Batch 6. Among 800 startups, we&apos;ve proudly secured a spot as one of the top 17, earning us coaching and support from KOMINFO. This collaboration marks a significant milestone, poised to fuel our growth and pave the way for continued success.
                     </p>
-                    <p>
-                        DEUS is rooted in good intentions, DEUS has entered into a strategic partnership with the Ministry of Communication and Information Technology (KOMINFO) for the SSI Program Batch 6. Among 800 startups, we&apos;ve proudly secured a spot as one of the top 17, earning us coaching and support from KOMINFO. This collaboration marks a significant milestone, poised to fuel our growth and pave the way for continued success.
-                    </p>
+                    <div id="our-journey">
+                        <p>
+                            DEUS is rooted in good intentions, DEUS has entered into a strategic partnership with the Ministry of Communication and Information Technology (KOMINFO) for the SSI Program Batch 6. Among 800 startups, we&apos;ve proudly secured a spot as one of the top 17, earning us coaching and support from KOMINFO. This collaboration marks a significant milestone, poised to fuel our growth and pave the way for continued success.
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </section>
