@@ -3,8 +3,7 @@ import Barrier from "./barrier";
 
 const titles = [
     "What Makes DEUS Enhance Stand Out?",
-    "What is Gamification in Assessments?",
-    "Gamified Assessment Benefits for Organizations"
+    "Key Features for HR Transformation Management"
 ];
 
 function BarrierSection({ title }: { title: string }) {
