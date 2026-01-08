@@ -6,7 +6,12 @@ const titles = [
     "Key Features for HR Transformation Management"
 ];
 
-function BarrierSection({ title }: { title: string }) {
+const descriptions = [
+    undefined,
+    "From KPI tracking to secure remuneration integration. DEUS Enhance delivers key features for effective HR management and business performance optimization"
+];
+
+function BarrierSection({ title, description }: { title: string; description?: string }) {
     return (
         <div>
             <Barrier />
@@ -34,6 +39,11 @@ function BarrierSection({ title }: { title: string }) {
                     <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#1a2a3a]">
                         {title}
                     </h2>
+                    {description && (
+                        <p className="text-base md:text-lg lg:text-xl text-[#1a2a3a] mt-4 max-w-4xl mx-auto">
+                            {description}
+                        </p>
+                    )}
                 </div>
             </div>
             <Barrier />
@@ -47,13 +57,13 @@ interface BarrierNameProps {
 
 export default function BarrierName({ index }: BarrierNameProps) {
     if (index !== undefined) {
-        return <BarrierSection title={titles[index]} />;
+        return <BarrierSection title={titles[index]} description={descriptions[index]} />;
     }
 
     return (
         <>
             {titles.map((title, idx) => (
-                <BarrierSection key={idx} title={title} />
+                <BarrierSection key={idx} title={title} description={descriptions[idx]} />
             ))}
         </>
     );
