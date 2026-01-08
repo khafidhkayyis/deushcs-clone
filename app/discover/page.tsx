@@ -14,6 +14,7 @@ export default function DiscoverPage() {
             <Fitures />
             <Benefits />
             <KickStart />
+            <BarrierName index={2} />
         </div>
     );
 }
