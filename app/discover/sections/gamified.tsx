@@ -201,6 +201,17 @@ export default function Gamified() {
                     </div>
                 </div>
             </section>
+
+            {/* Experience Banner Section */}
+            <section className="relative bg-[#122430] text-white py-16 lg:py-24">
+                <div className="container mx-auto px-6">
+                    <div className="max-w-4xl mx-auto text-center">
+                        <p className="text-xl md:text-2xl lg:text-3xl italic text-gray-200">
+                            Experience the power of DEUS gamified assessment and take your talent management to a new level.
+                        </p>
+                    </div>
+                </div>
+            </section>
         </>
     );
 }
