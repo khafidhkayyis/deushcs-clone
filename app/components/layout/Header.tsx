@@ -110,9 +110,9 @@ export default function Header() {
                   <Link href="/discover" className="block px-4 py-2 hover:bg-gray-100">
                     DEUS Discover
                   </Link>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                    Product 2
-                  </a>
+                  <Link href="/enhance" className="block px-4 py-2 hover:bg-gray-100">
+                    DEUS Enhance
+                  </Link>
                   <a href="#" className="block px-4 py-2 hover:bg-gray-100">
                     Product 3
                   </a>
