@@ -3,7 +3,8 @@ import Barrier from "./barrier";
 
 const titles = [
     "Indonesia’s Pioneer for Gamified Assessment tools",
-    "What is Gamification in Assessments?"
+    "What is Gamification in Assessments?",
+    "Gamified Assessment Benefits for Organizations"
 ];
 
 function BarrierSection({ title }: { title: string }) {
