@@ -4,6 +4,7 @@ import BarrierName from "./sections/barrierName";
 import Fitures from "./sections/fitures";
 import Benefits from "./sections/benefits";
 import KickStart from "./sections/klickStart";
+import Gamified from "./sections/gamified";
 
 export default function DiscoverPage() {
     return (
@@ -15,6 +16,7 @@ export default function DiscoverPage() {
             <Benefits />
             <KickStart />
             <BarrierName index={2} />
+            <Gamified />
         </div>
     );
 }
