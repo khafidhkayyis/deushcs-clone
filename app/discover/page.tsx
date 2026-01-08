@@ -3,6 +3,7 @@ import BarrierName from "./sections/barrierName";
 // import BannerVideo from "./sections/bannerVideo";
 import Fitures from "./sections/fitures";
 import Benefits from "./sections/benefits";
+import KickStart from "./sections/klickStart";
 
 export default function DiscoverPage() {
     return (
@@ -12,6 +13,7 @@ export default function DiscoverPage() {
             {/* <BannerVideo /> */}
             <Fitures />
             <Benefits />
+            <KickStart />
         </div>
     );
 }
