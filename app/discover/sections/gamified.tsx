@@ -92,7 +92,7 @@ export default function Gamified() {
     return (
         <>
             {/* Talent Acquisition Section */}
-            <section className="relative bg-[#122430] text-white py-16 lg:py-24 overflow-hidden">
+            <section className="relative bg-[#122430] text-white py-10 lg:py-24 overflow-hidden">
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
                         {/* Left Side - UI Image */}
@@ -119,7 +119,7 @@ export default function Gamified() {
             </section>
 
             {/* Individual Report Section */}
-            <section className="relative bg-[#122430] text-white py-16 lg:py-24 overflow-hidden">
+            <section className="relative bg-[#122430] text-white py-10 lg:py-24 overflow-hidden">
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
                         {/* Left Side - Text Content */}
@@ -149,7 +149,7 @@ export default function Gamified() {
             <GapAnalysisSection />
 
             {/* Development Section */}
-            <section className="relative bg-[#122430] text-white py-16 lg:py-24 overflow-hidden">
+            <section className="relative bg-[#122430] text-white py-10 lg:py-24 overflow-hidden">
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
                         {/* Left Side - Text Content */}
@@ -176,7 +176,7 @@ export default function Gamified() {
             </section>
 
             {/* Nurturing Talent Section */}
-            <section className="relative bg-[#122430] text-white py-16 lg:py-24 overflow-hidden">
+            <section className="relative bg-[#122430] text-white py-10 lg:py-24 overflow-hidden">
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
                         {/* Left Side - Nurturing Talent Image */}
@@ -203,7 +203,7 @@ export default function Gamified() {
             </section>
 
             {/* Experience Banner Section */}
-            <section className="relative bg-[#122430] text-white py-16 lg:py-24">
+            <section className="relative bg-[#122430] text-white py-10 lg:py-24">
                 <div className="container mx-auto px-6">
                     <div className="max-w-4xl mx-auto text-center">
                         <p className="text-xl md:text-2xl lg:text-3xl italic text-gray-200">
