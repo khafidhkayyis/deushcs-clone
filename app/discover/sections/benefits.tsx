@@ -66,7 +66,7 @@ export default function Benefits() {
             </section>
 
             {/* Powerful Digitalization */}
-            <section className="relative bg-[#122430] text-white py-16 lg:py-24 overflow-hidden">
+            <section className="relative bg-[#122430] text-white py-10 lg:py-24 overflow-hidden">
                 <div className="container mx-auto px-6">
                     <BenefitItem
                         title="Powerful Digitalization"
@@ -79,7 +79,7 @@ export default function Benefits() {
             </section>
 
             {/* Gamified Assessment Practice */}
-            <section className="relative bg-[#122430] text-white py-16 lg:py-24 overflow-hidden">
+            <section className="relative bg-[#122430] text-white py-10 lg:py-24 overflow-hidden">
                 <div className="container mx-auto px-6">
                     <BenefitItem
                         title="Gamified Assessment Practice"
@@ -91,7 +91,7 @@ export default function Benefits() {
             </section>
 
             {/* Reduce Response Bias */}
-            <section className="relative bg-[#122430] text-white py-16 lg:py-24 overflow-hidden">
+            <section className="relative bg-[#122430] text-white py-10 lg:py-24 overflow-hidden">
                 <div className="container mx-auto px-6">
                     <BenefitItem
                         title="Gamified Assessments to Reduce Response Bias"
