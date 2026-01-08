@@ -2,6 +2,7 @@ import HeroBanner from "./sections/heroBanner";
 import BarrierName from "./sections/barrierName";
 import UniqueValue from "./sections/uniqueValue";
 import ClickStart from "./sections/clickstart";
+import KeyFeatures from "./sections/keyFeatures";
 
 
 export default function EnhancePage() {
@@ -12,6 +13,7 @@ export default function EnhancePage() {
             <UniqueValue />
             <ClickStart />
             <BarrierName index={1} />
+            <KeyFeatures />
         </div>
     );
 }
