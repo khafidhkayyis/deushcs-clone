@@ -3,7 +3,7 @@ import Barrier from "./barrier";
 
 const titles = [
     "Eagle Vision Core Values",
-    "What is Gamification in Assessments?",
+    "Why Trust Eagle Vision to Drive Results??",
     "Gamified Assessment Benefits for Organizations"
 ];
 
