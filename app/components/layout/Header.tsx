@@ -113,9 +113,9 @@ export default function Header() {
                   <Link href="/enhance" className="block px-4 py-2 hover:bg-gray-100">
                     DEUS Enhance
                   </Link>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-100">
-                    Product 3
-                  </a>
+                  <Link href="/eaglevision" className="block px-4 py-2 hover:bg-gray-100">
+                    DEUS Eagle Vision
+                  </Link>
                 </div>
               )}
             </div>
@@ -258,12 +258,12 @@ export default function Header() {
                     <Link href="/discover" className="text-gray-300 hover:text-gray-300">
                       DEUS Discover
                     </Link>
-                    <a href="#" className="text-gray-300 hover:text-gray-300">
-                      Product 2
-                    </a>
-                    <a href="#" className="text-gray-300 hover:text-gray-300">
-                      Product 3
-                    </a>
+                    <Link href="/enhance" className="text-gray-300 hover:text-gray-300">
+                      DEUS Enhance
+                    </Link>
+                    <Link href="/eaglevision" className="text-gray-300 hover:text-gray-300">
+                      DEUS Eagle Vision
+                    </Link>
                   </div>
                 )}
               </div>
