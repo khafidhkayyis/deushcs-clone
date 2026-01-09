@@ -2,12 +2,18 @@ import React from "react";
 import Barrier from "./barrier";
 
 const titles = [
-    "Indonesia’s Pioneer for Gamified Assessment tools",
+    "Eagle Vision Core Values",
     "What is Gamification in Assessments?",
     "Gamified Assessment Benefits for Organizations"
 ];
 
-function BarrierSection({ title }: { title: string }) {
+const descriptions = [
+    "For the Best Interest of Clients",
+    undefined,
+    undefined
+];
+
+function BarrierSection({ title, description }: { title: string; description?: string }) {
     return (
         <div>
             <Barrier />
@@ -35,6 +41,11 @@ function BarrierSection({ title }: { title: string }) {
                     <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#1a2a3a]">
                         {title}
                     </h2>
+                    {description && (
+                        <p className="text-base md:text-lg lg:text-xl text-[#1a2a3a] mt-4 max-w-4xl mx-auto">
+                            {description}
+                        </p>
+                    )}
                 </div>
             </div>
             <Barrier />
@@ -48,13 +59,13 @@ interface BarrierNameProps {
 
 export default function BarrierName({ index }: BarrierNameProps) {
     if (index !== undefined) {
-        return <BarrierSection title={titles[index]} />;
+        return <BarrierSection title={titles[index]} description={descriptions[index]} />;
     }
 
     return (
         <>
             {titles.map((title, idx) => (
-                <BarrierSection key={idx} title={title} />
+                <BarrierSection key={idx} title={title} description={descriptions[idx]} />
             ))}
         </>
     );
