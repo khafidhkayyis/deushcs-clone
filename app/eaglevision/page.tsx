@@ -2,6 +2,10 @@ import HeroBanner from "./sections/heroBanner";
 import BarrierName from "./sections/barrierName";
 import CoreValue from "./sections/coreValue";
 import WhyTrust from "./sections/whyTrust";
+import Quote from "./sections/quote";
+import Benefits from "./sections/businessBenefits";
+import ClickStart from "./sections/clickStart";
+
 
 
 export default function EagleVisionPage() {
@@ -12,6 +16,10 @@ export default function EagleVisionPage() {
             <CoreValue />
             <BarrierName index={1} />
             <WhyTrust />
+            <Quote />
+            <BarrierName index={2} />
+            <Benefits />
+            <ClickStart />
         </div>
     );
 }

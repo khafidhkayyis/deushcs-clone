@@ -4,13 +4,13 @@ import Barrier from "./barrier";
 const titles = [
     "Eagle Vision Core Values",
     "Why Trust Eagle Vision to Drive Results??",
-    "Gamified Assessment Benefits for Organizations"
+    "Benefits for Organizations"
 ];
 
 const descriptions = [
     "For the Best Interest of Clients",
     undefined,
-    undefined
+    "Operations management tool for easier workflow, enhanced efficiency, and to drive company growth."
 ];
 
 function BarrierSection({ title, description }: { title: string; description?: string }) {
