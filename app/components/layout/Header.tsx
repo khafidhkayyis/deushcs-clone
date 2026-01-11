@@ -120,9 +120,9 @@ export default function Header() {
               )}
             </div>
             {/* CTA Button */}
-            <button className="hidden lg:block text-xl bg-yellow-200 hover:bg-yellow-500 text-gray-900 font-medium px-6 py-2 rounded-full transition-colors">
+            <Link href="/consultation" className="hidden lg:block text-xl bg-yellow-200 hover:bg-yellow-500 text-gray-900 font-medium px-6 py-2 rounded-full transition-colors text-center">
               Free HR Consultation
-            </button>
+            </Link>
             <a href="#" className="hover:text-gray-300 transition-colors text-xl">
               DEUS Corner
             </a>
@@ -270,9 +270,9 @@ export default function Header() {
               <a href="#" className="hover:text-gray-300 transition-colors">
                 DEUS Corner
               </a>
-              <button className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-6 py-2 rounded-lg transition-colors w-full mt-2">
+              <Link href="/consultation" className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-6 py-2 rounded-lg transition-colors w-full mt-2 text-center block">
                 Free HR Consultation
-              </button>
+              </Link>
             </nav>
           </div>
         )}
