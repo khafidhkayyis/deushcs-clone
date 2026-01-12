@@ -14,7 +14,7 @@ import Pillars from "./sections/Pillars";
 
 export default function HomePage() {
     return (
-        <div className="w-full">
+        <div className="w-full" style={{ backgroundColor: "#f8f7f3" }}>
             <HeroBanner />
             <Barrier index={0} />
             <Service />
