@@ -1,4 +1,5 @@
 import React from "react";
+import BarrierLine from "./barrierLine";
 
 interface BarrierItem {
   text: string;
@@ -8,6 +9,7 @@ interface BarrierItem {
 
 interface BarrierProps {
   items?: BarrierItem[];
+  index?: number;
 }
 
 export const defaultItems: BarrierItem[] = [
@@ -23,12 +25,18 @@ export const defaultItems: BarrierItem[] = [
   },
 ];
 
-export default function Barrier({ items = defaultItems }: BarrierProps) {
+export default function Barrier({ items = defaultItems, index }: BarrierProps) {
+  // If index is provided, show only that specific item
+  const displayItems = index !== undefined
+    ? [items[index]].filter(Boolean) // Filter out undefined if index is out of bounds
+    : items;
+
   return (
     <div className="relative w-full">
-      {items.map((item, index) => (
+      <BarrierLine />
+      {displayItems.map((item, idx) => (
         <div
-          key={index}
+          key={idx}
           className="py-12 md:py-16"
           style={{ backgroundColor: item.bgColor }}
         >
@@ -42,6 +50,7 @@ export default function Barrier({ items = defaultItems }: BarrierProps) {
           </div>
         </div>
       ))}
+      <BarrierLine />
     </div>
   );
 }

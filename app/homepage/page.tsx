@@ -16,13 +16,14 @@ export default function HomePage() {
     return (
         <div className="w-full">
             <HeroBanner />
-            <Barrier />
+            <Barrier index={0} />
             <Service />
             <Profile />
             <Smarter />
             <Smart />
             <Empower />
             <Dedicate />
+            <Barrier index={1} />
             <Clients />
             <Patners />
             <Scrolllogo />
