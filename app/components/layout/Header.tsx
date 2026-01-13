@@ -67,18 +67,18 @@ export default function Header() {
               </button>
               {aboutUsOpen && (
                 <div className="absolute top-full left-0 mt-2 bg-white text-gray-800 rounded shadow-lg py-2 min-w-[200px] z-50">
-                  <a href="/whoweare" className="block px-4 py-2 hover:bg-gray-100">
+                  <Link href="/whoweare" className="block px-4 py-2 hover:bg-gray-100">
                     Who We Are
-                  </a>
-                  <a href="/whoweare#our-journey" className="block px-4 py-2 hover:bg-gray-100">
+                  </Link>
+                  <Link href="/whoweare#our-journey" className="block px-4 py-2 hover:bg-gray-100">
                     Our Journey
-                  </a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                  </Link>
+                  <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
                     Values
-                  </a>
-                  <a href="#" className="block px-4 py-2 hover:bg-gray-100">
+                  </Link>
+                  <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
                     Core Team
-                  </a>
+                  </Link>
                 </div>
               )}
             </div>
@@ -123,9 +123,9 @@ export default function Header() {
             <Link href="/consultation" className="hidden lg:block text-xl bg-yellow-200 hover:bg-yellow-500 text-gray-900 font-medium px-6 py-2 rounded-full transition-colors text-center">
               Free HR Consultation
             </Link>
-            <a href="#" className="hover:text-gray-300 transition-colors text-xl">
+            <Link href="#" className="hover:text-gray-300 transition-colors text-xl">
               DEUS Corner
-            </a>
+            </Link>
           </nav>
 
 
@@ -218,18 +218,18 @@ export default function Header() {
                 </button>
                 {aboutUsOpen && (
                   <div className="ml-4 mt-2 flex flex-col gap-2">
-                    <a href="/whoweare" className="text-gray-300 hover:text-gray-300">
-                      Who We Aree
-                    </a>
-                    <a href="/whoweare#our-journey" className="text-gray-300 hover:text-gray-300">
+                    <Link href="/whoweare" className="text-gray-300 hover:text-gray-300">
+                      Who We Are
+                    </Link>
+                    <Link href="/whoweare#our-journey" className="text-gray-300 hover:text-gray-300">
                       Our Journey
-                    </a>
-                    <a href="#" className="text-gray-300 hover:text-gray-300">
+                    </Link>
+                    <Link href="#" className="text-gray-300 hover:text-gray-300">
                       Values
-                    </a>
-                    <a href="#" className="text-gray-300 hover:text-gray-300">
+                    </Link>
+                    <Link href="#" className="text-gray-300 hover:text-gray-300">
                       Core Team
-                    </a>
+                    </Link>
                   </div>
                 )}
               </div>
@@ -267,9 +267,9 @@ export default function Header() {
                   </div>
                 )}
               </div>
-              <a href="#" className="hover:text-gray-300 transition-colors">
+              <Link href="#" className="hover:text-gray-300 transition-colors">
                 DEUS Corner
-              </a>
+              </Link>
               <Link href="/consultation" className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-6 py-2 rounded-lg transition-colors w-full mt-2 text-center block">
                 Free HR Consultation
               </Link>
