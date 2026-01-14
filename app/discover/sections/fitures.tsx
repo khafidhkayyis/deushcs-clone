@@ -40,20 +40,6 @@ export default function Features() {
                                 height={400}
                                 className="object-cover w-full h-auto"
                             />
-                            {/* Overlay text for "HEROES OF A FALLEN LAND" */}
-                            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                                <div className="text-center">
-                                    <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] mb-2">
-                                        HEROES
-                                    </h3>
-                                    <p className="text-xl md:text-2xl lg:text-3xl font-semibold text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] mb-1">
-                                        OF A
-                                    </p>
-                                    <h3 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
-                                        FALLEN LAND
-                                    </h3>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
