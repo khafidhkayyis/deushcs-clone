@@ -5,7 +5,7 @@ import videojs from "video.js";
 import type Player from "video.js/dist/types/player";
 import "video.js/dist/video-js.css";
 
-const videoFileName = encodeURI("/discover/video/Screen Recording 2026-01-13 at 14.36.24.mov");
+const videoFileName = encodeURI("/discover/video/kompres1.mp4");
 
 export default function Video() {
     const videoRef = useRef<HTMLVideoElement>(null);
