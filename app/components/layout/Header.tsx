@@ -2,15 +2,23 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import logo from "./images/deus_human_capital_services_logo.jpeg";
 import Image from "next/image";
 
 export default function Header() {
+  const pathname = usePathname();
   const [aboutUsOpen, setAboutUsOpen] = useState(false);
   const [productsOpen, setProductsOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const aboutUsRef = useRef<HTMLDivElement>(null);
   const productsRef = useRef<HTMLDivElement>(null);
+
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+    setAboutUsOpen(false);
+    setProductsOpen(false);
+  };
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -25,6 +33,17 @@ export default function Header() {
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
+
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [mobileMenuOpen]);
 
   return (
     <header className="bg-[#122430] text-white w-full sticky top-0 z-50 font-sans">
@@ -189,93 +208,215 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Menu Overlay */}
         {mobileMenuOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-gray-600 pt-4">
-            <nav className="flex flex-col gap-4">
-              <Link href="/" className="hover:text-gray-300 transition-colors">
-                Home
-              </Link>
-              <div>
-                <button
-                  onClick={() => setAboutUsOpen(!aboutUsOpen)}
-                  className="flex items-center justify-between w-full hover:text-gray-300 transition-colors"
-                >
-                  About Us
-                  <svg
-                    className={`w-4 h-4 transition-transform ${aboutUsOpen ? "rotate-180" : ""}`}
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
-                </button>
-                {aboutUsOpen && (
-                  <div className="ml-4 mt-2 flex flex-col gap-2">
-                    <Link href="/whoweare" className="text-gray-300 hover:text-gray-300">
-                      Who We Are
-                    </Link>
-                    <Link href="/whoweare#our-journey" className="text-gray-300 hover:text-gray-300">
-                      Our Journey
-                    </Link>
-                    <Link href="#" className="text-gray-300 hover:text-gray-300">
-                      Values
-                    </Link>
-                    <Link href="#" className="text-gray-300 hover:text-gray-300">
-                      Core Team
-                    </Link>
-                  </div>
-                )}
-              </div>
-              <div>
-                <button
-                  onClick={() => setProductsOpen(!productsOpen)}
-                  className="flex items-center justify-between w-full hover:text-gray-300 transition-colors"
-                >
-                  Our Products
-                  <svg
-                    className={`w-4 h-4 transition-transform ${productsOpen ? "rotate-180" : ""}`}
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
-                </button>
-                {productsOpen && (
-                  <div className="ml-4 mt-2 flex flex-col gap-2">
-                    <Link href="/discover" className="text-gray-300 hover:text-gray-300">
-                      DEUS Discover
-                    </Link>
-                    <Link href="/enhance" className="text-gray-300 hover:text-gray-300">
-                      DEUS Enhance
-                    </Link>
-                    <Link href="/eaglevision" className="text-gray-300 hover:text-gray-300">
-                      DEUS Eagle Vision
-                    </Link>
-                  </div>
-                )}
-              </div>
-              <Link href="#" className="hover:text-gray-300 transition-colors">
-                DEUS Corner
-              </Link>
-              <Link href="/consultation" className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-6 py-2 rounded-lg transition-colors w-full mt-2 text-center block">
-                Free HR Consultation
-              </Link>
-            </nav>
-          </div>
+          <div
+            className="fixed inset-0 bg-black/50 z-40 md:hidden top-[73px]"
+            onClick={closeMobileMenu}
+          />
         )}
+
+        {/* Mobile Menu */}
+        <div
+          className={`fixed top-[73px] left-0 right-0 bottom-0 bg-[#122430] z-50 md:hidden transform transition-transform duration-300 ease-in-out overflow-y-auto ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"
+            }`}
+        >
+          <nav className="flex flex-col px-6 py-6">
+            <Link
+              href="/"
+              onClick={closeMobileMenu}
+              className={`py-4 px-4 text-lg font-medium transition-colors border-b border-gray-700 ${pathname === "/"
+                  ? "text-yellow-400"
+                  : "text-white hover:text-yellow-400"
+                }`}
+            >
+              Home
+            </Link>
+
+            <div className="border-b border-gray-700">
+              <button
+                onClick={() => {
+                  setAboutUsOpen(!aboutUsOpen);
+                  setProductsOpen(false);
+                }}
+                className={`flex items-center justify-between w-full py-4 px-4 text-lg font-medium transition-colors ${pathname.startsWith("/whoweare")
+                    ? "text-yellow-400"
+                    : "text-white hover:text-yellow-400"
+                  }`}
+              >
+                <span>About Us</span>
+                <svg
+                  className={`w-5 h-5 transition-transform duration-200 ${aboutUsOpen ? "rotate-180" : ""
+                    }`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+              <div
+                className={`overflow-hidden transition-all duration-300 ease-in-out ${aboutUsOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+                  }`}
+              >
+                <div className="bg-gray-900/50 flex flex-col py-2">
+                  <Link
+                    href="/whoweare"
+                    onClick={closeMobileMenu}
+                    className={`py-3 px-8 text-base transition-colors ${pathname === "/whoweare"
+                        ? "text-yellow-400 font-semibold bg-gray-800/50"
+                        : "text-gray-300 hover:text-yellow-400 hover:bg-gray-800/30"
+                      }`}
+                  >
+                    Who We Are
+                  </Link>
+                  <Link
+                    href="/whoweare#our-journey"
+                    onClick={closeMobileMenu}
+                    className="py-3 px-8 text-base text-gray-300 hover:text-yellow-400 hover:bg-gray-800/30 transition-colors"
+                  >
+                    Our Journey
+                  </Link>
+                  <Link
+                    href="#"
+                    onClick={closeMobileMenu}
+                    className="py-3 px-8 text-base text-gray-300 hover:text-yellow-400 hover:bg-gray-800/30 transition-colors"
+                  >
+                    Values
+                  </Link>
+                  <Link
+                    href="#"
+                    onClick={closeMobileMenu}
+                    className="py-3 px-8 text-base text-gray-300 hover:text-yellow-400 hover:bg-gray-800/30 transition-colors"
+                  >
+                    Core Team
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="border-b border-gray-700">
+              <button
+                onClick={() => {
+                  setProductsOpen(!productsOpen);
+                  setAboutUsOpen(false);
+                }}
+                className={`flex items-center justify-between w-full py-4 px-4 text-lg font-medium transition-colors ${pathname === "/discover" || pathname === "/enhance" || pathname === "/eaglevision"
+                    ? "text-yellow-400"
+                    : "text-white hover:text-yellow-400"
+                  }`}
+              >
+                <span>Our Products</span>
+                <svg
+                  className={`w-5 h-5 transition-transform duration-200 ${productsOpen ? "rotate-180" : ""
+                    }`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </button>
+              <div
+                className={`overflow-hidden transition-all duration-300 ease-in-out ${productsOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+                  }`}
+              >
+                <div className="bg-gray-900/50 flex flex-col py-2">
+                  <Link
+                    href="/discover"
+                    onClick={closeMobileMenu}
+                    className={`py-3 px-8 text-base transition-colors ${pathname === "/discover"
+                        ? "text-yellow-400 font-semibold bg-gray-800/50"
+                        : "text-gray-300 hover:text-yellow-400 hover:bg-gray-800/30"
+                      }`}
+                  >
+                    DEUS Discover
+                  </Link>
+                  <Link
+                    href="/enhance"
+                    onClick={closeMobileMenu}
+                    className={`py-3 px-8 text-base transition-colors ${pathname === "/enhance"
+                        ? "text-yellow-400 font-semibold bg-gray-800/50"
+                        : "text-gray-300 hover:text-yellow-400 hover:bg-gray-800/30"
+                      }`}
+                  >
+                    DEUS Enhance
+                  </Link>
+                  <Link
+                    href="/eaglevision"
+                    onClick={closeMobileMenu}
+                    className={`py-3 px-8 text-base transition-colors ${pathname === "/eaglevision"
+                        ? "text-yellow-400 font-semibold bg-gray-800/50"
+                        : "text-gray-300 hover:text-yellow-400 hover:bg-gray-800/30"
+                      }`}
+                  >
+                    DEUS Eagle Vision
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <Link
+              href="#"
+              onClick={closeMobileMenu}
+              className={`py-4 px-4 text-lg font-medium transition-colors border-b border-gray-700 ${pathname === "#"
+                  ? "text-yellow-400"
+                  : "text-white hover:text-yellow-400"
+                }`}
+            >
+              DEUS Corner
+            </Link>
+
+            <Link
+              href="/consultation"
+              onClick={closeMobileMenu}
+              className={`mt-4 py-4 px-6 text-lg font-semibold rounded-lg transition-colors text-center ${pathname === "/consultation"
+                  ? "bg-yellow-500 text-gray-900"
+                  : "bg-yellow-400 hover:bg-yellow-500 text-gray-900"
+                }`}
+            >
+              Free HR Consultation
+            </Link>
+
+            <div className="mt-6 pt-6 border-t border-gray-700 flex items-center justify-center gap-4">
+              <button
+                className="w-8 h-6 border border-gray-400 hover:border-yellow-400 transition-colors overflow-hidden rounded"
+                title="United States"
+              >
+                <svg width="32" height="24" viewBox="0 0 32 24" className="w-full h-full">
+                  <rect width="32" height="24" fill="#B22234" />
+                  <rect y="1.85" width="32" height="1.85" fill="white" />
+                  <rect y="5.55" width="32" height="1.85" fill="white" />
+                  <rect y="9.25" width="32" height="1.85" fill="white" />
+                  <rect y="12.95" width="32" height="1.85" fill="white" />
+                  <rect y="16.65" width="32" height="1.85" fill="white" />
+                  <rect y="20.35" width="32" height="1.85" fill="white" />
+                  <rect width="10.67" height="9.25" fill="#3C3B6E" />
+                  <text x="5.33" y="6" fontSize="3" fill="white" textAnchor="middle" fontFamily="Arial">★</text>
+                </svg>
+              </button>
+              <button
+                className="w-8 h-6 border border-gray-400 hover:border-yellow-400 transition-colors overflow-hidden rounded"
+                title="Indonesia"
+              >
+                <div className="w-full h-full flex flex-col">
+                  <div className="h-1/2 bg-red-600"></div>
+                  <div className="h-1/2 bg-white"></div>
+                </div>
+              </button>
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
   );
