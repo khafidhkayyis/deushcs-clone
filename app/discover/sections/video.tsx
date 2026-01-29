@@ -5,7 +5,7 @@ import videojs from "video.js";
 import type Player from "video.js/dist/types/player";
 import "video.js/dist/video-js.css";
 
-const videoFileName = encodeURI("/discover/video/kompres1.mp4");
+const videoFileName = encodeURI("/discover/video/promotion.mp4");
 
 export default function Video() {
     const videoRef = useRef<HTMLVideoElement>(null);
