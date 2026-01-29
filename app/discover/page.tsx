@@ -5,7 +5,7 @@ import Fitures from "./sections/fitures";
 import Benefits from "./sections/benefits";
 import KickStart from "./sections/klickStart";
 import Gamified from "./sections/gamified";
-import Video from "./sections/video";
+// import Video from "./sections/video";
 import Storytelling from "./sections/storytelling";
 import Barrier from "./sections/barrier";
 
@@ -13,7 +13,7 @@ export default function DiscoverPage() {
     return (
         <div className="w-full">
             <BarrierName index={0} />
-            <Video />
+            {/* <Video /> */}
             <Barrier />
             <Storytelling />
             <BarrierName index={1} />
