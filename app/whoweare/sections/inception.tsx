@@ -33,7 +33,7 @@ export default function OurProcess() {
                     {inceptionItems.map((item, index) => (
                         <div
                             key={index}
-                            className="group bg-[#93bcd7] hover:bg-gray-500 rounded-lg px-6 py-8 text-center text-white font-black text-lg lg:text-2xl md:text-xl flex items-center justify-center min-h-[120px] transition-all duration-1000 ease-in-out transform hover:transform-[rotateY(180deg)] cursor-pointer transform-3d relative"
+                            className="group bg-[#93bcd7] hover:bg-gray-500 rounded-lg px-6 py-8 text-center text-white font-black text-lg lg:text-xl md:text-xl flex items-center justify-center min-h-[120px] transition-all duration-1000 ease-in-out transform hover:transform-[rotateY(180deg)] cursor-pointer transform-3d relative"
                         >
                             <span className="group-hover:opacity-0 transition-all duration-1000 group-hover:scale-x-[-1]">{item.normal}</span>
                             <span className="absolute opacity-0 group-hover:opacity-100 transition-all duration-1000 group-hover:scale-x-[-1]">{item.hover}</span>
@@ -51,7 +51,7 @@ export default function OurProcess() {
                     {implementationItems.map((item, index) => (
                         <div
                             key={index}
-                            className="group bg-[#d4c7b0] hover:bg-gray-500 rounded-lg px-6 py-8 text-center text-white font-black text-lg lg:text-2xl md:text-xl flex items-center justify-center min-h-[120px] transition-all duration-1000 ease-in-out transform hover:transform-[rotateY(180deg)] cursor-pointer transform-3d relative"
+                            className="group bg-[#d4c7b0] hover:bg-gray-500 rounded-lg px-6 py-8 text-center text-white font-black text-lg lg:text-xl md:text-xl flex items-center justify-center min-h-[120px] transition-all duration-1000 ease-in-out transform hover:transform-[rotateY(180deg)] cursor-pointer transform-3d relative"
                         >
                             <span className="group-hover:opacity-0 transition-all duration-1000 group-hover:scale-x-[-1]">{item.normal}</span>
                             <span className="absolute opacity-0 group-hover:opacity-100 transition-all duration-1000 group-hover:scale-x-[-1]">{item.hover}</span>
