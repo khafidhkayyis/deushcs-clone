@@ -47,7 +47,7 @@ export default function Header() {
 
   return (
     <header className="bg-[#122430] text-white w-full sticky top-0 z-50 font-sans">
-      <div className="container mx-auto md:mx-10 px-4 py-4">
+      <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo Section */}
           <div className="flex items-center">
@@ -226,8 +226,8 @@ export default function Header() {
               href="/"
               onClick={closeMobileMenu}
               className={`py-4 px-4 text-lg font-medium transition-colors border-b border-gray-700 ${pathname === "/"
-                  ? "text-yellow-400"
-                  : "text-white hover:text-yellow-400"
+                ? "text-yellow-400"
+                : "text-white hover:text-yellow-400"
                 }`}
             >
               Home
@@ -240,8 +240,8 @@ export default function Header() {
                   setProductsOpen(false);
                 }}
                 className={`flex items-center justify-between w-full py-4 px-4 text-lg font-medium transition-colors ${pathname.startsWith("/whoweare")
-                    ? "text-yellow-400"
-                    : "text-white hover:text-yellow-400"
+                  ? "text-yellow-400"
+                  : "text-white hover:text-yellow-400"
                   }`}
               >
                 <span>About Us</span>
@@ -269,8 +269,8 @@ export default function Header() {
                     href="/whoweare"
                     onClick={closeMobileMenu}
                     className={`py-3 px-8 text-base transition-colors ${pathname === "/whoweare"
-                        ? "text-yellow-400 font-semibold bg-gray-800/50"
-                        : "text-gray-300 hover:text-yellow-400 hover:bg-gray-800/30"
+                      ? "text-yellow-400 font-semibold bg-gray-800/50"
+                      : "text-gray-300 hover:text-yellow-400 hover:bg-gray-800/30"
                       }`}
                   >
                     Who We Are
@@ -307,8 +307,8 @@ export default function Header() {
                   setAboutUsOpen(false);
                 }}
                 className={`flex items-center justify-between w-full py-4 px-4 text-lg font-medium transition-colors ${pathname === "/discover" || pathname === "/enhance" || pathname === "/eaglevision"
-                    ? "text-yellow-400"
-                    : "text-white hover:text-yellow-400"
+                  ? "text-yellow-400"
+                  : "text-white hover:text-yellow-400"
                   }`}
               >
                 <span>Our Products</span>
@@ -336,8 +336,8 @@ export default function Header() {
                     href="/discover"
                     onClick={closeMobileMenu}
                     className={`py-3 px-8 text-base transition-colors ${pathname === "/discover"
-                        ? "text-yellow-400 font-semibold bg-gray-800/50"
-                        : "text-gray-300 hover:text-yellow-400 hover:bg-gray-800/30"
+                      ? "text-yellow-400 font-semibold bg-gray-800/50"
+                      : "text-gray-300 hover:text-yellow-400 hover:bg-gray-800/30"
                       }`}
                   >
                     DEUS Discover
@@ -346,8 +346,8 @@ export default function Header() {
                     href="/enhance"
                     onClick={closeMobileMenu}
                     className={`py-3 px-8 text-base transition-colors ${pathname === "/enhance"
-                        ? "text-yellow-400 font-semibold bg-gray-800/50"
-                        : "text-gray-300 hover:text-yellow-400 hover:bg-gray-800/30"
+                      ? "text-yellow-400 font-semibold bg-gray-800/50"
+                      : "text-gray-300 hover:text-yellow-400 hover:bg-gray-800/30"
                       }`}
                   >
                     DEUS Enhance
@@ -356,8 +356,8 @@ export default function Header() {
                     href="/eaglevision"
                     onClick={closeMobileMenu}
                     className={`py-3 px-8 text-base transition-colors ${pathname === "/eaglevision"
-                        ? "text-yellow-400 font-semibold bg-gray-800/50"
-                        : "text-gray-300 hover:text-yellow-400 hover:bg-gray-800/30"
+                      ? "text-yellow-400 font-semibold bg-gray-800/50"
+                      : "text-gray-300 hover:text-yellow-400 hover:bg-gray-800/30"
                       }`}
                   >
                     DEUS Eagle Vision
@@ -370,8 +370,8 @@ export default function Header() {
               href="#"
               onClick={closeMobileMenu}
               className={`py-4 px-4 text-lg font-medium transition-colors border-b border-gray-700 ${pathname === "#"
-                  ? "text-yellow-400"
-                  : "text-white hover:text-yellow-400"
+                ? "text-yellow-400"
+                : "text-white hover:text-yellow-400"
                 }`}
             >
               DEUS Corner
@@ -381,8 +381,8 @@ export default function Header() {
               href="/consultation"
               onClick={closeMobileMenu}
               className={`mt-4 py-4 px-6 text-lg font-semibold rounded-lg transition-colors text-center ${pathname === "/consultation"
-                  ? "bg-yellow-500 text-gray-900"
-                  : "bg-yellow-400 hover:bg-yellow-500 text-gray-900"
+                ? "bg-yellow-500 text-gray-900"
+                : "bg-yellow-400 hover:bg-yellow-500 text-gray-900"
                 }`}
             >
               Free HR Consultation
