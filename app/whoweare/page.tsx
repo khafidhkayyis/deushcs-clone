@@ -1,6 +1,6 @@
 import WhoWeAre from "./sections/WhoWeAre";
 import BarrierName from "./sections/barrierName";
-import OurProcess from "./sections/ourProcess";
+import OurProcess from "./sections/inception";
 import OurValues from "./sections/ourValues";
 import TeamCore from "./sections/teamCore";
 import GetIn from "./sections/getIn";
