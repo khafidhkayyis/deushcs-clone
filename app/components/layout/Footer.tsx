@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="bg-[#122430] text-white relative overflow-hidden">
@@ -87,9 +89,9 @@ export default function Footer() {
 
           {/* Middle-Right Section - CTA Button */}
           <div className="flex items-start justify-center lg:justify-start">
-            <button className="bg-yellow-200 hover:bg-yellow-500 text-gray-900 font-semibold px-6 py-3 rounded-full transition-colors w-full text-lg lg:w-auto">
+            <Link href="/consultation" className="bg-yellow-200 hover:bg-yellow-500 text-gray-900 font-semibold px-6 py-3 rounded-full transition-colors w-full text-lg lg:w-auto text-center inline-block">
               FREE HR CONSULTATION
-            </button>
+            </Link>
           </div>
 
           {/* Right Column */}
