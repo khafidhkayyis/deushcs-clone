@@ -95,7 +95,7 @@ export default function Header() {
                   <Link href="/whoweare#our-values" className="block px-4 py-2 hover:bg-gray-100">
                     Values
                   </Link>
-                  <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
+                  <Link href="/whoweare#core-team" className="block px-4 py-2 hover:bg-gray-100">
                     Core Team
                   </Link>
                 </div>
@@ -290,7 +290,7 @@ export default function Header() {
                     Values
                   </Link>
                   <Link
-                    href="#"
+                    href="/whoweare#core-team"
                     onClick={closeMobileMenu}
                     className="py-3 px-8 text-base text-gray-300 hover:text-yellow-400 hover:bg-gray-800/30 transition-colors"
                   >
