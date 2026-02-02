@@ -2,12 +2,13 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import logo from "./images/deus_human_capital_services_logo.jpeg";
 import Image from "next/image";
 
 export default function Header() {
   const pathname = usePathname();
+  const router = useRouter();
   const [aboutUsOpen, setAboutUsOpen] = useState(false);
   const [productsOpen, setProductsOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -18,6 +19,28 @@ export default function Header() {
     setMobileMenuOpen(false);
     setAboutUsOpen(false);
     setProductsOpen(false);
+  };
+
+  const handleHashLink = (href: string) => {
+    closeMobileMenu();
+    const [path, hash] = href.split('#');
+
+    if (pathname !== path) {
+      router.push(path);
+      setTimeout(() => {
+        const element = document.getElementById(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 300);
+    } else {
+      setTimeout(() => {
+        const element = document.getElementById(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+    }
   };
 
   useEffect(() => {
@@ -277,21 +300,30 @@ export default function Header() {
                   </Link>
                   <Link
                     href="/whoweare#our-journey"
-                    onClick={closeMobileMenu}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleHashLink("/whoweare#our-journey");
+                    }}
                     className="py-3 px-8 text-base text-gray-300 hover:text-yellow-400 hover:bg-gray-800/30 transition-colors"
                   >
                     Our Journey
                   </Link>
                   <Link
                     href="/whoweare#our-values"
-                    onClick={closeMobileMenu}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleHashLink("/whoweare#our-values");
+                    }}
                     className="py-3 px-8 text-base text-gray-300 hover:text-yellow-400 hover:bg-gray-800/30 transition-colors"
                   >
                     Values
                   </Link>
                   <Link
                     href="/whoweare#core-team"
-                    onClick={closeMobileMenu}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleHashLink("/whoweare#core-team");
+                    }}
                     className="py-3 px-8 text-base text-gray-300 hover:text-yellow-400 hover:bg-gray-800/30 transition-colors"
                   >
                     Core Team
