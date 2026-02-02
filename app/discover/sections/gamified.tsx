@@ -94,7 +94,9 @@ export default function Gamified() {
         <>
             {/* Talent Acquisition Section */}
             <section className="relative bg-[#122430] text-white py-10 lg:py-24 overflow-hidden">
-                <NavSection />
+                <div className="container mx-auto pb-6">
+                    <NavSection />
+                </div>
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
                         {/* Left Side - UI Image */}
