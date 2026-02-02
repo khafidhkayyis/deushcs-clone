@@ -92,7 +92,7 @@ export default function Header() {
                   <Link href="/whoweare#our-journey" className="block px-4 py-2 hover:bg-gray-100">
                     Our Journey
                   </Link>
-                  <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
+                  <Link href="/whoweare#our-values" className="block px-4 py-2 hover:bg-gray-100">
                     Values
                   </Link>
                   <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
@@ -283,7 +283,7 @@ export default function Header() {
                     Our Journey
                   </Link>
                   <Link
-                    href="#"
+                    href="/whoweare#our-values"
                     onClick={closeMobileMenu}
                     className="py-3 px-8 text-base text-gray-300 hover:text-yellow-400 hover:bg-gray-800/30 transition-colors"
                   >
