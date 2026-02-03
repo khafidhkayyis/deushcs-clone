@@ -1,3 +1,452 @@
 {
-    "hello": "Halo"
+    "navigation": {
+        "home": "Beranda",
+        "aboutUs": "Tentang Kami",
+        "whoWeAre": "Siapa Kami",
+        "ourJourney": "Perjalanan Kami",
+        "values": "Nilai-Nilai",
+        "coreTeam": "Tim Inti",
+        "ourProducts": "Produk Kami",
+        "deusDiscover": "DEUS Discover",
+        "deusEnhance": "DEUS Enhance",
+        "eagleVision": "DEUS Eagle Vision",
+        "freeHrConsultation": "Konsultasi HR Gratis",
+        "deusCorner": "DEUS Corner"
+    },
+    "homepage": {
+        "heroBanner": {
+            "title": "Membantu Bisnis Indonesia dengan Asesmen Gamifikasi & Layanan HR",
+            "discover": {
+                "description": "Jika perusahaan Anda membutuhkan panduan untuk rekrutmen yang efisien atau pengembangan karyawan: lihat {product} untuk asesmen gamifikasi pertama di Indonesia!"
+            },
+            "enhance": {
+                "description": "Jika perusahaan Anda membutuhkan alat manajemen KPI dan pengembangan tenaga kerja yang lebih baik: lihat {product} di sini."
+            },
+            "eagleVision": {
+                "description": "Jika perusahaan Anda kesulitan mengikuti manajemen tugas operasional: lihat {product} di sini."
+            },
+            "quote": "DEUS Human Capital Services menyediakan solusi yang dioptimalkan untuk layanan hr yang bertujuan meningkatkan manajemen karyawan.",
+            "description": "Platform kami didedikasikan untuk memaksimalkan kinerja karyawan sambil mendorong inovasi dalam manajemen talenta dan layanan HR di Indonesia. Dengan memanfaatkan perangkat lunak HR yang dimodernisasi, DEUS Human Capital Services menjamin integrasi yang mulus dan peningkatan kinerja di seluruh organisasi."
+        },
+        "service": {
+            "title": "Membantu Perusahaan Indonesia Menemukan Talenta yang Tepat. Mendorong Akuntabilitas. Menghargai Keunggulan",
+            "description": "Menyediakan solusi sumber daya manusia strategis dengan keahlian dalam manajemen karyawan. Solusi inovatif kami menghidupkan kembali akuisisi talenta, pengembangan, dan retensi. Dalam lingkungan bisnis Indonesia yang berubah cepat, tetap unggul dengan mengoptimalkan tenaga kerja Anda, memungkinkan pengembangan karyawan yang berkelanjutan."
+        },
+        "profile": {
+            "title": "Pelopor Asesmen Gamifikasi di Indonesia",
+            "description": "DEUS berada di garis depan solusi asesmen gamifikasi di Indonesia. Pendekatan perintis kami menetapkan standar untuk wawasan yang lebih akurat dan berbasis data yang memberdayakan organisasi untuk membuat keputusan yang tepat tentang talenta mereka."
+        },
+        "smarter": {
+            "title": "Operasi yang Lebih Cerdas, Hasil yang Lebih Kuat",
+            "description": "Memberdayakan bisnis dengan kontrol operasional real-time: lacak kehadiran, kelola inventaris, dan tingkatkan strategi operasi bisnis Anda dengan mulus. Tingkatkan produktivitas, kurangi biaya, dan pastikan kepatuhan, semuanya dari satu platform terpusat."
+        },
+        "smart": {
+            "title": "Manajemen Kinerja Karyawan yang Cerdas & Adil",
+            "description1": "Evaluasi kinerja tim secara akurat menggunakan pelacakan KPI real-time, sistem penilaian kinerja, dan analitik cerdas.",
+            "description2": "Buat keputusan HRM transparan, objektif, dan berorientasi hasil."
+        },
+        "empower": {
+            "title": "Memberdayakan Transformasi Digital Perusahaan Anda dengan DEUS",
+            "description": "Mengintegrasikan teknologi modern untuk meningkatkan strategi manajemen talenta dan kinerja karyawan Anda. DEUS menawarkan solusi yang sepenuhnya otomatis yang merampingkan proses Anda, memungkinkan Anda fokus pada hal yang penting."
+        },
+        "dedicate": {
+            "title": "Berdedikasi Melayani Bisnis Indonesia dengan Layanan HR yang Unggul",
+            "description": "Dengan layanan HR yang disesuaikan untuk memenuhi tujuan organisasi yang unik. Komitmen DEUS adalah melayani klien kami dengan perawatan dan dedikasi yang luar biasa. Kami bangga melampaui harapan untuk memenuhi kebutuhan Anda dan memastikan kepuasan Anda. Kesuksesan Anda adalah prioritas utama kami.",
+            "ctaTitle": "Mari Mulai",
+            "ctaButton": "Pesan Konsultasi Gratis Bersama Kami!"
+        },
+        "barrier": {
+            "whyChooseUs": "Mengapa Memilih Kami?",
+            "clientPartnerships": "Klien dan Kemitraan"
+        },
+        "pillars": {
+            "organizationalEnhancement": "Peningkatan Organisasi",
+            "optimizeTalent": "Optimalkan Talenta",
+            "successStartsHere": "Kesuksesan Dimulai Di Sini"
+        },
+        "transformational": {
+            "title": "Layanan HR strategis transformasional untuk bisnis Anda",
+            "stat1": {
+                "value": "90%",
+                "description": "Akan merekomendasikan layanan kami kepada orang lain"
+            },
+            "stat2": {
+                "value": "85%",
+                "description": "Keterlibatan yang lebih tinggi"
+            },
+            "stat3": {
+                "value": "95%",
+                "description": "Menikmati asesmen gamifikasi kami"
+            }
+        },
+        "clients": {
+            "title": "Klien Kami",
+            "andManyMore": "Dan banyak lagi!"
+        },
+        "partners": {
+            "title": "Mitra Kami",
+            "andManyMore": "Dan banyak lagi!"
+        },
+        "navSection": {
+            "effortlessShortlisting": "Penyaringan Kandidat Tanpa Usaha",
+            "identifyLeaders": "Identifikasi Pemimpin Masa Depan",
+            "competencyFit": "Wawasan Kesesuaian Kompetensi",
+            "gapAnalysis": "Analisis Kesenjangan",
+            "retainPerformers": "Pertahankan Performer Terbaik Anda"
+        }
+    },
+    "discover": {
+        "barrierName": {
+            "titles": [
+                "Pelopor Alat Asesmen Gamifikasi Indonesia",
+                "Apa itu Gamifikasi dalam Asesmen?",
+                "Manfaat Asesmen Gamifikasi untuk Organisasi"
+            ],
+            "descriptions": [
+                null,
+                "Asesmen gamifikasi adalah solusi inovatif yang menggabungkan elemen permainan ke dalam proses evaluasi untuk meningkatkan keterlibatan, motivasi, dan efektivitas dalam proses rekrutmen dan pengembangan karyawan untuk bisnis.",
+                null
+            ]
+        },
+        "features": {
+            "title": "Pengalaman yang Sepenuhnya Imersif",
+            "description": "Ucapkan selamat tinggal pada asesmen tradisional. Asesmen Gamifikasi DEUS menawarkan pendekatan yang segar dan menarik yang mengukur keterampilan dan kompetensi seperti yang belum pernah ada sebelumnya."
+        },
+        "benefits": {
+            "enhancedBranding": {
+                "title": "Peningkatan Branding Perusahaan",
+                "description": "Hasil instan dan otomatis, tidak ada lagi penilaian manual. DEUS memberikan wawasan real-time, membuat proses asesmen Anda efisien dan efektif."
+            },
+            "powerfulDigitalization": {
+                "title": "Digitalisasi yang Kuat",
+                "description": "Berdiri menonjol, terutama untuk Gen-Z dan Milenial. Alat asesmen DEUS tidak hanya mengevaluasi talenta tetapi juga meningkatkan citra perusahaan Anda di era digital yang terus berkembang."
+            },
+            "gamifiedPractice": {
+                "title": "Praktik Asesmen Gamifikasi",
+                "description": "Rasakan asesmen yang menarik dan interaktif yang membuat evaluasi menyenangkan sambil mempertahankan akurasi dan keandalan."
+            },
+            "reduceBias": {
+                "title": "Asesmen Gamifikasi untuk Mengurangi Bias Respons",
+                "description": "Pendekatan gamifikasi inovatif kami meminimalkan bias respons, memberikan hasil asesmen yang lebih autentik dan akurat melalui mekanik gameplay yang menarik."
+            }
+        },
+        "kickStart": {
+            "quote": "Bergabunglah dengan era baru dan pilih DEUS untuk asesmen yang menarik, digital, dan sangat informatif.",
+            "title": "Mulai Hari Ini!",
+            "button": "Pesan Konsultasi Gratis Bersama Kami!"
+        },
+        "gamified": {
+            "effortlessShortlisting": "Gunakan DEUS Discover untuk meminimalkan upaya dalam proses akuisisi talenta yang paling efektif. Selain itu, kami menjamin bahwa Anda memilih kecocokan terbaik untuk posisi berdasarkan kompetensi dan kekuatan mereka.",
+            "identifyLeaders": "Platform kami membantu mengungkap potensi kepemimpinan dengan menganalisis kompetensi dan sifat kepribadian, yang memberi Anda alat untuk mengidentifikasi pemimpin masa depan untuk perusahaan Anda.",
+            "competencyFit": "Dapatkan kejelasan tentang kesesuaian pekerjaan dengan output dari asesmen gamifikasi kami. Terima rekomendasi detail dan persentase untuk karyawan saat ini dan kandidat, membuat keputusan yang tepat menjadi mudah.",
+            "gapAnalysis": "Tangani kesenjangan keterampilan pada tingkat individu. Asesmen gamifikasi DEUS memungkinkan Anda melakukan analisis kesenjangan mendalam, sehingga memberdayakan Anda untuk menyesuaikan rencana pengembangan secara efektif.",
+            "retainPerformers": "DEUS Discover membantu evaluasi kandidat perusahaan dengan mengenali dan memelihara talenta, memastikan mereka tetap menjadi aset berharga bagi organisasi Anda.",
+            "experienceBanner": "Rasakan kekuatan asesmen gamifikasi DEUS dan bawa manajemen talenta Anda ke level baru."
+        },
+        "storytelling": {
+            "description": "Anda adalah pahlawan di kerajaan abad pertengahan, dalam misi menyelamatkan kerajaan ajaib dari wabah yang menghancurkan. Tapi ada twist – permainan dapat membaca kepribadian Anda dan mengungkapkan diri Anda yang sebenarnya. Apakah Anda siap memulai perjalanan luar biasa ini?"
+        }
+    },
+    "enhance": {
+        "heroBanner": {
+            "title": "Pengukuran Kinerja Bisnis Dibuat Sederhana, tetapi Efektif",
+            "subtitle": "DEUS Enhance: Alat KPI & Manajemen Kinerja untuk Kinerja Karyawan yang Dioptimalkan",
+            "description": "DEUS Enhance mengubah lanskap penilaian kinerja dengan memberikan analisis yang informatif dan berbasis data yang memungkinkan organisasi Anda berkembang. Dengan menyelaraskan KPI dengan penilaian kinerja, kami dapat membantu Bisnis Indonesia untuk membantu pertumbuhan dan pengembangan karyawan."
+        },
+        "barrierName": {
+            "titles": [
+                "Apa yang Membuat DEUS Enhance Menonjol?",
+                "Fitur Utama untuk Manajemen Transformasi HR"
+            ],
+            "descriptions": [
+                null,
+                "Dari pelacakan KPI hingga integrasi remunerasi yang aman. DEUS Enhance memberikan fitur utama untuk manajemen HR yang efektif dan optimasi kinerja bisnis"
+            ]
+        },
+        "uniqueValue": {
+            "comprehensiveTracking": {
+                "title": "Pelacakan Kinerja Komprehensif",
+                "description": "Kelola kinerja karyawan individu dan tim dengan mudah menggunakan DEUS Enhance. Platform kami menggabungkan poin data utama, dari produktivitas hingga metrik keuangan, membuat manajemen KPI lebih sederhana dan membantu perusahaan Anda mempertahankan keunggulan kompetitif untuk pertumbuhan bisnis yang stabil."
+            },
+            "secureTracking": {
+                "title": "Pelacakan KPI yang Aman (100% Anonimitas Data)",
+                "description": "Pastikan kerahasiaan data kinerja sambil secara efektif memantau KPI untuk individu dan tim dalam manajemen KPI."
+            },
+            "clearMetrics": {
+                "title": "Metrik yang Jelas",
+                "description": "Data yang terukur dan real-time memastikan tinjauan kinerja didasarkan pada akurasi dan keadilan."
+            },
+            "realTimeInsights": {
+                "title": "Wawasan Real-Time",
+                "description": "Akses informasi real-time untuk meningkatkan analisis kebutuhan pelatihan dan membuat strategi jangka panjang yang efektif untuk pengembangan tim dan perusahaan."
+            },
+            "speedUpDecision": {
+                "title": "Percepat Pengambilan Keputusan",
+                "description": "Alat yang efisien dengan wawasan detail tentang karyawan memfasilitasi pengambilan keputusan yang cepat dengan memungkinkan manajer untuk mengevaluasi dan merespons dengan cepat terhadap wawasan tentang kinerja karyawan."
+            }
+        },
+        "keyFeatures": {
+            "dataDriven": {
+                "title": "Evaluasi Kinerja Berbasis Data",
+                "description": "Memastikan setiap evaluasi kinerja didukung oleh wawasan yang terukur, meningkatkan akurasi proses pengambilan keputusan."
+            },
+            "comprehensiveAppraisal": {
+                "title": "Penilaian Kinerja Komprehensif",
+                "description": "Formulir penilaian yang disederhanakan yang menangkap metrik KPI penting dan indikator kinerja untuk penilaian karyawan yang akurat."
+            },
+            "advancedEvaluation": {
+                "title": "Metode Evaluasi Lanjutan",
+                "description": "Teknik evaluasi modern yang memanfaatkan analitik data dan wawasan real-time untuk memberikan penilaian kinerja yang komprehensif."
+            }
+        },
+        "clickStart": {
+            "title": "Mulai Hari Ini!",
+            "button": "Pesan Konsultasi Gratis Bersama Kami!"
+        }
+    },
+    "eaglevision": {
+        "heroBanner": {
+            "title": "Pemantauan Kinerja untuk Manajemen Tugas Operasional yang Terorganisir",
+            "subtitle": "Eagle Vision: Sederhanakan Operasi Bisnis Anda dengan Alat Berbasis Data",
+            "description": "Eagle Vision menyederhanakan manajemen tugas operasional dengan pemantauan tugas real-time, pelacakan kinerja karyawan, dan analitik inventaris lanjutan. Tingkatkan produktivitas, kurangi biaya, dan dorong kesuksesan dengan alat inovatif kami yang disesuaikan untuk efisiensi bisnis."
+        },
+        "barrierName": {
+            "titles": [
+                "Nilai Inti Eagle Vision",
+                "Mengapa Mempercayai Eagle Vision untuk Mendorong Hasil??",
+                "Manfaat untuk Organisasi"
+            ],
+            "descriptions": [
+                "Untuk Kepentingan Terbaik Klien",
+                null,
+                "Alat manajemen operasi untuk alur kerja yang lebih mudah, efisiensi yang ditingkatkan, dan untuk mendorong pertumbuhan perusahaan."
+            ]
+        },
+        "coreValue": {
+            "operationalExcellence": {
+                "title": "Keunggulan Operasional",
+                "items": [
+                    "Tanggung Jawab Karyawan",
+                    "Kesiapan Penjualan dan Produk",
+                    "Kesiapan Outlet dan Peralatan",
+                    "Manajemen Tugas yang Jelas",
+                    "Pantau Kompetitor"
+                ]
+            },
+            "businessAnalytics": {
+                "title": "Analitik Bisnis",
+                "items": [
+                    "Penjualan Pangsa Pasar",
+                    "Profitabilitas",
+                    "Kurangi Penyusutan dan Kerugian",
+                    "Evaluasi Inventaris",
+                    "Hindari Kehilangan Peluang Penjualan"
+                ]
+            }
+        },
+        "whyTrust": {
+            "realTimeVisibility": {
+                "title": "Visibilitas Real-Time di Seluruh Operasi",
+                "description": "Pantau kehadiran karyawan, lacak kemajuan tugas, dan kelola inventaris dengan mulus melalui dashboard bisnis yang beroperasi secara real-time. Manfaatkan kenyamanan mengakses dashboard Eagle Vision di perangkat seluler dan platform desktop."
+            },
+            "increaseProductivity": {
+                "title": "Tingkatkan Produktivitas dengan Alat Terpusat",
+                "description": "Integrasikan alat manajemen tugas dan kinerja untuk menyederhanakan perencanaan, organisasi, dan eksekusi tugas, memastikan produktivitas yang lebih besar di antara tenaga kerja Anda."
+            },
+            "costEfficient": {
+                "title": "Efisien Biaya",
+                "description": "Optimalkan pemanfaatan sumber daya dengan mengurangi insiden tenggat waktu yang terlewat, mencegah kekurangan stok, dan mengurangi potensi kerugian penjualan melalui implementasi wawasan operasional real-time."
+            },
+            "enhanceCollaboration": {
+                "title": "Tingkatkan Kolaborasi Tim",
+                "description": "Tetapkan dan lacak tugas secara terus-menerus, meningkatkan koordinasi tim dan kinerja karyawan."
+            },
+            "userCentric": {
+                "title": "Desain Berpusat pada Pengguna",
+                "description1": "Dirancang untuk navigasi yang ramah pengguna, memastikan semua anggota tim, terlepas dari keahlian teknologi, dapat mengoperasikan sistem dengan lancar.",
+                "description2": "Modul yang disesuaikan untuk memenuhi kebutuhan klien spesifik dengan platform terpusat untuk mengelola semua jenis tugas operasional di perusahaan. Ini memberikan kenyamanan ekstra dan memungkinkan efisiensi yang lebih tinggi dalam operasi sehari-hari Anda."
+            }
+        },
+        "quote": {
+            "text": "Melangkah ke masa depan dengan Eagle Vision, solusi all-in-one Anda untuk operasi yang mulus, efisien, dan berbasis data."
+        },
+        "businessBenefits": {
+            "performanceMonitoring": {
+                "description1": "Pantau kinerja karyawan dan kemajuan tugas secara real-time dengan sistem keunggulan operasional kami.",
+                "description2": "Tingkatkan pengawasan aktivitas karyawan dan tenggat waktu proyek melalui solusi manajemen tugas yang efektif."
+            },
+            "inventoryManagement": {
+                "description": "Implementasikan manajemen inventaris real-time untuk memastikan tingkat stok optimal, mengurangi kerugian, dan meningkatkan kepuasan pelanggan secara keseluruhan."
+            },
+            "businessAnalytics": {
+                "description": "Manfaatkan alat analitik bisnis berbasis data yang tertanam dalam platform untuk membuat keputusan yang tepat dan berbasis data. Pantau penjualan harian, volume transaksi, dan kemajuan menuju tujuan."
+            },
+            "storeManagement": {
+                "description": "Fitur ramah pengguna yang dirancang untuk menjamin kebersihan toko, kenyamanan pelanggan maksimal, kesiapan toko dan banyak lagi. Identifikasi masalah dengan mudah dengan memasukkan foto dan komentar dalam tugas, mempertahankan standar perusahaan."
+            }
+        },
+        "clickStart": {
+            "quote": "Rasakan kekuatan Eagle Vision dan bawa manajemen talenta Anda ke level baru.",
+            "title": "Mulai Hari Ini!",
+            "button": "Hubungi Kami"
+        }
+    },
+    "whoweare": {
+        "whoWeAre": {
+            "title": "Siapa Kami",
+            "subtitle": "Memberdayakan Bisnis dengan Sistem Manajemen Sumber Daya Manusia yang Inovatif",
+            "description": "Kami membantu bisnis mengungkap potensi karyawan melalui solusi HR inovatif seperti asesmen gamifikasi dan alat manajemen strategis. Menggabungkan passion kami untuk permainan dan psikologi bisnis, kami membantu memberdayakan organisasi Indonesia untuk menilai, mengembangkan, dan meningkatkan tim mereka untuk kesuksesan yang bertahan lama.",
+            "journey": "Di DEUS, passion kami untuk permainan dan dedikasi dalam Layanan HR berkembang di organisasi mendorong perjalanan kami. Menggabungkan cinta pendiri kami untuk permainan dengan keahlian dalam psikologi bisnis, kami menciptakan asesmen gamifikasi untuk memberdayakan pertumbuhan profesional. Sejak itu kami berkembang untuk menawarkan layanan manajemen sumber daya manusia yang komprehensif melalui sistem manajemen orang strategis kami. Solusi kami memungkinkan organisasi untuk menilai dan secara strategis mengembangkan aset paling berharga mereka: orang-orang mereka. Dengan dukungan solusi perangkat lunak HR canggih kami, kami memberdayakan perusahaan untuk memanfaatkan potensi penuh tenaga kerja mereka. DEUS berakar pada niat baik, DEUS telah memasuki kemitraan strategis dengan Kementerian Komunikasi dan Informatika (KOMINFO) untuk Program SSI Batch 6. Di antara 800 startup, kami dengan bangga mengamankan tempat sebagai salah satu dari 17 teratas, mendapatkan kami pembinaan dan dukungan dari KOMINFO. Kolaborasi ini menandai tonggak penting, siap untuk mendorong pertumbuhan kami dan membuka jalan bagi kesuksesan berkelanjutan.",
+            "komInfo": "DEUS berakar pada niat baik, DEUS telah memasuki kemitraan strategis dengan Kementerian Komunikasi dan Informatika (KOMINFO) untuk Program SSI Batch 6. Di antara 800 startup, kami dengan bangga mengamankan tempat sebagai salah satu dari 17 teratas, mendapatkan kami pembinaan dan dukungan dari KOMINFO. Kolaborasi ini menandai tonggak penting, siap untuk mendorong pertumbuhan kami dan membuka jalan bagi kesuksesan berkelanjutan."
+        },
+        "inception": {
+            "title": "Awal Mula",
+            "items": [
+                {
+                    "normal": "Visi",
+                    "hover": "Menciptakan sistem HRM revolusioner dengan model kepribadian perintis."
+                },
+                {
+                    "normal": "Kolaborasi Ahli",
+                    "hover": "Bekerja dengan ahli psikometrik Inggris untuk membangun database besar pertanyaan kepribadian."
+                },
+                {
+                    "normal": "Validasi",
+                    "hover": "Mencapai skor validitas yang luar biasa melalui prosedur yang ketat."
+                },
+                {
+                    "normal": "Perencanaan",
+                    "hover": "Merancang dengan hati-hati pengalaman gamifikasi, alur cerita, pengaturan, dan karakter."
+                },
+                {
+                    "normal": "Transformasi",
+                    "hover": "Mengubah item kepribadian menjadi elemen gamifikasi yang menarik."
+                },
+                {
+                    "normal": "Pengembangan",
+                    "hover": "Menciptakan permainan novel visual yang imersif yang dapat Anda gunakan untuk menemukan 'diri sejati' Anda."
+                }
+            ]
+        },
+        "implementation": {
+            "title": "Implementasi",
+            "items": [
+                {
+                    "normal": "Laporan Inovatif",
+                    "hover": "Mengembangkan laporan yang dihasilkan otomatis 'DEUS Discover' dan dashboard yang informatif."
+                },
+                {
+                    "normal": "Memperluas Cakrawala",
+                    "hover": "Kami membangun sistem manajemen orang strategis yang komprehensif, menawarkan layanan HR yang beragam yang dapat diakses melalui platform web kami."
+                },
+                {
+                    "normal": "Kesuksesan Awal",
+                    "hover": "Menyambut klien awal dan mitra HR, meletakkan dasar untuk hubungan yang bertahan lama."
+                },
+                {
+                    "normal": "Pengakuan Industri",
+                    "hover": "Dipilih sebagai salah satu dari 17 startup unggulan dari 800+ pelamar untuk program Startup Studio Indonesia (SSI) KOMINFO."
+                },
+                {
+                    "normal": "Peluncuran Menarik",
+                    "hover": "Secara resmi memperkenalkan permainan kami ke pasar dengan pengujian menyeluruh untuk pengalaman yang mulus."
+                },
+                {
+                    "normal": "Ekspansi Produk Berkelanjutan",
+                    "hover": "Saat ini kami memiliki 3 produk utama, namun kami selalu terbuka untuk berinovasi dengan produk baru yang menarik."
+                }
+            ]
+        },
+        "ourValues": {
+            "innovative": {
+                "title": "Inovatif",
+                "description": "Kami berkomitmen untuk mendorong batas-batas apa yang mungkin di dunia sumber daya manusia. Kami terus berinovasi untuk memberikan sistem manajemen sumber daya manusia yang inovatif untuk perusahaan Indonesia. Kami merangkul inovasi teknologi HR untuk meningkatkan manajemen kinerja karyawan dan mendorong pertumbuhan organisasi dan produktivitas."
+            },
+            "inspiring": {
+                "title": "Menginspirasi",
+                "description": "Kami bertujuan untuk menginspirasi perubahan positif, baik di dalam organisasi kami maupun di antara mereka yang kami layani. Dengan memprioritaskan pengembangan dan keterlibatan karyawan, kami mendorong pertumbuhan dan transformasi. Tujuan kami adalah memberdayakan individu melalui strategi HR yang mendorong keunggulan tempat kerja dan akuntabilitas."
+            },
+            "invested": {
+                "title": "Berinvestasi pada Klien Kami",
+                "description": "Klien kami adalah pemain VIP kami. Kami berdedikasi untuk pencarian kesuksesan mereka, membangun aliansi berdasarkan kepercayaan dan kolaborasi. Melalui solusi manajemen HR yang dipersonalisasi, kami memastikan kepuasan pelanggan, sehingga setiap klien menerima dukungan strategis untuk mencapai tujuan mereka dan memaksimalkan potensi talenta."
+            },
+            "inclusive": {
+                "title": "Inklusif",
+                "description": "Kami merayakan perbedaan dan memupuk budaya kerja di mana perspektif semua orang dihargai. Solusi HR kami dan layanan keragaman dan inklusi dirancang untuk menciptakan budaya perusahaan yang inklusif di mana individu merasa diberdayakan dan didukung dalam perjalanan pertumbuhan karier dan pengembangan profesional mereka."
+            },
+            "insightful": {
+                "title": "Berwawasan",
+                "description": "Kami bertujuan untuk mendapatkan pemahaman mendalam tentang tantangan produktivitas kerja klien kami dan peluang tenaga kerja. Dengan memanfaatkan analitik HR canggih, kami mendorong keputusan yang tepat dan memberikan hasil yang berarti yang mendorong pertumbuhan bisnis, keterlibatan karyawan, dan inovasi."
+            },
+            "improvement": {
+                "title": "Berorientasi pada Peningkatan",
+                "description": "Kami dalam pencarian tanpa akhir untuk power-up. Peningkatan berkelanjutan adalah pencarian utama kami, dan kami selalu mencari cara untuk naik level. Melalui sistem manajemen HR dan pengembangan profesional berkelanjutan, kami memastikan bahwa tim dan solusi kami berkembang untuk memenuhi kebutuhan klien kami yang terus berubah."
+            }
+        },
+        "teamCore": {
+            "title": "Kenali Tim Inti Kami",
+            "christian": {
+                "name": "Christian Kurnia, B.E.",
+                "position": "Penasihat Bisnis Senior",
+                "description": "Eksekutif bisnis senior dan ahli ritel dengan pengalaman bisnis 25+ tahun. Naik tangga karier dan akhirnya menjadi direktur e-bisnis di Metrodata Electronics. Dia kemudian bergabung dengan Matahari Department Store dan mengawasi pengembangan 160+ toko di seluruh Indonesia, mengawasi peningkatan pendapatan dari 6T menjadi 19T."
+            },
+            "gregory": {
+                "name": "Gregory Kurnia",
+                "position": "CEO",
+                "description": "Lulus dengan pujian dari Los Angeles untuk B.A. dalam Psikologi dengan Minor dalam Sosiologi dan Teologi dan menerima gelar kedua dengan pujian untuk M.Sc. Psikologi Organisasi dari City University of London. Dia juga praktisi psikometrik bersertifikat dan Anggota Asosiasi Psikolog Bisnis."
+            }
+        },
+        "getIn": {
+            "title": "Hubungi Kami!",
+            "button": "Pesan Konsultasi Gratis Bersama Kami!"
+        }
+    },
+    "consultation": {
+        "title": "Mari Berhubungan!",
+        "form": {
+            "fullName": "Nama Lengkap",
+            "workEmail": "Email Kantor",
+            "companyName": "Nama Perusahaan",
+            "jobTitle": "Jabatan",
+            "companySize": "Ukuran Perusahaan",
+            "companySizeOptions": {
+                "small": "1 - 100",
+                "medium": "101 - 500",
+                "large": "501 - 1000",
+                "enterprise": "1000+"
+            },
+            "countryCity": "Negara dan Kota",
+            "jobRole": "Apa peran pekerjaan Anda",
+            "hearAboutUs": "Bagaimana Anda mengetahui kami",
+            "hearAboutUsOptions": {
+                "google": "Pencarian Google",
+                "social": "Media Sosial",
+                "referral": "Referensi",
+                "advertisement": "Iklan",
+                "other": "Lainnya"
+            },
+            "phoneNumber": "Nomor Telepon Perusahaan",
+            "submit": "Kirim"
+        },
+        "contact": {
+            "whatsapp": "+6282312121660",
+            "email": "gregory.kurnia@deushcs.com",
+            "address": "Jl. Jalur Sutera Bar. Alam No.15, RT.003/RW.006, Panunggangan Tim., Sutera, Kota Tangerang, Banten 15143, Indonesia"
+        }
+    },
+    "footer": {
+        "home": "BERANDA",
+        "aboutUs": "TENTANG KAMI",
+        "whoWeAre": "Siapa Kami",
+        "ourJourney": "Perjalanan Kami",
+        "values": "Nilai-Nilai",
+        "coreTeam": "Tim Inti",
+        "ourProducts": "PRODUK KAMI",
+        "deusDiscover": "DEUS Discover",
+        "deusEnhance": "DEUS Enhance",
+        "eagleVision": "Eagle Vision",
+        "freeHrConsultation": "KONSULTASI HR GRATIS",
+        "deusCorner": "DEUS CORNER",
+        "copyright": "© DEUS Human Capital Services"
+    }
 }
