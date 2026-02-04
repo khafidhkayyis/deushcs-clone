@@ -275,6 +275,12 @@
         "quote": {
             "text": "Step into the future with Eagle Vision, your all-in-one solution for smooth, efficient, and data-driven operations."
         },
+        "navSection": {
+            "attendanceTask": "Employee Attendance and Task Management",
+            "inventoryFlow": "Real-Time Inventory Flow",
+            "businessAnalytics": "Business Analytics",
+            "storeAudit": "Store cleanliness and Ambience Audit"
+        },
         "businessBenefits": {
             "performanceMonitoring": {
                 "description1": "Monitor employee performance and task progress in real-time with our operational excellence system.",

@@ -275,6 +275,12 @@
         "quote": {
             "text": "Melangkah ke masa depan dengan Eagle Vision, solusi all-in-one Anda untuk operasi yang mulus, efisien, dan berbasis data."
         },
+        "navSection": {
+            "attendanceTask": "Manajemen Kehadiran dan Tugas Karyawan",
+            "inventoryFlow": "Alur Inventaris Real-Time",
+            "businessAnalytics": "Analitik Bisnis",
+            "storeAudit": "Audit Kebersihan dan Suasana Toko"
+        },
         "businessBenefits": {
             "performanceMonitoring": {
                 "description1": "Pantau kinerja karyawan dan kemajuan tugas secara real-time dengan sistem keunggulan operasional kami.",
