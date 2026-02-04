@@ -1,6 +1,10 @@
+"use client";
+
 import Link from "next/link";
+import { useTranslation } from "@/app/hooks/useTranslation";
 
 export default function Footer() {
+  const { t } = useTranslation();
   return (
     <footer className="bg-[#122430] text-white relative overflow-hidden">
       {/* Wavy Pattern Background */}
@@ -34,29 +38,29 @@ export default function Footer() {
           {/* Left Column */}
           <div className="flex gap-4">
             <a href="#" className="font-bold text-white hover:text-yellow-400 transition-colors uppercase">
-              HOME
+              {t('footer.home')}
             </a>
             <div>
-              <h3 className="font-bold text-white mb-3 uppercase">ABOUT US</h3>
+              <h3 className="font-bold text-white mb-3 uppercase">{t('footer.aboutUs')}</h3>
               <ul className="flex flex-col gap-2">
                 <li>
                   <a href="#" className="text-gray-300 hover:text-yellow-400 transition-colors">
-                    Who We Are
+                    {t('footer.whoWeAre')}
                   </a>
                 </li>
                 <li>
                   <a href="#" className="text-gray-300 hover:text-yellow-400 transition-colors">
-                    Our Journey
+                    {t('footer.ourJourney')}
                   </a>
                 </li>
                 <li>
                   <a href="#" className="text-gray-300 hover:text-yellow-400 transition-colors">
-                    Values
+                    {t('footer.values')}
                   </a>
                 </li>
                 <li>
                   <a href="#" className="text-gray-300 hover:text-yellow-400 transition-colors">
-                    Core Team
+                    {t('footer.coreTeam')}
                   </a>
                 </li>
               </ul>
@@ -66,21 +70,21 @@ export default function Footer() {
           {/* Middle-Left Column */}
           <div className="flex flex-col gap-4">
             <div>
-              <h3 className="font-bold text-white mb-3 uppercase">OUR PRODUCTS</h3>
+              <h3 className="font-bold text-white mb-3 uppercase">{t('footer.ourProducts')}</h3>
               <ul className="flex flex-col gap-2">
                 <li>
                   <a href="#" className="text-gray-300 hover:text-yellow-400 transition-colors">
-                    DEUS Discover
+                    {t('footer.deusDiscover')}
                   </a>
                 </li>
                 <li>
                   <a href="#" className="text-gray-300 hover:text-yellow-400 transition-colors">
-                    DEUS Enhance
+                    {t('footer.deusEnhance')}
                   </a>
                 </li>
                 <li>
                   <a href="#" className="text-gray-300 hover:text-yellow-400 transition-colors">
-                    Eagle Vision
+                    {t('footer.eagleVision')}
                   </a>
                 </li>
               </ul>
@@ -90,13 +94,13 @@ export default function Footer() {
           {/* Middle-Right Section - CTA Button */}
           <div className="flex items-start justify-center lg:justify-start">
             <Link href="/consultation" className="bg-yellow-200 hover:bg-yellow-500 text-gray-900 font-semibold px-6 py-3 rounded-full transition-colors w-full text-lg lg:w-auto text-center inline-block">
-              FREE HR CONSULTATION
+              {t('footer.freeHrConsultation')}
             </Link>
           </div>
 
           {/* Right Column */}
           <div className="flex flex-col gap-4">
-            <h3 className="font-bold text-white uppercase">DEUS CORNER</h3>
+            <h3 className="font-bold text-white uppercase">{t('footer.deusCorner')}</h3>
           </div>
         </div>
 
@@ -105,7 +109,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             {/* Copyright */}
             <div className="text-gray-300 text-sm">
-              © DEUS Human Capital Services
+              {t('footer.copyright')}
             </div>
 
             {/* Social Icons */}

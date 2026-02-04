@@ -1,5 +1,8 @@
+"use client";
+
 import React from "react";
 import Image, { StaticImageData } from "next/image";
+import { useTranslation } from "@/app/hooks/useTranslation";
 import telkomLogo from "../images/logoclient/telkom-indonesia.png";
 import bogaLogo from "../images/logoclient/boga-group-logo.png";
 import delamibrandLogo from "../images/logoclient/Delamibrands.png";
@@ -106,11 +109,13 @@ const clients: ClientItem[] = [
 ];
 
 export default function Sponsored() {
+    const { t } = useTranslation();
+    
     return (
         <section className="relative bg-[#f8f7f3] py-12 md:py-16">
             <div className="container mx-auto px-6">
                 <h2 className="text-3xl md:text-4xl lg:text-3xl font-extrabold text-[#1e293b] text-center mb-[80px]">
-                    Our Clients
+                    {t('homepage.clients.title')}
                 </h2>
 
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[80px] md:gap-[100px] lg:gap-[110px] items-center justify-items-center">
@@ -140,7 +145,7 @@ export default function Sponsored() {
                         </div>
                     ))}
                     <div className="col-span-2 md:col-span-3 lg:col-span-5 flex justify-end items-center w-full">
-                        <p className="text-[#1e293b] text-4xl font-semibold text-right w-full">And many more!</p>
+                        <p className="text-[#1e293b] text-4xl font-semibold text-right w-full">{t('homepage.clients.andManyMore')}</p>
                     </div>
                 </div>
             </div>

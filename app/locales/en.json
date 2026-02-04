@@ -1,0 +1,452 @@
+{
+    "navigation": {
+        "home": "Home",
+        "aboutUs": "About Us",
+        "whoWeAre": "Who We Are",
+        "ourJourney": "Our Journey",
+        "values": "Values",
+        "coreTeam": "Core Team",
+        "ourProducts": "Our Products",
+        "deusDiscover": "DEUS Discover",
+        "deusEnhance": "DEUS Enhance",
+        "eagleVision": "DEUS Eagle Vision",
+        "freeHrConsultation": "Free HR Consultation",
+        "deusCorner": "DEUS Corner"
+    },
+    "homepage": {
+        "heroBanner": {
+            "title": "Helping Indonesian Businesses With Gamified Assessments & HR Services",
+            "discover": {
+                "description": "If your company needs guidance for efficient recruitment or employee development: check out {product} for the first gamified assessment in Indonesia!"
+            },
+            "enhance": {
+                "description": "If your company needs better KPI management and workforce development tools: check out {product} here."
+            },
+            "eagleVision": {
+                "description": "If your company is having a hard time keeping up with operational task managements: check out {product} here."
+            },
+            "quote": "DEUS Human Capital Services provides optimized solutions for hr services aimed at enhancing employee management.",
+            "description": "Our platform is dedicated to maximizing employee performance while fostering innovation in talent management and HR services in Indonesia. By utilizing modernized HR software, DEUS Human Capital Services guarantees smooth integration and enhanced performance across the organization."
+        },
+        "service": {
+            "title": "Helping Indonesian Companies find the Right Talent. Drive Accountability. Reward Excellence",
+            "description": "Providing strategic human resource solutions with expertise in employee management. Our innovative solutions breathe new life into talent acquisition, development, and retention. In Indonesia's rapidly changing business environment, stay ahead by optimizing your workforce, allowing ongoing employee development."
+        },
+        "profile": {
+            "title": "Pioneering Gamified Assessment in Indonesia",
+            "description": "DEUS stands at the forefront of gamified assessment solutions in Indonesia. Our pioneering approach sets the standard for more accurate, data-driven insights that empower organizations to make informed decisions about their talent."
+        },
+        "smarter": {
+            "title": "Smarter Operations, Stronger Results",
+            "description": "Empower businesses with real-time operational control: track attendance, manage inventory, and enhance your business operations strategy seamlessly. Enhance productivity, reduce costs, and ensure compliance, all from one centralized platform."
+        },
+        "smart": {
+            "title": "Smart & Fair Employee Performance Management",
+            "description1": "Evaluate team performance accurately using real-time KPI tracking, performance appraisal systems, and smart analytics.",
+            "description2": "Make HRM decisions transparent, objective, and results driven."
+        },
+        "empower": {
+            "title": "Empower Your Company's Digital Transformation with DEUS",
+            "description": "Integrating modern technologies to enhance your talent management and employee performance strategies. DEUS offers a fully automated solution that streamlines your processes, allowing you to focus on what matters."
+        },
+        "dedicate": {
+            "title": "Dedicated to Serving Indonesian Businesses with Excellent HR Services",
+            "description": "With tailored HR services designed to meet unique organizational goals. DEUS' commitment is to serve our clients with the utmost care and dedication. We pride ourselves on going above and beyond to meet your needs and ensure your satisfaction. Your success is our top priority.",
+            "ctaTitle": "Let's Get Started",
+            "ctaButton": "Book Your Free Consultation With Us!"
+        },
+        "barrier": {
+            "whyChooseUs": "Why Choose Us?",
+            "clientPartnerships": "Client and Partnerships"
+        },
+        "pillars": {
+            "organizationalEnhancement": "Organizational Enhancement",
+            "optimizeTalent": "Optimize Talent",
+            "successStartsHere": "Success Starts Here"
+        },
+        "transformational": {
+            "title": "Transformational strategic HR services for your business",
+            "stat1": {
+                "value": "90%",
+                "description": "Would recommend our services to others"
+            },
+            "stat2": {
+                "value": "85%",
+                "description": "Higher engagement"
+            },
+            "stat3": {
+                "value": "95%",
+                "description": "Enjoyed our gamified assessments"
+            }
+        },
+        "clients": {
+            "title": "Our Clients",
+            "andManyMore": "And many more!"
+        },
+        "partners": {
+            "title": "Our Partners",
+            "andManyMore": "And many more!"
+        },
+        "navSection": {
+            "effortlessShortlisting": "Effortless Candidate Shortlisting",
+            "identifyLeaders": "Identify Future Leaders",
+            "competencyFit": "Competency Fit Insight",
+            "gapAnalysis": "Gap Analysis",
+            "retainPerformers": "Retain your Top Performers"
+        }
+    },
+    "discover": {
+        "barrierName": {
+            "titles": [
+                "Indonesia's Pioneer for Gamified Assessment tools",
+                "What is Gamification in Assessments?",
+                "Gamified Assessment Benefits for Organizations"
+            ],
+            "descriptions": [
+                null,
+                "A gamified assessment is an innovative solution that incorporates game elements into evaluation processes to enhance engagement, motivation, and effectiveness in recruitment processes and employee development for businesses.",
+                null
+            ]
+        },
+        "features": {
+            "title": "Fully Immersive Experience",
+            "description": "Say goodbye to traditional assessments. DEUS' Gamified Assessment offers a fresh, engaging approach that measures skills and competencies like never before."
+        },
+        "benefits": {
+            "enhancedBranding": {
+                "title": "Enhanced Company Branding",
+                "description": "Instant and automated results, no more manual grading. DEUS delivers real-time insights, making your assessment process efficient and effective."
+            },
+            "powerfulDigitalization": {
+                "title": "Powerful Digitalization",
+                "description": "Stand out, especially to Gen-Z and Millennials. DEUS' assessment tool not only evaluate talent but also boost your company's image in the ever growing digital age."
+            },
+            "gamifiedPractice": {
+                "title": "Gamified Assessment Practice",
+                "description": "Experience engaging and interactive assessments that make evaluation enjoyable while maintaining accuracy and reliability."
+            },
+            "reduceBias": {
+                "title": "Gamified Assessments to Reduce Response Bias",
+                "description": "Our innovative gamified approach minimizes response bias, providing more authentic and accurate assessment results through engaging gameplay mechanics."
+            }
+        },
+        "kickStart": {
+            "quote": "Join the new era and choose DEUS for assessments that are engaging, digital, and highly insightful.",
+            "title": "Kick Start Today!",
+            "button": "Book Your Free Consultation With Us!"
+        },
+        "gamified": {
+            "effortlessShortlisting": "Utilize DEUS Discover to minimize efforts for the most effective talent acquisition process. In addition, we guarantee that you choose the best match for the position based on their competencies and strengths.",
+            "identifyLeaders": "Our platform helps uncover leadership potential by analyzing competency and personality traits, which gives you the tools to identify future leaders for your company.",
+            "competencyFit": "Gain clarity on job fit with outputs from our gamified assessment. Receive detailed recommendations and percentages for both current employees and candidates, making informed decisions a breeze.",
+            "gapAnalysis": "Address skill gaps at an individual level. DEUS' gamified assessment enables you to conduct in-depth gap analysis, therefore empowering you to tailor development plans effectively.",
+            "retainPerformers": "DEUS Discover helps companies' candidate evaluations by recognizing and nurturing talent, ensuring they remain valuable assets to your organization.",
+            "experienceBanner": "Experience the power of DEUS gamified assessment and take your talent management to a new level."
+        },
+        "storytelling": {
+            "description": "You're a hero in a medieval realm, on a quest to save a magical kingdom from a devastating plague. But here's the twist – the game can read your personality and reveal your true self. Are you ready to embark on this extraordinary journey?"
+        }
+    },
+    "enhance": {
+        "heroBanner": {
+            "title": "Business Performance Measurement Made Simple, but Effective",
+            "subtitle": "DEUS Enhance: KPI & Performance Management Tool for Optimized Employee Performance",
+            "description": "DEUS Enhance transforms the landscape of performance appraisal by delivering insightful, data-driven analysis that enables your organization to grow. By aligning KPI with performance appraisal, we can help Indonesian Businesses to help employee growth and development."
+        },
+        "barrierName": {
+            "titles": [
+                "What Makes DEUS Enhance Stand Out?",
+                "Key Features for HR Transformation Management"
+            ],
+            "descriptions": [
+                null,
+                "From KPI tracking to secure remuneration integration. DEUS Enhance delivers key features for effective HR management and business performance optimization"
+            ]
+        },
+        "uniqueValue": {
+            "comprehensiveTracking": {
+                "title": "Comprehensive Performance Tracking",
+                "description": "Easily manage individual and team employee performance with DEUS Enhance. Our platform combines key data points, from productivity to financial metrics, making KPI management simpler and helping your company maintain a competitive edge for steady business growth."
+            },
+            "secureTracking": {
+                "title": "Secure KPI Tracking (100% Data Anonimity)",
+                "description": "Ensure the confidentiality of performance data while effectively monitoring KPIs for both individuals and teams in KPI management."
+            },
+            "clearMetrics": {
+                "title": "Clear Metrics",
+                "description": "Measurable, real-time data ensures performance reviews are grounded in accuracy and fairness."
+            },
+            "realTimeInsights": {
+                "title": "Real-Time Insights",
+                "description": "Access real-time information to enhance training needs analysis and create effective long-term strategies for team and company development."
+            },
+            "speedUpDecision": {
+                "title": "Speed Up Decision Making",
+                "description": "An efficient tool with detailed insights about employees facilitate prompt decision making by allowing managers to evaluate and respond swiftly to insights about employee performance."
+            }
+        },
+        "keyFeatures": {
+            "dataDriven": {
+                "title": "Data-Driven Performance Evaluation",
+                "description": "Ensures each performance evaluation is supported by measurable insights, enhancing the accuracy of decision making processes."
+            },
+            "comprehensiveAppraisal": {
+                "title": "Comprehensive Performance Appraisal",
+                "description": "Streamlined appraisal forms that capture essential KPI metrics and performance indicators for accurate employee assessment."
+            },
+            "advancedEvaluation": {
+                "title": "Advanced Evaluation Methods",
+                "description": "Modern evaluation techniques that leverage data analytics and real-time insights to provide comprehensive performance assessments."
+            }
+        },
+        "clickStart": {
+            "title": "Kick Start Today!",
+            "button": "Book A Free Consultation With Us!"
+        }
+    },
+    "eaglevision": {
+        "heroBanner": {
+            "title": "Performance Monitoring for organized Operational Task Management",
+            "subtitle": "Eagle Vision: Streamline Your Business Operations with Data-Driven Tools",
+            "description": "Eagle Vision simplifies operational task management with real-time task monitoring, employee performance tracking, and advanced inventory analytics. Enhance productivity, reduce costs, and drive success with our innovative tools tailored for business efficiency."
+        },
+        "barrierName": {
+            "titles": [
+                "Eagle Vision Core Values",
+                "Why Trust Eagle Vision to Drive Results??",
+                "Benefits for Organizations"
+            ],
+            "descriptions": [
+                "For the Best Interest of Clients",
+                null,
+                "Operations management tool for easier workflow, enhanced efficiency, and to drive company growth."
+            ]
+        },
+        "coreValue": {
+            "operationalExcellence": {
+                "title": "Operational Excellence",
+                "items": [
+                    "Employee Responsibility",
+                    "Sales and Product Readiness",
+                    "Readiness of Outlets and Equipments",
+                    "Clear Task Management",
+                    "Monitor Competitors"
+                ]
+            },
+            "businessAnalytics": {
+                "title": "Business Analytics",
+                "items": [
+                    "Market Share Sales",
+                    "Profitability",
+                    "Reduce Shrinkage and Loss",
+                    "Inventory Evaluation",
+                    "Avoid Loss of Sales Opportunity"
+                ]
+            }
+        },
+        "whyTrust": {
+            "realTimeVisibility": {
+                "title": "Real-Time Visibility Across Operations",
+                "description": "Monitor employee attendance, track task progress, and manage inventory seamlessly through the business dashboard that operates in real-time. Benefit from the convenience of accessing Eagle Vision's dashboard on both mobile devices and desktop platforms."
+            },
+            "increaseProductivity": {
+                "title": "Increase Productivity with Centralized Tools",
+                "description": "Integrate task management and performance tools to simplify planning, organization, and execution of tasks, ensuring greater productivity among your workforce."
+            },
+            "costEfficient": {
+                "title": "Cost Efficient",
+                "description": "Optimize resource utilization by reducing instances of missed deadlines, preventing stock shortages, and mitigating potential sales losses through the implementation of real-time operational insights."
+            },
+            "enhanceCollaboration": {
+                "title": "Enhance Team Collaboration",
+                "description": "Assign and track tasks continuously, improving team coordination and employee performance."
+            },
+            "userCentric": {
+                "title": "User Centric Design",
+                "description1": "Designed for user-friendly navigation, ensuring all team members, regardless of tech proficiency, can operate the system smoothly.",
+                "description2": "Tailored modules to meet specific client needs with a centralized platform to manage all kinds of operational tasks in the company. This provides extra convenience and allows higher efficiency in your day to day operations."
+            }
+        },
+        "quote": {
+            "text": "Step into the future with Eagle Vision, your all-in-one solution for smooth, efficient, and data-driven operations."
+        },
+        "businessBenefits": {
+            "performanceMonitoring": {
+                "description1": "Monitor employee performance and task progress in real-time with our operational excellence system.",
+                "description2": "Enhance oversight of employee activities and project timelines through effective task management solutions."
+            },
+            "inventoryManagement": {
+                "description": "Implement real-time inventory management to ensure optimal stock levels, mitigate losses, and enhance overall customer satisfaction."
+            },
+            "businessAnalytics": {
+                "description": "Utilize data-driven business analytics tools embedded within the platform to make informed, data-driven decisions. Monitor daily sales, transaction volumes, and advancements towards objectives."
+            },
+            "storeManagement": {
+                "description": "A user-friendly feature designed to guarantee store cleanliness, maximum customer comfort, store readiness and more. Easily identify problems by incorporating photos and comments in tasks, maintaining the company's standards."
+            }
+        },
+        "clickStart": {
+            "quote": "Experience the power of Eagle Vision and take your talent management to a new level.",
+            "title": "Kick Start Today!",
+            "button": "Contact Us"
+        }
+    },
+    "whoweare": {
+        "whoWeAre": {
+            "title": "Who We Are",
+            "subtitle": "Empowering Businessses with Innovative Human Resource Management Systems",
+            "description": "We help businesses uncover employee potential through innovative HR solutions like gamified assessments and strategic management tools. Combining our passion for games and business psychology, we help empower Indonesian organizations to assess, develop, and enhance their teams for lasting success.",
+            "journey": "At DEUS, our passion for games and dedication in HR Services thrive in organizations drove our journey. Combining our founder's love for games with expertise in business psychology, we created gamified assessments to empower professional growth. We've since evolved to offer comprehensive human resource management services via our strategic people management system. Our solutions enable organizations to assess and strategically develop their most valuable asset: their people. With the support of our advanced HR software solutions, we empower companies to harness the full potential of their workforce. DEUS is rooted in good intentions, DEUS has entered into a strategic partnership with the Ministry of Communication and Information Technology (KOMINFO) for the SSI Program Batch 6. Among 800 startups, we've proudly secured a spot as one of the top 17, earning us coaching and support from KOMINFO. This collaboration marks a significant milestone, poised to fuel our growth and pave the way for continued success.",
+            "komInfo": "DEUS is rooted in good intentions, DEUS has entered into a strategic partnership with the Ministry of Communication and Information Technology (KOMINFO) for the SSI Program Batch 6. Among 800 startups, we've proudly secured a spot as one of the top 17, earning us coaching and support from KOMINFO. This collaboration marks a significant milestone, poised to fuel our growth and pave the way for continued success."
+        },
+        "inception": {
+            "title": "Inception",
+            "items": [
+                {
+                    "normal": "Vision",
+                    "hover": "Creating revolutionary HRM systems with a pioneering personality model."
+                },
+                {
+                    "normal": "Expert Collaboration",
+                    "hover": "Worked with UK psychometric experts to build a vast database of personality questions."
+                },
+                {
+                    "normal": "Validation",
+                    "hover": "Achieved remarkable validity score through rigorous procedures."
+                },
+                {
+                    "normal": "Planning",
+                    "hover": "Carefully designed gamified experience, storyline, settings, and characters."
+                },
+                {
+                    "normal": "Transformation",
+                    "hover": "Converted personality items into engaging gamification elements."
+                },
+                {
+                    "normal": "Development",
+                    "hover": "Created an immersive visual novel game that you can use to discover your `true self`.​"
+                }
+            ]
+        },
+        "implementation": {
+            "title": "Implementation",
+            "items": [
+                {
+                    "normal": "Innovative Report",
+                    "hover": "Developed the groundbreaking `DEUS Discover` auto-generated report and insightful dashboards."
+                },
+                {
+                    "normal": "Expanding Horizons",
+                    "hover": "We built a comprehensive strategic people management system, offering diverse HR services accessible via our web platform."
+                },
+                {
+                    "normal": "Early Success",
+                    "hover": "Welcomed initial clients and HR partners, laying the groundwork for lasting relationships."
+                },
+                {
+                    "normal": "Industry Recognition",
+                    "hover": "Chosen as one of 17 standout startups from 800+ applicants for KOMINFO's Startup Studio Indonesia (SSI) program."
+                },
+                {
+                    "normal": "Exciting Launch",
+                    "hover": "Officially introduced our game to the market with thorough testing for a seamless experience."
+                },
+                {
+                    "normal": "Continuous Product Expansion",
+                    "hover": "Currently we have 3 main products, however we are always open to innovating with exciting new products."
+                }
+            ]
+        },
+        "ourValues": {
+            "innovative": {
+                "title": "Innovative",
+                "description": "We are committed to pushing the boundaries of what's possible in the world of human resources. We're constantly innovating to deliver Innovative human resource management systems for Indonesian companies. We embrace HR technology innovation to enhance employee performance management and drive organizational growth and productivity."
+            },
+            "inspiring": {
+                "title": "Inspiring",
+                "description": "We aim to inspire positive change, both within our organization and among those we serve. By prioritizing employee development and engagement, we encourage growth and transformation. Our goal is to empower individuals through HR strategies that foster workplace excellence and accountability."
+            },
+            "invested": {
+                "title": "Invested in our Clients",
+                "description": "Our clients are our VIP players. We're dedicated to their quest for success, building alliances based on trust and collaboration. Through personalized HR management solutions, we ensure customer satisfaction, so that each client receives strategic support to achieve their goals and maximize talent potential."
+            },
+            "inclusive": {
+                "title": "Inclusive",
+                "description": "We celebrate differences and foster a work culture where everyone's perspectives are valued. Our HR solutions and diversity and inclusion services are designed to create an inclusive company culture where individuals feel empowered and supported in their career growth and professional development journeys."
+            },
+            "insightful": {
+                "title": "Insightful",
+                "description": "We aim to gain a deep understanding of our client's work productivity challenges and workforce opportunities. By leveraging advanced HR analytics, we drive informed decisions and deliver meaningful results that fuel business growth, employee engagement, and innovation."
+            },
+            "improvement": {
+                "title": "Improvement Oriented",
+                "description": "We're on a never-ending quest for power-ups. Constant improvement is our main quest, and we're always looking for ways to level up. Through HR management systems and continuous professional development, we ensure that our team and solutions evolve to meet the ever-changing needs of our clients."
+            }
+        },
+        "teamCore": {
+            "title": "Meet Our Core Team",
+            "christian": {
+                "name": "Christian Kurnia, B.E.",
+                "position": "Senior Business Advisor",
+                "description": "Senior business executive and retail expert with 25+ years of business experience. Climbed up the career ladder and ended up becoming the director of e-business in Metrodata Electronics. He then joined Matahari Department Store and oversaw the development of 160+ stores across Indonesia, overseeing an increase of revenue from 6T to 19T."
+            },
+            "gregory": {
+                "name": "Gregory Kurnia",
+                "position": "CEO",
+                "description": "Graduated with honors from Los Angeles for his B.A. in Psychology with a Minor in Sociology and Theology and received second degree honors for his M.Sc. of Organizational Psychology from City University of London. He is also a certified psychometric practitioner and a Member of the Association of Business Psychologists."
+            }
+        },
+        "getIn": {
+            "title": "Get in Touch!",
+            "button": "Book a Free Consultation With Us!"
+        }
+    },
+    "consultation": {
+        "title": "Let's Get in Touch!",
+        "form": {
+            "fullName": "Full Name",
+            "workEmail": "Work Email",
+            "companyName": "Company Name",
+            "jobTitle": "Job Title",
+            "companySize": "Company Size",
+            "companySizeOptions": {
+                "small": "1 - 100",
+                "medium": "101 - 500",
+                "large": "501 - 1000",
+                "enterprise": "1000+"
+            },
+            "countryCity": "Country and City",
+            "jobRole": "What is your job role",
+            "hearAboutUs": "How did you hear about us",
+            "hearAboutUsOptions": {
+                "google": "Google Search",
+                "social": "Social Media",
+                "referral": "Referral",
+                "advertisement": "Advertisement",
+                "other": "Other"
+            },
+            "phoneNumber": "Company Phone Number",
+            "submit": "Send"
+        },
+        "contact": {
+            "whatsapp": "+6282312121660",
+            "email": "gregory.kurnia@deushcs.com",
+            "address": "Jl. Jalur Sutera Bar. Alam No.15, RT.003/RW.006, Panunggangan Tim., Sutera, Kota Tangerang, Banten 15143, Indonesia"
+        }
+    },
+    "footer": {
+        "home": "HOME",
+        "aboutUs": "ABOUT US",
+        "whoWeAre": "Who We Are",
+        "ourJourney": "Our Journey",
+        "values": "Values",
+        "coreTeam": "Core Team",
+        "ourProducts": "OUR PRODUCTS",
+        "deusDiscover": "DEUS Discover",
+        "deusEnhance": "DEUS Enhance",
+        "eagleVision": "Eagle Vision",
+        "freeHrConsultation": "FREE HR CONSULTATION",
+        "deusCorner": "DEUS CORNER",
+        "copyright": "© DEUS Human Capital Services"
+    }
+}

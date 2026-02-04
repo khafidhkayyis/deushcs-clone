@@ -1,7 +1,11 @@
+"use client";
+
 import React from "react";
 import bottomSectionBg from "../images/DEUS-Technology.jpeg";
+import { useTranslation } from "@/app/hooks/useTranslation";
 
 export default function Stats() {
+    const { t } = useTranslation();
     return (
         <section
             className="relative text-white py-16 lg:py-24 overflow-hidden"
@@ -20,11 +24,7 @@ export default function Stats() {
                 {/* Main Heading */}
                 <div className="text-center mb-12 lg:mb-16">
                     <h2 className="text-3xl md:text-4xl lg:text-3xl font-extrabold leading-tight">
-                        Transformational{" "}
-                        <span className="underline decoration-2 decoration-white-400 underline-offset-4">
-                            strategic HR services
-                        </span>{" "}
-                        for your business
+                        {t('homepage.transformational.title')}
                     </h2>
                 </div>
 
@@ -33,30 +33,30 @@ export default function Stats() {
                     {/* Stat 1 */}
                     <div className="text-center">
                         <div className="text-5xl md:text-6xl lg:text-5xl font-extrabold mb-4 text-blue-50">
-                            90%
+                            {t('homepage.transformational.stat1.value')}
                         </div>
                         <p className="text-base md:text-lg text-gray-50">
-                            Would recommend our services to others
+                            {t('homepage.transformational.stat1.description')}
                         </p>
                     </div>
 
                     {/* Stat 2 */}
                     <div className="text-center">
                         <div className="text-5xl md:text-6xl lg:text-5xl font-extrabold mb-4 text-blue-50">
-                            85%
+                            {t('homepage.transformational.stat2.value')}
                         </div>
                         <p className="text-base md:text-lg text-gray-50">
-                            Higher engagement
+                            {t('homepage.transformational.stat2.description')}
                         </p>
                     </div>
 
                     {/* Stat 3 */}
                     <div className="text-center">
                         <div className="text-5xl md:text-6xl lg:text-5xl font-extrabold mb-4 text-blue-50">
-                            95%
+                            {t('homepage.transformational.stat3.value')}
                         </div>
                         <p className="text-base md:text-lg text-gray-50">
-                            Enjoyed our gamified assessments
+                            {t('homepage.transformational.stat3.description')}
                         </p>
                     </div>
                 </div>

@@ -1,5 +1,8 @@
+"use client";
+
 import React from "react";
 import Image, { StaticImageData } from "next/image";
+import { useTranslation } from "@/app/hooks/useTranslation";
 import aciLogo from "../images/logopatners/aci-logo.png";
 import agateLogo from "../images/logopatners/agate-logo.png";
 import firstasiaLogo from "../images/logopatners/firstasia-logo.png";
@@ -106,11 +109,13 @@ const partners: PartnerItem[] = [
 ];
 
 export default function Patners() {
+    const { t } = useTranslation();
+    
     return (
         <section className="relative bg-[#f8f7f3] py-12 md:py-16">
             <div className="container mx-auto px-6">
                 <h2 className="text-3xl md:text-4xl lg:text-3xl font-extrabold text-[#1e293b] text-center mb-[80px]">
-                    Our Partners
+                    {t('homepage.partners.title')}
                 </h2>
 
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[80px] md:gap-[100px] lg:gap-[110px] items-center justify-items-center">
@@ -140,7 +145,7 @@ export default function Patners() {
                         </div>
                     ))}
                     <div className="col-span-2 md:col-span-3 lg:col-span-5 flex justify-end items-center w-full">
-                        <p className="text-[#1e293b] text-4xl font-semibold text-right w-full">And many more!</p>
+                        <p className="text-[#1e293b] text-4xl font-semibold text-right w-full">{t('homepage.partners.andManyMore')}</p>
                     </div>
                 </div>
             </div>
