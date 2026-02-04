@@ -1,10 +1,14 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import backgroundImage from "../images/storytelling/_.jpeg";
 import image1 from "../images/storytelling/___1_-removebg-preview.png";
 import image2 from "../images/storytelling/___2_-removebg-preview.png";
+import { useTranslation } from "@/app/hooks/useTranslation";
 
 export default function Storytelling() {
+    const { t } = useTranslation();
     return (
         <section className="relative w-full min-h-screen py-16 lg:py-24 overflow-hidden">
             {/* Background image */}
@@ -39,7 +43,7 @@ export default function Storytelling() {
                     <div className="order-2 md:order-2 text-center">
                         <div className="bg-[#8B7355]/90 backdrop-blur-sm rounded-lg p-6 md:p-12 border-2 border-[#6B5D4F] shadow-2xl">
                             <p className="text-white text-base md:text-lg lg:text-xl leading-relaxed">
-                                You&apos;re a hero in a medieval realm, on a quest to save a magical kingdom from a devastating plague. But here&apos;s the twist – the game can read your personality and reveal your true self. Are you ready to embark on this extraordinary journey?
+                                {t('discover.storytelling.description')}
                             </p>
                         </div>
                     </div>

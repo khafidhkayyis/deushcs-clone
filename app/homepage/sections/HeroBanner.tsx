@@ -1,9 +1,13 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import heroBannerImage from "../images/DEUS-Human-Capital-Services-Indonesia.webp";
 import bottomSectionBg from "../images/DEUS-Technology.jpeg";
+import { useTranslation } from "@/app/hooks/useTranslation";
 
 export default function HeroBanner() {
+    const { t } = useTranslation();
     return (
         <div className="relative w-full">
             {/* Top Section - Dark Teal Background */}
@@ -13,10 +17,7 @@ export default function HeroBanner() {
                         {/* Left Side - Content */}
                         <div className="relative z-10 order-2 lg:order-1">
                             <h1 className="text-4xl leading-12 md:text-5xl lg:text-5xl font-extrabold mb-8 pl-0 md:pl-5">
-                                Helping Indonesian<br />
-                                Businesses With<br />
-                                Gamified Assessments<br />
-                                & HR Services
+                                {t('homepage.heroBanner.title')}
                             </h1>
 
                             {/* Service Descriptions */}
@@ -40,10 +41,7 @@ export default function HeroBanner() {
                                     </div>
                                     <div>
                                         <p className="text-base text-justify md:text-lg leading-6">
-                                            If your company needs guidance for efficient recruitment or
-                                            employee development: check out{" "}
-                                            <strong>DEUS Discover</strong> for the first gamified
-                                            assessment in Indonesia!
+                                            {t('homepage.heroBanner.discover.description', { product: 'DEUS Discover' })}
                                         </p>
                                     </div>
                                 </div>
@@ -67,9 +65,7 @@ export default function HeroBanner() {
                                     </div>
                                     <div>
                                         <p className="text-base text-justify md:text-lg leading-6">
-                                            If your company needs better KPI management and workforce
-                                            development tools: check out{" "}
-                                            <strong>DEUS Enhance</strong> here.
+                                            {t('homepage.heroBanner.enhance.description', { product: 'DEUS Enhance' })}
                                         </p>
                                     </div>
                                 </div>
@@ -93,9 +89,7 @@ export default function HeroBanner() {
                                     </div>
                                     <div>
                                         <p className="text-base text-justify md:text-lg leading-6">
-                                            If your company is having a hard time keeping up with
-                                            operational task managements: check out{" "}
-                                            <strong>Eagle Vision</strong> here.
+                                            {t('homepage.heroBanner.eagleVision.description', { product: 'Eagle Vision' })}
                                         </p>
                                     </div>
                                 </div>
@@ -129,17 +123,12 @@ export default function HeroBanner() {
                     <div className="max-w-7xl mx-auto">
                         {/* Quote */}
                         <blockquote className="text-3xl md:text-4xl lg:text-4xl font-bold leading-tight mb-8">
-                            &ldquo;DEUS Human Capital Services provides optimized solutions
-                            for hr services aimed at enhancing employee management.&rdquo;
+                            &ldquo;{t('homepage.heroBanner.quote')}&rdquo;
                         </blockquote>
 
                         {/* Descriptive Paragraph */}
                         <p className="text-base text-justify md:text-lg lg:text-xl leading-relaxed text-gray-200">
-                            Our platform is dedicated to maximizing employee performance while
-                            fostering innovation in talent management and HR services in
-                            Indonesia. By utilizing modernized HR software, DEUS Human Capital
-                            Services guarantees smooth integration and enhanced performance
-                            across the organization.
+                            {t('homepage.heroBanner.description')}
                         </p>
                     </div>
                 </div>
