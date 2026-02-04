@@ -1,8 +1,12 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import smartImage from "../images/DEUS-Smart.webp";
+import { useTranslation } from "@/app/hooks/useTranslation";
 
 export default function Smart() {
+    const { t } = useTranslation();
     return (
         <section className="relative bg-[#ffffff] text-[#122430] py-16 lg:py-24">
             <div className="container mx-auto px-6">
@@ -15,13 +19,13 @@ export default function Smart() {
                     {/* Right Side - Text Content */}
                     <div className="relative z-10 order-2 lg:order-2">
                         <h2 className="text-3xl md:text-4xl lg:text-3xl font-extrabold mb-6 leading-tight">
-                            Smart & Fair Employee Performance Management
+                            {t('homepage.smart.title')}
                         </h2>
                         <p className="text-base md:text-lg leading-relaxed text-gray-700 mb-4">
-                            Evaluate team performance accurately using real-time KPI tracking, performance appraisal systems, and smart analytics.
+                            {t('homepage.smart.description1')}
                         </p>
                         <p className="text-base md:text-lg leading-relaxed text-gray-700">
-                            Make HRM decisions transparent, objective, and results driven.
+                            {t('homepage.smart.description2')}
                         </p>
                     </div>
                 </div>

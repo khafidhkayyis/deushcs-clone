@@ -1,17 +1,9 @@
+"use client";
+
 import React from "react";
 import Barrier from "./barrier";
-
-const titles = [
-    "Indonesia's Pioneer for Gamified Assessment tools",
-    "What is Gamification in Assessments?",
-    "Gamified Assessment Benefits for Organizations"
-];
-
-const descriptions = [
-    undefined,
-    "A gamified assessment is an innovative solution that incorporates game elements into evaluation processes to enhance engagement, motivation, and effectiveness in recruitment processes and employee development for businesses.",
-    undefined
-];
+import { useTranslation } from "@/app/hooks/useTranslation";
+import { getTranslation } from "@/app/utils/translations";
 
 function BarrierSection({ title, description }: { title: string; description?: string }) {
     return (
@@ -58,14 +50,19 @@ interface BarrierNameProps {
 }
 
 export default function BarrierName({ index }: BarrierNameProps) {
+    const { locale } = useTranslation();
+    const translations = getTranslation(locale);
+    const titles = translations.discover.barrierName.titles as string[];
+    const descriptions = translations.discover.barrierName.descriptions as (string | null)[];
+
     if (index !== undefined) {
-        return <BarrierSection title={titles[index]} description={descriptions[index]} />;
+        return <BarrierSection title={titles[index]} description={descriptions[index] || undefined} />;
     }
 
     return (
         <>
             {titles.map((title, idx) => (
-                <BarrierSection key={idx} title={title} description={descriptions[idx]} />
+                <BarrierSection key={idx} title={title} description={descriptions[idx] || undefined} />
             ))}
         </>
     );

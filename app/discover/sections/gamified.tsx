@@ -9,6 +9,7 @@ import nurturingTalentImage from "../images/gamified /Gamifikasi-untuk-Rekrutmen
 import psychometricImage2 from "../images/gamified /gamified-psychometric-assessment-2-1.webp";
 import psychometricResultImage from "../images/gamified /Gamified-psychometric-assessment-result-1.webp";
 import psychometricImage3 from "../images/gamified /gamified-psychometric-assessment-3-1.webp";
+import NavSection from "@/app/components/NavSection";
 
 function GapAnalysisSection() {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -77,7 +78,7 @@ function GapAnalysisSection() {
                     </div>
 
                     {/* Right Side - Text Content */}
-                    <div className="relative z-10 order-2 lg:order-2">
+                    <div id="competency-fit" className="relative z-10 order-2 lg:order-2 scroll-mt-24">
                         <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-200">
                             Gain clarity on job fit with outputs from our gamified assessment. Receive detailed recommendations and percentages for both current employees and candidates, making informed decisions a breeze.
                         </p>
@@ -93,6 +94,9 @@ export default function Gamified() {
         <>
             {/* Talent Acquisition Section */}
             <section className="relative bg-[#122430] text-white py-10 lg:py-24 overflow-hidden">
+                <div className="container mx-auto pb-6">
+                    <NavSection />
+                </div>
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
                         {/* Left Side - UI Image */}
@@ -109,7 +113,7 @@ export default function Gamified() {
                         </div>
 
                         {/* Right Side - Text Content */}
-                        <div className="relative z-10 order-2 lg:order-2">
+                        <div id="effortless-shortlisting" className="relative z-10 order-2 lg:order-2 scroll-mt-24">
                             <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-200">
                                 Utilize DEUS Discover to minimize efforts for the most effective talent acquisition process. In addition, we guarantee that you choose the best match for the position based on their competencies and strengths.
                             </p>
@@ -123,7 +127,7 @@ export default function Gamified() {
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
                         {/* Left Side - Text Content */}
-                        <div className="relative z-10 order-2 lg:order-1">
+                        <div id="identify-leaders" className="relative z-10 order-2 lg:order-1 scroll-mt-24">
                             <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-200">
                                 Our platform helps uncover leadership potential by analyzing competency and personality traits, which gives you the tools to identify future leaders for your company.
                             </p>
@@ -153,7 +157,7 @@ export default function Gamified() {
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
                         {/* Left Side - Text Content */}
-                        <div className="relative z-10 order-2 lg:order-1">
+                        <div id="gap-analysis" className="relative z-10 order-2 lg:order-1 scroll-mt-24">
                             <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-200">
                                 Address skill gaps at an individual level. DEUS&apos; gamified assessment enables you to conduct in-depth gap analysis, therefore empowering you to tailor development plans effectively.
                             </p>
@@ -193,7 +197,7 @@ export default function Gamified() {
                         </div>
 
                         {/* Right Side - Text Content */}
-                        <div className="relative z-10 order-2 lg:order-2">
+                        <div id="retain-performers" className="relative z-10 order-2 lg:order-2 scroll-mt-24">
                             <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-200">
                                 DEUS Discover helps companies&apos; candidate evaluations by recognizing and nurturing talent, ensuring they remain valuable assets to your organization.
                             </p>

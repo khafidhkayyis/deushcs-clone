@@ -5,7 +5,7 @@ import gregoryPhoto from "../images/teamCore/Gregory-Kurnia-pj9viyarugszk6erhodc
 
 export default function TeamCore() {
     return (
-        <section className="relative bg-[#f8f7f3] text-[#122430] py-16 lg:py-24">
+        <section id="core-team" className="relative bg-[#f8f7f3] text-[#122430] py-16 lg:py-24">
             <div className="container mx-auto px-6">
                 {/* Heading */}
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-center mb-16">

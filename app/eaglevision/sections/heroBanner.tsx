@@ -1,8 +1,12 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import heroBannerImage from "../images/eagle-visiontitle-qz46t97u211l84qoi303b1wu04e74smbzqe3he9yfc.png";
+import { useTranslation } from "@/app/hooks/useTranslation";
 
 export default function HeroBanner() {
+    const { t } = useTranslation();
     return (
         <section className="relative bg-[#122430] text-white overflow-hidden">
             <div className="container mx-auto px-6 py-16 lg:py-24">
@@ -10,13 +14,13 @@ export default function HeroBanner() {
                     {/* Left Side - Content */}
                     <div className="relative z-10 order-2 lg:order-1">
                         <h1 className="text-4xl md:text-5xl lg:text-4xl font-black mb-6 leading-tight">
-                            Performance Monitoring for organized Operational Task Management
+                            {t('eaglevision.heroBanner.title')}
                         </h1>
                         <h2 className="text-xl md:text-2xl lg:text-3xl font-extralight mb-6">
-                            Eagle Vision: Streamline Your Business Operations with Data-Driven Tools
+                            {t('eaglevision.heroBanner.subtitle')}
                         </h2>
                         <p className="text-base md:text-lg leading-relaxed text-gray-200">
-                            Eagle Vision simplifies operational task management with real-time task monitoring, employee performance tracking, and advanced inventory analytics. Enhance productivity, reduce costs, and drive success with our innovative tools tailored for business efficiency.
+                            {t('eaglevision.heroBanner.description')}
                         </p>
                     </div>
 

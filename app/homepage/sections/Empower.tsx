@@ -1,8 +1,12 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import empowerImage from "../images/DEUS-Empower.webp";
+import { useTranslation } from "@/app/hooks/useTranslation";
 
 export default function Empower() {
+    const { t } = useTranslation();
     return (
         <section className="relative bg-[#122430] text-white py-16 lg:py-24">
             <div className="container mx-auto px-6">
@@ -15,10 +19,10 @@ export default function Empower() {
                     {/* Right Side - Text Content */}
                     <div className="relative z-10 order-2 lg:order-2">
                         <h2 className="text-3xl md:text-4xl lg:text-3xl font-extrabold mb-6 leading-tight">
-                            Empower Your Company&apos;s Digital Transformation with DEUS
+                            {t('homepage.empower.title')}
                         </h2>
                         <p className="text-base md:text-lg leading-relaxed text-gray-200">
-                            Integrating modern technologies to enhance your talent management and employee performance strategies. DEUS offers a fully automated solution that streamlines your processes, allowing you to focus on what matters.
+                            {t('homepage.empower.description')}
                         </p>
                     </div>
                 </div>

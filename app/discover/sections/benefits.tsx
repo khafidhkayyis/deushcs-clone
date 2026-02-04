@@ -1,9 +1,12 @@
+"use client";
+
 import React from "react";
 import Image, { StaticImageData } from "next/image";
 import brandingImage from "../images/benefits/Improved-Company-Branding-.webp";
 import digitalizationImage from "../images/benefits/Powerful-Digitalization.webp";
 import practiceImage from "../images/benefits/gamified-assessment-practice.webp";
 import biasImage from "../images/benefits/Gamified-assessments-to-reduce-response-bias.webp";
+import { useTranslation } from "@/app/hooks/useTranslation";
 
 interface BenefitItemProps {
     title: string;
@@ -43,22 +46,16 @@ function BenefitItem({ title, description, image, imageAlt, reverse = false }: B
 }
 
 export default function Benefits() {
+    const { t } = useTranslation();
+    
     return (
         <>
             {/* Enhanced Company Branding */}
             <section className="relative bg-[#122430] text-white py-16 lg:py-24 overflow-hidden">
                 <div className="container mx-auto px-6">
                     <BenefitItem
-                        title="Enhanced Company Branding"
-                        description={
-                            <>
-                                Instant and automated results, no more manual grading.
-                                <br />
-                                DEUS delivers real-time insights, making your assessment
-                                <br />
-                                process efficient and effective.
-                            </>
-                        }
+                        title={t('discover.benefits.enhancedBranding.title')}
+                        description={t('discover.benefits.enhancedBranding.description')}
                         image={brandingImage}
                         imageAlt="Enhanced Company Branding - Growth and Efficiency"
                     />
@@ -69,8 +66,8 @@ export default function Benefits() {
             <section className="relative bg-[#122430] text-white py-10 lg:py-24 overflow-hidden">
                 <div className="container mx-auto px-6">
                     <BenefitItem
-                        title="Powerful Digitalization"
-                        description="Stand out, especially to Gen-Z and Millennials. DEUS' assessment tool not only evaluate talent but also boost your company's image in the ever growing digital age."
+                        title={t('discover.benefits.powerfulDigitalization.title')}
+                        description={t('discover.benefits.powerfulDigitalization.description')}
                         image={digitalizationImage}
                         imageAlt="Powerful Digitalization - Data Analytics and Digital Transformation"
                         reverse={true}
@@ -82,10 +79,10 @@ export default function Benefits() {
             <section className="relative bg-[#122430] text-white py-10 lg:py-24 overflow-hidden">
                 <div className="container mx-auto px-6">
                     <BenefitItem
-                        title="Gamified Assessment Practice"
+                        title={t('discover.benefits.gamifiedPractice.title')}
                         image={practiceImage}
                         imageAlt="Gamified Assessment Practice"
-                        description="Experience engaging and interactive assessments that make evaluation enjoyable while maintaining accuracy and reliability."
+                        description={t('discover.benefits.gamifiedPractice.description')}
                     />
                 </div>
             </section>
@@ -94,10 +91,10 @@ export default function Benefits() {
             <section className="relative bg-[#122430] text-white py-10 lg:py-24 overflow-hidden">
                 <div className="container mx-auto px-6">
                     <BenefitItem
-                        title="Gamified Assessments to Reduce Response Bias"
+                        title={t('discover.benefits.reduceBias.title')}
                         image={biasImage}
                         imageAlt="Gamified Assessments to Reduce Response Bias"
-                        description="Our innovative gamified approach minimizes response bias, providing more authentic and accurate assessment results through engaging gameplay mechanics."
+                        description={t('discover.benefits.reduceBias.description')}
                         reverse={true}
                     />
                 </div>

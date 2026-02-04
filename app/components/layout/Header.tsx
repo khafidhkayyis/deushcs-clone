@@ -2,12 +2,17 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import logo from "./images/deus_human_capital_services_logo.jpeg";
 import Image from "next/image";
+import { useTranslation } from "@/app/hooks/useTranslation";
+import { useLanguage } from "@/app/contexts/LanguageContext";
 
 export default function Header() {
   const pathname = usePathname();
+  const router = useRouter();
+  const { t } = useTranslation();
+  const { locale, setLocale } = useLanguage();
   const [aboutUsOpen, setAboutUsOpen] = useState(false);
   const [productsOpen, setProductsOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -18,6 +23,28 @@ export default function Header() {
     setMobileMenuOpen(false);
     setAboutUsOpen(false);
     setProductsOpen(false);
+  };
+
+  const handleHashLink = (href: string) => {
+    closeMobileMenu();
+    const [path, hash] = href.split('#');
+
+    if (pathname !== path) {
+      router.push(path);
+      setTimeout(() => {
+        const element = document.getElementById(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 300);
+    } else {
+      setTimeout(() => {
+        const element = document.getElementById(hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 100);
+    }
   };
 
   useEffect(() => {
@@ -47,7 +74,7 @@ export default function Header() {
 
   return (
     <header className="bg-[#122430] text-white w-full sticky top-0 z-50 font-sans">
-      <div className="container mx-auto md:mx-10 px-4 py-4">
+      <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo Section */}
           <div className="flex items-center">
@@ -59,7 +86,7 @@ export default function Header() {
           {/* Navigation Links */}
           <nav className="hidden md:flex items-center gap-17 font-medium">
             <Link href="/" className="hover:text-gray-300 transition-colors text-xl">
-              Home
+              {t('navigation.home')}
             </Link>
             <div className="relative" ref={aboutUsRef}>
               <button
@@ -69,7 +96,7 @@ export default function Header() {
                 }}
                 className="flex items-center gap-1 hover:text-gray-300 transition-colors text-xl"
               >
-                About Us
+                {t('navigation.aboutUs')}
                 <svg
                   className={`w-4 h-4 transition-transform ${aboutUsOpen ? "rotate-180" : ""}`}
                   fill="none"
@@ -87,16 +114,16 @@ export default function Header() {
               {aboutUsOpen && (
                 <div className="absolute top-full left-0 mt-2 bg-white text-gray-800 rounded shadow-lg py-2 min-w-[200px] z-50">
                   <Link href="/whoweare" className="block px-4 py-2 hover:bg-gray-100">
-                    Who We Are
+                    {t('navigation.whoWeAre')}
                   </Link>
                   <Link href="/whoweare#our-journey" className="block px-4 py-2 hover:bg-gray-100">
-                    Our Journey
+                    {t('navigation.ourJourney')}
                   </Link>
-                  <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
-                    Values
+                  <Link href="/whoweare#our-values" className="block px-4 py-2 hover:bg-gray-100">
+                    {t('navigation.values')}
                   </Link>
-                  <Link href="#" className="block px-4 py-2 hover:bg-gray-100">
-                    Core Team
+                  <Link href="/whoweare#core-team" className="block px-4 py-2 hover:bg-gray-100">
+                    {t('navigation.coreTeam')}
                   </Link>
                 </div>
               )}
@@ -109,7 +136,7 @@ export default function Header() {
                 }}
                 className="flex items-center gap-1 hover:text-gray-300 transition-colors text-xl"
               >
-                Our Products
+                {t('navigation.ourProducts')}
                 <svg
                   className={`w-4 h-4 transition-transform ${productsOpen ? "rotate-180" : ""}`}
                   fill="none"
@@ -127,23 +154,23 @@ export default function Header() {
               {productsOpen && (
                 <div className="absolute top-full left-0 mt-2 bg-white text-gray-800 rounded shadow-lg py-2 min-w-[200px] z-50">
                   <Link href="/discover" className="block px-4 py-2 hover:bg-gray-100">
-                    DEUS Discover
+                    {t('navigation.deusDiscover')}
                   </Link>
                   <Link href="/enhance" className="block px-4 py-2 hover:bg-gray-100">
-                    DEUS Enhance
+                    {t('navigation.deusEnhance')}
                   </Link>
                   <Link href="/eaglevision" className="block px-4 py-2 hover:bg-gray-100">
-                    DEUS Eagle Vision
+                    {t('navigation.eagleVision')}
                   </Link>
                 </div>
               )}
             </div>
             {/* CTA Button */}
             <Link href="/consultation" className="hidden lg:block text-xl bg-yellow-200 hover:bg-yellow-500 text-gray-900 font-medium px-6 py-2 rounded-full transition-colors text-center">
-              Free HR Consultation
+              {t('navigation.freeHrConsultation')}
             </Link>
             <Link href="#" className="hover:text-gray-300 transition-colors text-xl">
-              DEUS Corner
+              {t('navigation.deusCorner')}
             </Link>
           </nav>
 
@@ -152,8 +179,9 @@ export default function Header() {
           {/* Language Flags */}
           <div className="flex items-center gap-2 ml-4">
             <button
-              className="w-6 h-4 border border-gray-400 hover:border-yellow-400 transition-colors overflow-hidden"
-              title="United States"
+              onClick={() => setLocale('en')}
+              className={`w-6 h-4 border transition-colors overflow-hidden ${locale === 'en' ? 'border-yellow-400' : 'border-gray-400 hover:border-yellow-400'}`}
+              title="English"
             >
               <svg width="32" height="24" viewBox="0 0 32 24" className="w-full h-full">
                 <rect width="32" height="24" fill="#B22234" />
@@ -168,8 +196,9 @@ export default function Header() {
               </svg>
             </button>
             <button
-              className="w-6 h-4 border border-gray-400 hover:border-yellow-400 transition-colors overflow-hidden"
-              title="Indonesia"
+              onClick={() => setLocale('id')}
+              className={`w-6 h-4 border transition-colors overflow-hidden ${locale === 'id' ? 'border-yellow-400' : 'border-gray-400 hover:border-yellow-400'}`}
+              title="Indonesian"
             >
               <div className="w-full h-full flex flex-col">
                 <div className="h-1/2 bg-red-600"></div>
@@ -226,11 +255,11 @@ export default function Header() {
               href="/"
               onClick={closeMobileMenu}
               className={`py-4 px-4 text-lg font-medium transition-colors border-b border-gray-700 ${pathname === "/"
-                  ? "text-yellow-400"
-                  : "text-white hover:text-yellow-400"
+                ? "text-yellow-400"
+                : "text-white hover:text-yellow-400"
                 }`}
             >
-              Home
+              {t('navigation.home')}
             </Link>
 
             <div className="border-b border-gray-700">
@@ -240,11 +269,11 @@ export default function Header() {
                   setProductsOpen(false);
                 }}
                 className={`flex items-center justify-between w-full py-4 px-4 text-lg font-medium transition-colors ${pathname.startsWith("/whoweare")
-                    ? "text-yellow-400"
-                    : "text-white hover:text-yellow-400"
+                  ? "text-yellow-400"
+                  : "text-white hover:text-yellow-400"
                   }`}
               >
-                <span>About Us</span>
+                <span>{t('navigation.aboutUs')}</span>
                 <svg
                   className={`w-5 h-5 transition-transform duration-200 ${aboutUsOpen ? "rotate-180" : ""
                     }`}
@@ -269,32 +298,41 @@ export default function Header() {
                     href="/whoweare"
                     onClick={closeMobileMenu}
                     className={`py-3 px-8 text-base transition-colors ${pathname === "/whoweare"
-                        ? "text-yellow-400 font-semibold bg-gray-800/50"
-                        : "text-gray-300 hover:text-yellow-400 hover:bg-gray-800/30"
+                      ? "text-yellow-400 font-semibold bg-gray-800/50"
+                      : "text-gray-300 hover:text-yellow-400 hover:bg-gray-800/30"
                       }`}
                   >
-                    Who We Are
+                    {t('navigation.whoWeAre')}
                   </Link>
                   <Link
                     href="/whoweare#our-journey"
-                    onClick={closeMobileMenu}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleHashLink("/whoweare#our-journey");
+                    }}
                     className="py-3 px-8 text-base text-gray-300 hover:text-yellow-400 hover:bg-gray-800/30 transition-colors"
                   >
-                    Our Journey
+                    {t('navigation.ourJourney')}
                   </Link>
                   <Link
-                    href="#"
-                    onClick={closeMobileMenu}
+                    href="/whoweare#our-values"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleHashLink("/whoweare#our-values");
+                    }}
                     className="py-3 px-8 text-base text-gray-300 hover:text-yellow-400 hover:bg-gray-800/30 transition-colors"
                   >
-                    Values
+                    {t('navigation.values')}
                   </Link>
                   <Link
-                    href="#"
-                    onClick={closeMobileMenu}
+                    href="/whoweare#core-team"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleHashLink("/whoweare#core-team");
+                    }}
                     className="py-3 px-8 text-base text-gray-300 hover:text-yellow-400 hover:bg-gray-800/30 transition-colors"
                   >
-                    Core Team
+                    {t('navigation.coreTeam')}
                   </Link>
                 </div>
               </div>
@@ -307,11 +345,11 @@ export default function Header() {
                   setAboutUsOpen(false);
                 }}
                 className={`flex items-center justify-between w-full py-4 px-4 text-lg font-medium transition-colors ${pathname === "/discover" || pathname === "/enhance" || pathname === "/eaglevision"
-                    ? "text-yellow-400"
-                    : "text-white hover:text-yellow-400"
+                  ? "text-yellow-400"
+                  : "text-white hover:text-yellow-400"
                   }`}
               >
-                <span>Our Products</span>
+                <span>{t('navigation.ourProducts')}</span>
                 <svg
                   className={`w-5 h-5 transition-transform duration-200 ${productsOpen ? "rotate-180" : ""
                     }`}
@@ -336,31 +374,31 @@ export default function Header() {
                     href="/discover"
                     onClick={closeMobileMenu}
                     className={`py-3 px-8 text-base transition-colors ${pathname === "/discover"
-                        ? "text-yellow-400 font-semibold bg-gray-800/50"
-                        : "text-gray-300 hover:text-yellow-400 hover:bg-gray-800/30"
+                      ? "text-yellow-400 font-semibold bg-gray-800/50"
+                      : "text-gray-300 hover:text-yellow-400 hover:bg-gray-800/30"
                       }`}
                   >
-                    DEUS Discover
+                    {t('navigation.deusDiscover')}
                   </Link>
                   <Link
                     href="/enhance"
                     onClick={closeMobileMenu}
                     className={`py-3 px-8 text-base transition-colors ${pathname === "/enhance"
-                        ? "text-yellow-400 font-semibold bg-gray-800/50"
-                        : "text-gray-300 hover:text-yellow-400 hover:bg-gray-800/30"
+                      ? "text-yellow-400 font-semibold bg-gray-800/50"
+                      : "text-gray-300 hover:text-yellow-400 hover:bg-gray-800/30"
                       }`}
                   >
-                    DEUS Enhance
+                    {t('navigation.deusEnhance')}
                   </Link>
                   <Link
                     href="/eaglevision"
                     onClick={closeMobileMenu}
                     className={`py-3 px-8 text-base transition-colors ${pathname === "/eaglevision"
-                        ? "text-yellow-400 font-semibold bg-gray-800/50"
-                        : "text-gray-300 hover:text-yellow-400 hover:bg-gray-800/30"
+                      ? "text-yellow-400 font-semibold bg-gray-800/50"
+                      : "text-gray-300 hover:text-yellow-400 hover:bg-gray-800/30"
                       }`}
                   >
-                    DEUS Eagle Vision
+                    {t('navigation.eagleVision')}
                   </Link>
                 </div>
               </div>
@@ -370,28 +408,29 @@ export default function Header() {
               href="#"
               onClick={closeMobileMenu}
               className={`py-4 px-4 text-lg font-medium transition-colors border-b border-gray-700 ${pathname === "#"
-                  ? "text-yellow-400"
-                  : "text-white hover:text-yellow-400"
+                ? "text-yellow-400"
+                : "text-white hover:text-yellow-400"
                 }`}
             >
-              DEUS Corner
+              {t('navigation.deusCorner')}
             </Link>
 
             <Link
               href="/consultation"
               onClick={closeMobileMenu}
               className={`mt-4 py-4 px-6 text-lg font-semibold rounded-lg transition-colors text-center ${pathname === "/consultation"
-                  ? "bg-yellow-500 text-gray-900"
-                  : "bg-yellow-400 hover:bg-yellow-500 text-gray-900"
+                ? "bg-yellow-500 text-gray-900"
+                : "bg-yellow-400 hover:bg-yellow-500 text-gray-900"
                 }`}
             >
-              Free HR Consultation
+              {t('navigation.freeHrConsultation')}
             </Link>
 
             <div className="mt-6 pt-6 border-t border-gray-700 flex items-center justify-center gap-4">
               <button
-                className="w-8 h-6 border border-gray-400 hover:border-yellow-400 transition-colors overflow-hidden rounded"
-                title="United States"
+                onClick={() => setLocale('en')}
+                className={`w-8 h-6 border transition-colors overflow-hidden rounded ${locale === 'en' ? 'border-yellow-400' : 'border-gray-400 hover:border-yellow-400'}`}
+                title="English"
               >
                 <svg width="32" height="24" viewBox="0 0 32 24" className="w-full h-full">
                   <rect width="32" height="24" fill="#B22234" />
@@ -406,8 +445,9 @@ export default function Header() {
                 </svg>
               </button>
               <button
-                className="w-8 h-6 border border-gray-400 hover:border-yellow-400 transition-colors overflow-hidden rounded"
-                title="Indonesia"
+                onClick={() => setLocale('id')}
+                className={`w-8 h-6 border transition-colors overflow-hidden rounded ${locale === 'id' ? 'border-yellow-400' : 'border-gray-400 hover:border-yellow-400'}`}
+                title="Indonesian"
               >
                 <div className="w-full h-full flex flex-col">
                   <div className="h-1/2 bg-red-600"></div>

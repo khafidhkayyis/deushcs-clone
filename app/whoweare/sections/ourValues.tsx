@@ -42,7 +42,7 @@ export default function OurValues() {
     ];
 
     return (
-        <section className="relative bg-[#122430] text-white py-16 lg:py-24">
+        <section id="our-values" className="relative bg-[#122430] text-white py-16 lg:py-24">
             <div className="container mx-auto px-6">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
                     {values.map((value, index) => (
