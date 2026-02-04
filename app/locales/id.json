@@ -185,6 +185,11 @@
                 "description": "Alat yang efisien dengan wawasan detail tentang karyawan memfasilitasi pengambilan keputusan yang cepat dengan memungkinkan manajer untuk mengevaluasi dan merespons dengan cepat terhadap wawasan tentang kinerja karyawan."
             }
         },
+        "navSection": {
+            "dataDriven": "Evaluasi Kinerja Berbasis Data",
+            "comprehensiveAppraisal": "Penilaian Kinerja Komprehensif",
+            "advancedEvaluation": "Metode Evaluasi Lanjutan"
+        },
         "keyFeatures": {
             "dataDriven": {
                 "title": "Evaluasi Kinerja Berbasis Data",

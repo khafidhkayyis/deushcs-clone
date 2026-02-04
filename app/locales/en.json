@@ -185,6 +185,11 @@
                 "description": "An efficient tool with detailed insights about employees facilitate prompt decision making by allowing managers to evaluate and respond swiftly to insights about employee performance."
             }
         },
+        "navSection": {
+            "dataDriven": "Data-Driven Performance Evaluation",
+            "comprehensiveAppraisal": "Comprehensive Performance Appraisal",
+            "advancedEvaluation": "Advanced Evaluation Methods"
+        },
         "keyFeatures": {
             "dataDriven": {
                 "title": "Data-Driven Performance Evaluation",

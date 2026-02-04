@@ -6,17 +6,28 @@ import digitalizationImage from "../images/keyFeatures/digitalization-for-KPI-ma
 import appraisalFormImage from "../images/keyFeatures/Employee-performance-appraisal-form-for-KPI.webp";
 import evaluationMethodsImage from "../images/keyFeatures/Employee-performance-evaluation-methods-2-scaled.webp";
 import { useTranslation } from "@/app/hooks/useTranslation";
+import NavSection from "@/app/components/NavSection";
 
 export default function KeyFeatures() {
     const { t } = useTranslation();
+
+    const navItems = [
+        { label: t('enhance.navSection.dataDriven'), id: "data-driven" },
+        { label: t('enhance.navSection.comprehensiveAppraisal'), id: "comprehensive-appraisal" },
+        { label: t('enhance.navSection.advancedEvaluation'), id: "advanced-evaluation" }
+    ];
+
     return (
         <>
             {/* Digitalization for KPI Management */}
-            <section className="relative bg-[#122430] text-white py-16 lg:py-24 overflow-hidden">
+            <section className="relative bg-[#122430] text-white py-10 lg:py-24 overflow-hidden">
+                <div className="container mx-auto pb-6">
+                    <NavSection items={navItems} />
+                </div>
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
                         {/* Left Side - Text Content */}
-                        <div className="relative z-10 order-2 lg:order-1">
+                        <div id="data-driven" className="relative z-10 order-2 lg:order-1 scroll-mt-24">
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 leading-tight">
                                 {t('enhance.keyFeatures.dataDriven.title')}
                             </h2>
@@ -46,7 +57,7 @@ export default function KeyFeatures() {
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
                         {/* Left Side - Text Content */}
-                        <div className="relative z-10 order-2 lg:order-2">
+                        <div id="comprehensive-appraisal" className="relative z-10 order-2 lg:order-2 scroll-mt-24">
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 leading-tight">
                                 {t('enhance.keyFeatures.comprehensiveAppraisal.title')}
                             </h2>
@@ -76,7 +87,7 @@ export default function KeyFeatures() {
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
                         {/* Left Side - Text Content */}
-                        <div className="relative z-10 order-2 lg:order-1">
+                        <div id="advanced-evaluation" className="relative z-10 order-2 lg:order-1 scroll-mt-24">
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 leading-tight">
                                 {t('enhance.keyFeatures.advancedEvaluation.title')}
                             </h2>
