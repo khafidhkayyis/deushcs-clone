@@ -1,9 +1,13 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import heroesImage from "../images/kastil.jpeg";
 import backgroundImage from "../images/DEUS-Discover-Gamified-Assessments-Indonesia.webp";
+import { useTranslation } from "@/app/hooks/useTranslation";
 
 export default function Features() {
+    const { t } = useTranslation();
     return (
         <section className="relative text-white py-16 lg:py-24 overflow-hidden">
             {/* Background image */}
@@ -23,10 +27,10 @@ export default function Features() {
                     {/* Left Side - Text Content */}
                     <div className="relative z-10 order-2 lg:order-1">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 leading-tight">
-                            Fully Immersive Experience
+                            {t('discover.features.title')}
                         </h2>
                         <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-200">
-                            Say goodbye to traditional assessments. DEUS&apos; Gamified Assessment offers a fresh, engaging approach that measures skills and competencies like never before.
+                            {t('discover.features.description')}
                         </p>
                     </div>
 

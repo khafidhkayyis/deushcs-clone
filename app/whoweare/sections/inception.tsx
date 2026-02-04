@@ -1,31 +1,22 @@
+"use client";
+
 import React from "react";
 import BarrierName from "./barrierName";
+import { useTranslation } from "@/app/hooks/useTranslation";
+import { getTranslation } from "@/app/utils/translations";
 
 export default function OurProcess() {
-    const inceptionItems = [
-        { normal: "Vision", hover: "Creating revolutionary HRM systems with a pioneering personality model." },
-        { normal: "Expert Collaboration", hover: "Worked with UK psychometric experts to build a vast database of personality questions." },
-        { normal: "Validation", hover: "Achieved remarkable validity score through rigorous procedures." },
-        { normal: "Planning", hover: "Carefully designed gamified experience, storyline, settings, and characters." },
-        { normal: "Transformation", hover: "Converted personality items into engaging gamification elements." },
-        { normal: "Development", hover: "Created an immersive visual novel game that you can use to discover your `true self`.​" }
-    ];
-
-    const implementationItems = [
-        { normal: "Innovative Report", hover: "Developed the groundbreaking `DEUS Discover` auto-generated report and insightful dashboards." },
-        { normal: "Expanding Horizons", hover: "We built a comprehensive strategic people management system, offering diverse HR services accessible via our web platform." },
-        { normal: "Early Success", hover: "Welcomed initial clients and HR partners, laying the groundwork for lasting relationships." },
-        { normal: "Industry Recognition", hover: "Chosen as one of 17 standout startups from 800+ applicants for KOMINFO's \ Startup Studio Indonesia (SSI) program." },
-        { normal: "Exciting Launch", hover: "Officially introduced our game to the market with thorough testing for a seamless experience." },
-        { normal: "Continuous Product Expansion", hover: "Currently we have 3 main products, however we are always open to innovating with exciting new products." }
-    ];
+    const { locale } = useTranslation();
+    const translations = getTranslation(locale);
+    const inceptionItems = translations.whoweare.inception.items;
+    const implementationItems = translations.whoweare.implementation.items;
 
     return (
         <section className="relative bg-[#122430] text-white py-16 lg:py-15">
             <div className="container mx-auto px-6 mb-12">
                 {/* Title - Inception */}
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-12 text-left">
-                    Inception
+                    {translations.whoweare.inception.title}
                 </h2>
 
                 {/* Grid of boxes - 2 rows, 3 columns */}
@@ -43,7 +34,7 @@ export default function OurProcess() {
 
                 {/* Title - Implementation */}
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-12 text-left">
-                    Implementation
+                    {translations.whoweare.implementation.title}
                 </h2>
 
                 {/* Grid of boxes - 2 rows, 3 columns */}

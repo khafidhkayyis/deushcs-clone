@@ -1,15 +1,9 @@
+"use client";
+
 import React from "react";
 import Barrier from "./barrier";
-
-const titles = [
-    "What Makes DEUS Enhance Stand Out?",
-    "Key Features for HR Transformation Management"
-];
-
-const descriptions = [
-    undefined,
-    "From KPI tracking to secure remuneration integration. DEUS Enhance delivers key features for effective HR management and business performance optimization"
-];
+import { useTranslation } from "@/app/hooks/useTranslation";
+import { getTranslation } from "@/app/utils/translations";
 
 function BarrierSection({ title, description }: { title: string; description?: string }) {
     return (
@@ -56,14 +50,19 @@ interface BarrierNameProps {
 }
 
 export default function BarrierName({ index }: BarrierNameProps) {
+    const { locale } = useTranslation();
+    const translations = getTranslation(locale);
+    const titles = translations.enhance.barrierName.titles as string[];
+    const descriptions = translations.enhance.barrierName.descriptions as (string | null)[];
+
     if (index !== undefined) {
-        return <BarrierSection title={titles[index]} description={descriptions[index]} />;
+        return <BarrierSection title={titles[index]} description={descriptions[index] || undefined} />;
     }
 
     return (
         <>
             {titles.map((title, idx) => (
-                <BarrierSection key={idx} title={title} description={descriptions[idx]} />
+                <BarrierSection key={idx} title={title} description={descriptions[idx] || undefined} />
             ))}
         </>
     );

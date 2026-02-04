@@ -1,10 +1,14 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import digitalizationImage from "../images/keyFeatures/digitalization-for-KPI-management.webp";
 import appraisalFormImage from "../images/keyFeatures/Employee-performance-appraisal-form-for-KPI.webp";
 import evaluationMethodsImage from "../images/keyFeatures/Employee-performance-evaluation-methods-2-scaled.webp";
+import { useTranslation } from "@/app/hooks/useTranslation";
 
 export default function KeyFeatures() {
+    const { t } = useTranslation();
     return (
         <>
             {/* Digitalization for KPI Management */}
@@ -14,10 +18,10 @@ export default function KeyFeatures() {
                         {/* Left Side - Text Content */}
                         <div className="relative z-10 order-2 lg:order-1">
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 leading-tight">
-                                Data-Driven Performance Evaluation
+                                {t('enhance.keyFeatures.dataDriven.title')}
                             </h2>
                             <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-200">
-                                Ensures each performance evaluation is supported by measurable insights, enhancing the accuracy of decision making processes.
+                                {t('enhance.keyFeatures.dataDriven.description')}
                             </p>
                         </div>
 
@@ -44,10 +48,10 @@ export default function KeyFeatures() {
                         {/* Left Side - Text Content */}
                         <div className="relative z-10 order-2 lg:order-2">
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 leading-tight">
-                                Comprehensive Performance Appraisal
+                                {t('enhance.keyFeatures.comprehensiveAppraisal.title')}
                             </h2>
                             <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-200">
-                                Streamlined appraisal forms that capture essential KPI metrics and performance indicators for accurate employee assessment.
+                                {t('enhance.keyFeatures.comprehensiveAppraisal.description')}
                             </p>
                         </div>
 
@@ -74,10 +78,10 @@ export default function KeyFeatures() {
                         {/* Left Side - Text Content */}
                         <div className="relative z-10 order-2 lg:order-1">
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 leading-tight">
-                                Advanced Evaluation Methods
+                                {t('enhance.keyFeatures.advancedEvaluation.title')}
                             </h2>
                             <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-200">
-                                Modern evaluation techniques that leverage data analytics and real-time insights to provide comprehensive performance assessments.
+                                {t('enhance.keyFeatures.advancedEvaluation.description')}
                             </p>
                         </div>
 
