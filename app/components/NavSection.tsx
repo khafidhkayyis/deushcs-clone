@@ -5,7 +5,7 @@ import { useTranslation } from "@/app/hooks/useTranslation";
 
 export default function NavSection() {
     const { t } = useTranslation();
-    
+
     const navItems = [
         { label: t('homepage.navSection.effortlessShortlisting'), id: "effortless-shortlisting" },
         { label: t('homepage.navSection.identifyLeaders'), id: "identify-leaders" },

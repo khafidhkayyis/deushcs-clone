@@ -13,6 +13,7 @@ import NavSection from "@/app/components/NavSection";
 import { useTranslation } from "@/app/hooks/useTranslation";
 
 function GapAnalysisSection() {
+    const { t } = useTranslation();
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const carouselImages = [
         { src: psychometricImage2, alt: "DEUS Discover - Psychometric Assessment 2" },
