@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import { useTranslation } from "@/app/hooks/useTranslation";
 import dashboardImage from "../images/whyTrust/DEUS-DIscover-images-44.png";
 import mobileAppImage from "../images/whyTrust/DEUS-DIscover-images-17-1024x1024.png";
 import mobileAppImage2 from "../images/whyTrust/DEUS-DIscover-images-47-1024x1024.png";
@@ -131,6 +132,8 @@ function UserCentricCarousel() {
 }
 
 export default function WhyTrust() {
+    const { t } = useTranslation();
+    
     return (
         <>
             {/* Real-Time Visibility Across Operations */}
@@ -140,10 +143,10 @@ export default function WhyTrust() {
                         {/* Left Side - Text Content */}
                         <div className="relative z-10 order-2 lg:order-1">
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 leading-tight">
-                                Real-Time Visibility Across Operations
+                                {t('eaglevision.whyTrust.realTimeVisibility.title')}
                             </h2>
                             <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-200">
-                                Monitor employee attendance, track task progress, and manage inventory seamlessly through the business dashboard that operates in real-time. Benefit from the convenience of accessing Eagle Vision&apos;s dashboard on both mobile devices and desktop platforms.
+                                {t('eaglevision.whyTrust.realTimeVisibility.description')}
                             </p>
                         </div>
 
@@ -175,10 +178,10 @@ export default function WhyTrust() {
                         {/* Right Side - Text Content */}
                         <div className="relative z-10 order-2 lg:order-2">
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 leading-tight">
-                                Increase Productivity with Centralized Tools
+                                {t('eaglevision.whyTrust.increaseProductivity.title')}
                             </h2>
                             <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-200">
-                                Integrate task management and performance tools to simplify planning, organization, and execution of tasks, ensuring greater productivity among your workforce.
+                                {t('eaglevision.whyTrust.increaseProductivity.description')}
                             </p>
                         </div>
                     </div>
@@ -192,10 +195,10 @@ export default function WhyTrust() {
                         {/* Left Side - Text Content */}
                         <div className="relative z-10 order-2 lg:order-1">
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 leading-tight">
-                                Cost Efficient
+                                {t('eaglevision.whyTrust.costEfficient.title')}
                             </h2>
                             <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-200">
-                                Optimize resource utilization by reducing instances of missed deadlines, preventing stock shortages, and mitigating potential sales losses through the implementation of real-time operational insights.
+                                {t('eaglevision.whyTrust.costEfficient.description')}
                             </p>
                         </div>
 
@@ -235,10 +238,10 @@ export default function WhyTrust() {
                         {/* Right Side - Text Content */}
                         <div className="relative z-10 order-2 lg:order-2">
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 leading-tight">
-                                Enhance Team Collaboration
+                                {t('eaglevision.whyTrust.enhanceCollaboration.title')}
                             </h2>
                             <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-200">
-                                Assign and track tasks continuously, improving team coordination and employee performance.
+                                {t('eaglevision.whyTrust.enhanceCollaboration.description')}
                             </p>
                         </div>
                     </div>
@@ -252,14 +255,14 @@ export default function WhyTrust() {
                         {/* Left Side - Text Content */}
                         <div className="relative z-10 order-2 lg:order-1">
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 leading-tight">
-                                User Centric Design
+                                {t('eaglevision.whyTrust.userCentric.title')}
                             </h2>
                             <div className="space-y-4 text-base md:text-lg lg:text-xl leading-relaxed text-gray-200">
                                 <p>
-                                    Designed for user-friendly navigation, ensuring all team members, regardless of tech proficiency, can operate the system smoothly.
+                                    {t('eaglevision.whyTrust.userCentric.description1')}
                                 </p>
                                 <p>
-                                    Tailored modules to meet specific client needs with a centralized platform to manage all kinds of operational tasks in the company. This provides extra convenience and allows higher efficiency in your day to day operations.
+                                    {t('eaglevision.whyTrust.userCentric.description2')}
                                 </p>
                             </div>
                         </div>

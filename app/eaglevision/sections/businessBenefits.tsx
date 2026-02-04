@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import { useTranslation } from "@/app/hooks/useTranslation";
 import mobileAppImage from "../images/busubessBenefits/DEUS-DIscover-images-23-1-qz4bal8l3bwbyoe7fbjurua0jz77ak3ru9fbu52cg8.png";
 import inventoryImage from "../images/busubessBenefits/DEUS-DIscover-images-46-qz9g0ri1kjhgh4n92w84ioxwgpc7fiu1hkepjosako.png";
 import businessAnalyticsImage from "../images/busubessBenefits/business-analytics.png";
@@ -69,6 +70,8 @@ function AnalyticsCarousel() {
 }
 
 export default function BusinessBenefits() {
+    const { t } = useTranslation();
+    
     return (
         <>
             {/* Employee Performance Monitoring */}
@@ -92,10 +95,10 @@ export default function BusinessBenefits() {
                         <div className="relative z-10 order-2 lg:order-2">
                             <div className="space-y-6 text-base md:text-lg lg:text-xl leading-relaxed text-gray-200">
                                 <p>
-                                    Monitor employee performance and task progress in real-time with our operational excellence system.
+                                    {t('eaglevision.businessBenefits.performanceMonitoring.description1')}
                                 </p>
                                 <p>
-                                    Enhance oversight of employee activities and project timelines through effective task management solutions.
+                                    {t('eaglevision.businessBenefits.performanceMonitoring.description2')}
                                 </p>
                             </div>
                         </div>
@@ -110,7 +113,7 @@ export default function BusinessBenefits() {
                         {/* Left Side - Text Content */}
                         <div className="relative z-10 order-2 lg:order-1">
                             <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-200">
-                                Implement real-time inventory management to ensure optimal stock levels, mitigate losses, and enhance overall customer satisfaction.
+                                {t('eaglevision.businessBenefits.inventoryManagement.description')}
                             </p>
                         </div>
 
@@ -142,7 +145,7 @@ export default function BusinessBenefits() {
                         {/* Right Side - Text Content */}
                         <div className="relative z-10 order-2 lg:order-2">
                             <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-200">
-                                Utilize data-driven business analytics tools embedded within the platform to make informed, data-driven decisions. Monitor daily sales, transaction volumes, and advancements towards objectives.
+                                {t('eaglevision.businessBenefits.businessAnalytics.description')}
                             </p>
                         </div>
                     </div>
@@ -156,7 +159,7 @@ export default function BusinessBenefits() {
                         {/* Left Side - Text Content */}
                         <div className="relative z-10 order-2 lg:order-1">
                             <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-200">
-                                A user-friendly feature designed to guarantee store cleanliness, maximum customer comfort, store readiness and more. Easily identify problems by incorporating photos and comments in tasks, maintaining the company&apos;s standards.
+                                {t('eaglevision.businessBenefits.storeManagement.description')}
                             </p>
                         </div>
 

@@ -1,17 +1,9 @@
+"use client";
+
 import React from "react";
 import Barrier from "./barrier";
-
-const titles = [
-    "Eagle Vision Core Values",
-    "Why Trust Eagle Vision to Drive Results??",
-    "Benefits for Organizations"
-];
-
-const descriptions = [
-    "For the Best Interest of Clients",
-    undefined,
-    "Operations management tool for easier workflow, enhanced efficiency, and to drive company growth."
-];
+import { useTranslation } from "@/app/hooks/useTranslation";
+import { getTranslation } from "@/app/utils/translations";
 
 function BarrierSection({ title, description }: { title: string; description?: string }) {
     return (
@@ -58,14 +50,19 @@ interface BarrierNameProps {
 }
 
 export default function BarrierName({ index }: BarrierNameProps) {
+    const { locale } = useTranslation();
+    const translations = getTranslation(locale);
+    const titles = translations.eaglevision.barrierName.titles as string[];
+    const descriptions = translations.eaglevision.barrierName.descriptions as (string | null)[];
+
     if (index !== undefined) {
-        return <BarrierSection title={titles[index]} description={descriptions[index]} />;
+        return <BarrierSection title={titles[index]} description={descriptions[index] || undefined} />;
     }
 
     return (
         <>
             {titles.map((title, idx) => (
-                <BarrierSection key={idx} title={title} description={descriptions[idx]} />
+                <BarrierSection key={idx} title={title} description={descriptions[idx] || undefined} />
             ))}
         </>
     );

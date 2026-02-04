@@ -1,16 +1,18 @@
 "use client";
 
 import { useState } from "react";
-
-const navItems = [
-    { label: "Effortless Candidate Shortlisting", id: "effortless-shortlisting" },
-    { label: "Identify Future Leaders", id: "identify-leaders" },
-    { label: "Competency Fit Insight", id: "competency-fit" },
-    { label: "Gap Analysis", id: "gap-analysis" },
-    { label: "Retain your Top Performers", id: "retain-performers" }
-];
+import { useTranslation } from "@/app/hooks/useTranslation";
 
 export default function NavSection() {
+    const { t } = useTranslation();
+
+    const navItems = [
+        { label: t('homepage.navSection.effortlessShortlisting'), id: "effortless-shortlisting" },
+        { label: t('homepage.navSection.identifyLeaders'), id: "identify-leaders" },
+        { label: t('homepage.navSection.competencyFit'), id: "competency-fit" },
+        { label: t('homepage.navSection.gapAnalysis'), id: "gap-analysis" },
+        { label: t('homepage.navSection.retainPerformers'), id: "retain-performers" }
+    ];
     const [selectedValue, setSelectedValue] = useState(navItems[0].id);
 
     const scrollToSection = (id: string) => {
