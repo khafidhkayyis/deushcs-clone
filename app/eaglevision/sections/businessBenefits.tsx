@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { useTranslation } from "@/app/hooks/useTranslation";
+import NavSection from "@/app/components/NavSection";
 import mobileAppImage from "../images/busubessBenefits/DEUS-DIscover-images-23-1-qz4bal8l3bwbyoe7fbjurua0jz77ak3ru9fbu52cg8.png";
 import inventoryImage from "../images/busubessBenefits/DEUS-DIscover-images-46-qz9g0ri1kjhgh4n92w84ioxwgpc7fiu1hkepjosako.png";
 import businessAnalyticsImage from "../images/busubessBenefits/business-analytics.png";
@@ -71,11 +72,21 @@ function AnalyticsCarousel() {
 
 export default function BusinessBenefits() {
     const { t } = useTranslation();
-    
+
+    const navItems = [
+        { label: t('eaglevision.navSection.attendanceTask'), id: "attendance-task" },
+        { label: t('eaglevision.navSection.inventoryFlow'), id: "inventory-flow" },
+        { label: t('eaglevision.navSection.businessAnalytics'), id: "business-analytics" },
+        { label: t('eaglevision.navSection.storeAudit'), id: "store-audit" }
+    ];
+
     return (
         <>
             {/* Employee Performance Monitoring */}
-            <section className="relative bg-[#122430] text-white py-16 lg:py-24 overflow-hidden">
+            <section className="relative bg-[#122430] text-white py-10 lg:py-24 overflow-hidden">
+                <div className="container mx-auto pb-6">
+                    <NavSection items={navItems} />
+                </div>
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
                         {/* Left Side - Mobile App Image */}
@@ -92,7 +103,7 @@ export default function BusinessBenefits() {
                         </div>
 
                         {/* Right Side - Text Content */}
-                        <div className="relative z-10 order-2 lg:order-2">
+                        <div id="attendance-task" className="relative z-10 order-2 lg:order-2 scroll-mt-24">
                             <div className="space-y-6 text-base md:text-lg lg:text-xl leading-relaxed text-gray-200">
                                 <p>
                                     {t('eaglevision.businessBenefits.performanceMonitoring.description1')}
@@ -111,7 +122,7 @@ export default function BusinessBenefits() {
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
                         {/* Left Side - Text Content */}
-                        <div className="relative z-10 order-2 lg:order-1">
+                        <div id="inventory-flow" className="relative z-10 order-2 lg:order-1 scroll-mt-24">
                             <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-200">
                                 {t('eaglevision.businessBenefits.inventoryManagement.description')}
                             </p>
@@ -143,7 +154,7 @@ export default function BusinessBenefits() {
                         </div>
 
                         {/* Right Side - Text Content */}
-                        <div className="relative z-10 order-2 lg:order-2">
+                        <div id="business-analytics" className="relative z-10 order-2 lg:order-2 scroll-mt-24">
                             <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-200">
                                 {t('eaglevision.businessBenefits.businessAnalytics.description')}
                             </p>
@@ -157,7 +168,7 @@ export default function BusinessBenefits() {
                 <div className="container mx-auto px-6">
                     <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:gap-12">
                         {/* Left Side - Text Content */}
-                        <div className="relative z-10 order-2 lg:order-1">
+                        <div id="store-audit" className="relative z-10 order-2 lg:order-1 scroll-mt-24">
                             <p className="text-base md:text-lg lg:text-xl leading-relaxed text-gray-200">
                                 {t('eaglevision.businessBenefits.storeManagement.description')}
                             </p>

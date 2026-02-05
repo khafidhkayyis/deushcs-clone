@@ -3,16 +3,27 @@
 import { useState } from "react";
 import { useTranslation } from "@/app/hooks/useTranslation";
 
-export default function NavSection() {
+interface NavItem {
+    label: string;
+    id: string;
+}
+
+interface NavSectionProps {
+    items?: NavItem[];
+}
+
+export default function NavSection({ items }: NavSectionProps) {
     const { t } = useTranslation();
 
-    const navItems = [
+    const defaultNavItems = [
         { label: t('homepage.navSection.effortlessShortlisting'), id: "effortless-shortlisting" },
         { label: t('homepage.navSection.identifyLeaders'), id: "identify-leaders" },
         { label: t('homepage.navSection.competencyFit'), id: "competency-fit" },
         { label: t('homepage.navSection.gapAnalysis'), id: "gap-analysis" },
         { label: t('homepage.navSection.retainPerformers'), id: "retain-performers" }
     ];
+
+    const navItems = items || defaultNavItems;
     const [selectedValue, setSelectedValue] = useState(navItems[0].id);
 
     const scrollToSection = (id: string) => {

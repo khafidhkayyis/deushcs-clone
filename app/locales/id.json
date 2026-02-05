@@ -60,9 +60,20 @@
             "clientPartnerships": "Klien dan Kemitraan"
         },
         "pillars": {
-            "organizationalEnhancement": "Peningkatan Organisasi",
-            "optimizeTalent": "Optimalkan Talenta",
-            "successStartsHere": "Kesuksesan Dimulai Di Sini"
+            "items": [
+                {
+                    "normal": "Peningkatan Organisasi",
+                    "hover": "Kembangkan bisnis berkinerja tinggi melalui Solusi HR kami: asesmen gamifikasi, analitik orang, pengukuran kinerja, dashboard komprehensif dan banyak lagi!"
+                },
+                {
+                    "normal": "Optimalkan Talenta",
+                    "hover": "Tingkatkan tim Anda untuk membentuk pipeline talenta masa depan Anda. Kami membantu Anda memilih talenta terbaik dan membangun tim berkinerja tinggi untuk kesuksesan perusahaan."
+                },
+                {
+                    "normal": "Kesuksesan Dimulai Di Sini",
+                    "hover": "Mengenal diri sendiri dan orang lain adalah kunci kesuksesan untuk Anda, tim Anda dan organisasi Anda"
+                }
+            ]
         },
         "transformational": {
             "title": "Layanan HR strategis transformasional untuk bisnis Anda",
@@ -185,6 +196,11 @@
                 "description": "Alat yang efisien dengan wawasan detail tentang karyawan memfasilitasi pengambilan keputusan yang cepat dengan memungkinkan manajer untuk mengevaluasi dan merespons dengan cepat terhadap wawasan tentang kinerja karyawan."
             }
         },
+        "navSection": {
+            "dataDriven": "Evaluasi Kinerja Berbasis Data",
+            "comprehensiveAppraisal": "Penilaian Kinerja Komprehensif",
+            "advancedEvaluation": "Metode Evaluasi Lanjutan"
+        },
         "keyFeatures": {
             "dataDriven": {
                 "title": "Evaluasi Kinerja Berbasis Data",
@@ -269,6 +285,12 @@
         },
         "quote": {
             "text": "Melangkah ke masa depan dengan Eagle Vision, solusi all-in-one Anda untuk operasi yang mulus, efisien, dan berbasis data."
+        },
+        "navSection": {
+            "attendanceTask": "Manajemen Kehadiran dan Tugas Karyawan",
+            "inventoryFlow": "Alur Inventaris Real-Time",
+            "businessAnalytics": "Analitik Bisnis",
+            "storeAudit": "Audit Kebersihan dan Suasana Toko"
         },
         "businessBenefits": {
             "performanceMonitoring": {
