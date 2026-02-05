@@ -60,9 +60,20 @@
             "clientPartnerships": "Client and Partnerships"
         },
         "pillars": {
-            "organizationalEnhancement": "Organizational Enhancement",
-            "optimizeTalent": "Optimize Talent",
-            "successStartsHere": "Success Starts Here"
+            "items": [
+                {
+                    "normal": "Organizational Enhancement",
+                    "hover": "Develop a high performing business through our HR Solutions: gamified assessments, people analytics, performance measurement, comprehensive dashboards and beyond!"
+                },
+                {
+                    "normal": "Optimize Talent",
+                    "hover": "Elevate your team to shape your future talent pipeline. We help you select top talent and build high-performing teams for company success."
+                },
+                {
+                    "normal": "Success Starts Here",
+                    "hover": "Knowing yourself and others is the key to success for you, your team and your organization"
+                }
+            ]
         },
         "transformational": {
             "title": "Transformational strategic HR services for your business",
@@ -105,7 +116,7 @@
             "descriptions": [
                 null,
                 "A gamified assessment is an innovative solution that incorporates game elements into evaluation processes to enhance engagement, motivation, and effectiveness in recruitment processes and employee development for businesses.",
-                null
+                "DEUS gamified assessment is a powerful tool that can be used to elevate your talent management strategy"
             ]
         },
         "features": {
@@ -184,6 +195,11 @@
                 "title": "Speed Up Decision Making",
                 "description": "An efficient tool with detailed insights about employees facilitate prompt decision making by allowing managers to evaluate and respond swiftly to insights about employee performance."
             }
+        },
+        "navSection": {
+            "dataDriven": "Data-Driven Performance Evaluation",
+            "comprehensiveAppraisal": "Comprehensive Performance Appraisal",
+            "advancedEvaluation": "Advanced Evaluation Methods"
         },
         "keyFeatures": {
             "dataDriven": {
@@ -269,6 +285,12 @@
         },
         "quote": {
             "text": "Step into the future with Eagle Vision, your all-in-one solution for smooth, efficient, and data-driven operations."
+        },
+        "navSection": {
+            "attendanceTask": "Employee Attendance and Task Management",
+            "inventoryFlow": "Real-Time Inventory Flow",
+            "businessAnalytics": "Business Analytics",
+            "storeAudit": "Store cleanliness and Ambience Audit"
         },
         "businessBenefits": {
             "performanceMonitoring": {
