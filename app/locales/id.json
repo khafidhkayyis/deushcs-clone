@@ -60,9 +60,20 @@
             "clientPartnerships": "Klien dan Kemitraan"
         },
         "pillars": {
-            "organizationalEnhancement": "Peningkatan Organisasi",
-            "optimizeTalent": "Optimalkan Talenta",
-            "successStartsHere": "Kesuksesan Dimulai Di Sini"
+            "items": [
+                {
+                    "normal": "Peningkatan Organisasi",
+                    "hover": "Kembangkan bisnis berkinerja tinggi melalui Solusi HR kami: asesmen gamifikasi, analitik orang, pengukuran kinerja, dashboard komprehensif dan banyak lagi!"
+                },
+                {
+                    "normal": "Optimalkan Talenta",
+                    "hover": "Tingkatkan tim Anda untuk membentuk pipeline talenta masa depan Anda. Kami membantu Anda memilih talenta terbaik dan membangun tim berkinerja tinggi untuk kesuksesan perusahaan."
+                },
+                {
+                    "normal": "Kesuksesan Dimulai Di Sini",
+                    "hover": "Mengenal diri sendiri dan orang lain adalah kunci kesuksesan untuk Anda, tim Anda dan organisasi Anda"
+                }
+            ]
         },
         "transformational": {
             "title": "Layanan HR strategis transformasional untuk bisnis Anda",

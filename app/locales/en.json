@@ -60,9 +60,20 @@
             "clientPartnerships": "Client and Partnerships"
         },
         "pillars": {
-            "organizationalEnhancement": "Organizational Enhancement",
-            "optimizeTalent": "Optimize Talent",
-            "successStartsHere": "Success Starts Here"
+            "items": [
+                {
+                    "normal": "Organizational Enhancement",
+                    "hover": "Develop a high performing business through our HR Solutions: gamified assessments, people analytics, performance measurement, comprehensive dashboards and beyond!"
+                },
+                {
+                    "normal": "Optimize Talent",
+                    "hover": "Elevate your team to shape your future talent pipeline. We help you select top talent and build high-performing teams for company success."
+                },
+                {
+                    "normal": "Success Starts Here",
+                    "hover": "Knowing yourself and others is the key to success for you, your team and your organization"
+                }
+            ]
         },
         "transformational": {
             "title": "Transformational strategic HR services for your business",
